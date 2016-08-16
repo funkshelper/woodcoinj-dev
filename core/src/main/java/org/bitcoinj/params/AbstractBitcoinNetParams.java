@@ -78,7 +78,7 @@ public abstract class AbstractBitcoinNetParams extends NetworkParameters {
             return;
         }
 
-        log.warn("inside abstractBitcoinNetParams checkDifficultyTransitions(blah)");
+        //log.warn("inside abstractBitcoinNetParams checkDifficultyTransitions(blah)");
         // We need to find a block far back in the chain. It's OK that this is expensive because it only occurs every
         // two weeks after the initial block chain download.
         final Stopwatch watch = Stopwatch.createStarted();
@@ -122,12 +122,12 @@ public abstract class AbstractBitcoinNetParams extends NetworkParameters {
         newTarget = newTarget.and(mask);
         long newTargetCompact = Utils.encodeCompactBits(newTarget);
 
-        if (newTargetCompact != receivedTargetCompact)
+        //if (newTargetCompact != receivedTargetCompact)
             // lol lets try leaving this out !!! :D :D 
             //throw new VerificationException("Network provided difficulty bits do not match what was calculated: " +
             //        Long.toHexString(newTargetCompact) + " vs " + Long.toHexString(receivedTargetCompact));
 
-        log.warn("returning from abnp.checkDifficultyTransitions where we go nobody knows");
+        //log.warn("returning from abnp.checkDifficultyTransitions where we go nobody knows");
     }
 
     @Override

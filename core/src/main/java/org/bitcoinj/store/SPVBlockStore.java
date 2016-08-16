@@ -164,7 +164,7 @@ public class SPVBlockStore implements BlockStore {
 
         lock.lock();
         try {
-	    System.out.println("trying put in SPVBlockStore" + block);
+	    //System.out.println("trying put in SPVBlockStore" + block);
             int cursor = getRingCursor(buffer);
             if (cursor == getFileSize()) {
                 // Wrapped around.
@@ -176,16 +176,18 @@ public class SPVBlockStore implements BlockStore {
             buffer.put(hash.getBytes());
             block.serializeCompact(buffer);
             setRingCursor(buffer, buffer.position());
-            System.out.println("about to try blokCache.put");
+            //System.out.println("about to try blokCache.put");
             blockCache.put(hash, block);
-	    System.out.println("apparently we put it in there in spvBS");
+	    //System.out.println("apparently we put it in there in spvBS");
         } finally { lock.unlock(); }
     }
 
     @Override
     @Nullable
     public StoredBlock get(Sha256Hash hash) throws BlockStoreException {
-        System.out.println("inside spvblockstore.get with hash = " + hash);
+	if (hash.toString().indexOf("00000000000000")!=-1) return null;
+
+        //System.out.println("inside spvblockstore.get with hash = " + hash);
         final MappedByteBuffer buffer = this.buffer;
         if (buffer == null) throw new BlockStoreException("Store closed");
 
@@ -197,6 +199,7 @@ public class SPVBlockStore implements BlockStore {
             if (notFoundCache.get(hash) != null)
                 return null;
 
+            //System.out.println("Apparently SPVBLockStore made it past cachHit wordup");
             // Starting from the current tip of the ring work backwards until we have either found the block or
             // wrapped around.
             int cursor = getRingCursor(buffer);
@@ -221,7 +224,7 @@ public class SPVBlockStore implements BlockStore {
                 }
             } while (cursor != startingPoint);
             // Not found.
-            System.out.println("We didn' t find it");
+            System.out.println("We didn' t find it in SPVBlockStore.get");
             notFoundCache.put(hash, notFoundMarker);
             return null;
         } catch (ProtocolException e) {
@@ -263,7 +266,7 @@ public class SPVBlockStore implements BlockStore {
             byte[] headHash = chainHead.getHeader().getHash().getBytes();
             buffer.position(8);
             buffer.put(headHash);
-            System.out.println("We set the chain head in spvstore");
+            //System.out.println("We set the chain head in spvstore");
         } finally { lock.unlock(); }
     }
 

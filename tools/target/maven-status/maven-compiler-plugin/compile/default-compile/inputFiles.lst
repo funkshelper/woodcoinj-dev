@@ -1,7 +1,7 @@
-/home/lukas/work/woodcoinj/tools/src/main/java/org/bitcoinj/tools/WalletTool.java
-/home/lukas/work/woodcoinj/tools/src/main/java/org/bitcoinj/tools/NetworkEnum.java
-/home/lukas/work/woodcoinj/tools/src/main/java/org/bitcoinj/tools/WatchMempool.java
-/home/lukas/work/woodcoinj/tools/src/main/java/org/bitcoinj/tools/PaymentProtocolTool.java
-/home/lukas/work/woodcoinj/tools/src/main/java/org/bitcoinj/tools/BuildCheckpoints.java
-/home/lukas/work/woodcoinj/tools/src/main/java/org/bitcoinj/tools/TestFeeLevel.java
-/home/lukas/work/woodcoinj/tools/src/main/java/org/bitcoinj/tools/BlockImporter.java
+/home/lukas/work/woodcoinj-dev/tools/src/main/java/org/bitcoinj/tools/TestFeeLevel.java
+/home/lukas/work/woodcoinj-dev/tools/src/main/java/org/bitcoinj/tools/WalletTool.java
+/home/lukas/work/woodcoinj-dev/tools/src/main/java/org/bitcoinj/tools/BuildCheckpoints.java
+/home/lukas/work/woodcoinj-dev/tools/src/main/java/org/bitcoinj/tools/PaymentProtocolTool.java
+/home/lukas/work/woodcoinj-dev/tools/src/main/java/org/bitcoinj/tools/BlockImporter.java
+/home/lukas/work/woodcoinj-dev/tools/src/main/java/org/bitcoinj/tools/WatchMempool.java
+/home/lukas/work/woodcoinj-dev/tools/src/main/java/org/bitcoinj/tools/NetworkEnum.java

@@ -90,6 +90,7 @@ public class CheckpointManager {
 
     /** Loads the checkpoints from the given stream */
     public CheckpointManager(NetworkParameters params, @Nullable InputStream inputStream) throws IOException {
+        System.out.println("Constructing a checkpointManager");
         this.params = checkNotNull(params);
         if (inputStream == null)
             inputStream = openStream(params);
@@ -104,6 +105,7 @@ public class CheckpointManager {
             dataHash = readTextual(inputStream);
         else
             throw new IOException("Unsupported format.");
+        System.out.println(" loaded in checkpointmanger: " + numCheckpoints());
     }
 
     /** Returns a checkpoints stream pointing to inside the bitcoinj JAR */

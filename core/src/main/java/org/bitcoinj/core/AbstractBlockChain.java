@@ -456,9 +456,9 @@ public abstract class AbstractBlockChain {
             }
 
 	    // uh, lets check.. limits db access yo!  funk here
-            if (blockStore.get(block.getHash()) != null) {
+           /* if (blockStore.get(block.getHash()) != null) {
                 return true;
-            }
+            }*/
 
             final StoredBlock storedPrev;
             final int height;
@@ -470,7 +470,7 @@ public abstract class AbstractBlockChain {
             // article here for more details: https://bitcoinj.github.io/security-model
             try {
                 block.verifyHeader();
-		log.warn("prevblockhash at this juncture: " + block.getPrevBlockHash());
+		//log.warn("prevblockhash at this juncture: " + block.getPrevBlockHash());
                 storedPrev = getStoredBlockInCurrentScope(block.getPrevBlockHash());
                 if (storedPrev != null) {
                     height = storedPrev.getHeight() + 1;
@@ -498,12 +498,12 @@ public abstract class AbstractBlockChain {
                 orphanBlocks.put(block.getHash(), new OrphanBlock(block, filteredTxHashList, filteredTxn));
                 return false;
             } else {
-		log.warn("Looks like we are successful in adding a block w/prev hash: " + block.getPrevBlockHash());
+		//log.warn("Looks like we are successful in adding a block w/prev hash: " + block.getPrevBlockHash());
                 checkState(lock.isHeldByCurrentThread());
                 // It connects to somewhere on the chain. Not necessarily the top of the best known chain.
-                log.warn("checking diff. in params..");
+                //log.warn("checking diff. in params..");
                 params.checkDifficultyTransitions(storedPrev, block, blockStore);
-                log.warn("trying connectBlock... ");
+                //log.warn("trying connectBlock... ");
                 connectBlock(block, storedPrev, shouldVerifyTransactions(), filteredTxHashList, filteredTxn);
             }
 
@@ -551,7 +551,7 @@ public abstract class AbstractBlockChain {
                 if (!tx.isFinal(storedPrev.getHeight() + 1, block.getTimeSeconds()))
                    throw new VerificationException("Block contains non-final transaction");
         }
-        log.warn("inside cB3");
+        //log.warn("inside cB3");
         StoredBlock head = getChainHead();
         if (storedPrev.equals(head)) {
           //  log.warn("inside cB4 storedPrev equals head");
@@ -582,10 +582,10 @@ public abstract class AbstractBlockChain {
             //log.warn("CB what is this 7 now?");
             if (shouldVerifyTransactions())
                 txOutChanges = connectTransactions(storedPrev.getHeight() + 1, block);
-            log.warn("ok entering addToBlockStore finally!!");
+            //log.warn("ok entering addToBlockStore finally!!");
             StoredBlock newStoredBlock = addToBlockStore(storedPrev,
                     block.transactions == null ? block : block.cloneAsHeader(), txOutChanges);
-            log.warn("CB8 yo");
+            //log.warn("CB8 yo");
             versionTally.add(block.getVersion());
             setChainHead(newStoredBlock);
             log.debug("Chain is now {} blocks high, running listeners", newStoredBlock.getHeight());

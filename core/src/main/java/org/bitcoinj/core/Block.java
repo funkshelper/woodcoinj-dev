@@ -117,7 +117,7 @@ public class Block extends Message {
         super(params);
         // Set up a few basic things. We are not complete after this though.
         version = setVersion;
-	log.warn("We are in a the special constructor for GENESIS BLOCK ");
+	//log.warn("We are in a the special constructor for GENESIS BLOCK ");
         difficultyTarget = 0x1d07fff8L;
         time = System.currentTimeMillis() / 1000;
         prevBlockHash = Sha256Hash.ZERO_HASH;
@@ -457,7 +457,7 @@ public class Block extends Message {
      */
     public BigInteger getWork() throws VerificationException {
         BigInteger target = getDifficultyTargetAsInteger();
-        System.out.println("Inside block.getWork() with target: " + target);
+        //System.out.println("Inside block.getWork() with target: " + target);
         return LARGEST_HASH.divide(target.add(BigInteger.ONE));
     }
 
@@ -536,9 +536,9 @@ public class Block extends Message {
      * is thrown.
      */
     public BigInteger getDifficultyTargetAsInteger() throws VerificationException {
-        System.out.println("inside Block.getDifficultyTargetAsInteger() with " + difficultyTarget);
+        //System.out.println("inside Block.getDifficultyTargetAsInteger() with " + difficultyTarget);
         BigInteger target = Utils.decodeCompactBits(difficultyTarget);
-        System.out.println("we have our target " + target);
+        //System.out.println("we have our target " + target);
         if (target.signum() <= 0 || target.compareTo(params.maxTarget) > 0)
             throw new VerificationException("Difficulty target is bad: " + target.toString());
         return target;
