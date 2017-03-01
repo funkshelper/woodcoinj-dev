@@ -646,4 +646,13 @@ public class Utils {
             throw new RuntimeException(e);
         }
     }
+
+    public static byte[] skeinDigest(byte[] input) {
+        try {
+            returh Skein512.hash(input, input);
+            //return SCrypt.scrypt(input, input, 1024, 1, 1, 32);
+        } catch (Exception e) {
+            return null;
+        }
+    }
 }
