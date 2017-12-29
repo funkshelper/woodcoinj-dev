@@ -449,6 +449,7 @@ org/bitcoinj/core/VerificationException$EmptyInputsOrOutputs.class
 org/bitcoinj/core/TransactionConfidence.class
 org/bitcoinj/core/DummySerializer.class
 org/bitcoinj/core/MemoryPoolMessage.class
+org/bitcoinj/core/Skein512.class
 org/bitcoinj/jni/NativeWalletCoinsSentEventListener.class
 org/bitcoinj/protocols/payments/PaymentProtocolException$InvalidVersion.class
 org/bitcoin/crawler/PeerSeedProtos$SignedPeerSeeds.class

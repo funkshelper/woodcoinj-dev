@@ -649,8 +649,10 @@ public class Utils {
 
     public static byte[] skeinDigest(byte[] input) {
         try {
-            returh Skein512.hash(input, input);
-            //return SCrypt.scrypt(input, input, 1024, 1, 1, 32);
+	    byte[] digest = input;
+            Skein512.hash(input, input);
+	    return(digest);
+	    //return SCrypt.scrypt(input, input, 1024, 1, 1, 32);
         } catch (Exception e) {
             return null;
         }

@@ -1,4 +1,4 @@
-package org.bitcoinj.core
+package org.bitcoinj.core;
 
 import java.util.Arrays;
 
