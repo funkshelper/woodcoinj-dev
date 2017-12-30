@@ -1,17 +1,3 @@
-CURRENT ISSUES
-
-Woodcoinj is not ready for full node, only SPV mode, because:
-
-  1) there is no skein implementation to check proof of work or perform woodcutting
-  2) there is a still unknown problem in difficulty adjustment disagreeing with network
-  
-The woodcoinj "checkpoint" system isn't working.  It doesn't make much difference (and in fact woodcoin has been historically anti-checkpoint for full node operation) but would speed up initial SPV client sync.  The build_checkpoints tool in /tools DOES work, and creates the files, but that's as far as that goes at the moment.  
-
-There is an unknwon issue in getting more peers to connect.  The things seems to stop at 2 peers at them moment.  
-
-Fixing any of these issues would result in LOG bounty, please visit #woodcoin on IRC.  
-
-
 
 ### Welcome to woodcoinj
 
