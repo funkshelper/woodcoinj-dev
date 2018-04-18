@@ -189,13 +189,13 @@
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/bitcoinj/core/Transaction.html" title="class in org.bitcoinj.core">Transaction</a></code></td>
-<td class="colLast"><span class="typeNameLabel">TransactionInput.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/core/TransactionInput.html#getParentTransaction--">getParentTransaction</a></span>()</code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code><a href="../../../../org/bitcoinj/core/Transaction.html" title="class in org.bitcoinj.core">Transaction</a></code></td>
 <td class="colLast"><span class="typeNameLabel">TransactionOutput.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/core/TransactionOutput.html#getParentTransaction--">getParentTransaction</a></span>()</code>
 <div class="block">Returns the transaction that owns this output.</div>
 </td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../org/bitcoinj/core/Transaction.html" title="class in org.bitcoinj.core">Transaction</a></code></td>
+<td class="colLast"><span class="typeNameLabel">TransactionInput.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/core/TransactionInput.html#getParentTransaction--">getParentTransaction</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/bitcoinj/core/Transaction.html" title="class in org.bitcoinj.core">Transaction</a></code></td>
@@ -552,17 +552,17 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><span class="typeNameLabel">AbstractPeerEventListener.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/core/listeners/AbstractPeerEventListener.html#onTransaction-org.bitcoinj.core.Peer-org.bitcoinj.core.Transaction-">onTransaction</a></span>(<a href="../../../../org/bitcoinj/core/Peer.html" title="class in org.bitcoinj.core">Peer</a>&nbsp;peer,
-             <a href="../../../../org/bitcoinj/core/Transaction.html" title="class in org.bitcoinj.core">Transaction</a>&nbsp;t)</code>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
-&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>void</code></td>
 <td class="colLast"><span class="typeNameLabel">OnTransactionBroadcastListener.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/core/listeners/OnTransactionBroadcastListener.html#onTransaction-org.bitcoinj.core.Peer-org.bitcoinj.core.Transaction-">onTransaction</a></span>(<a href="../../../../org/bitcoinj/core/Peer.html" title="class in org.bitcoinj.core">Peer</a>&nbsp;peer,
              <a href="../../../../org/bitcoinj/core/Transaction.html" title="class in org.bitcoinj.core">Transaction</a>&nbsp;t)</code>
 <div class="block">Called when a new transaction is broadcast over the network.</div>
 </td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="typeNameLabel">AbstractPeerEventListener.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/core/listeners/AbstractPeerEventListener.html#onTransaction-org.bitcoinj.core.Peer-org.bitcoinj.core.Transaction-">onTransaction</a></span>(<a href="../../../../org/bitcoinj/core/Peer.html" title="class in org.bitcoinj.core">Peer</a>&nbsp;peer,
+             <a href="../../../../org/bitcoinj/core/Transaction.html" title="class in org.bitcoinj.core">Transaction</a>&nbsp;t)</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
+&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>void</code></td>
@@ -573,21 +573,21 @@
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><span class="typeNameLabel">AbstractBlockChainListener.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/core/listeners/AbstractBlockChainListener.html#receiveFromBlock-org.bitcoinj.core.Transaction-org.bitcoinj.core.StoredBlock-org.bitcoinj.core.AbstractBlockChain.NewBlockType-int-">receiveFromBlock</a></span>(<a href="../../../../org/bitcoinj/core/Transaction.html" title="class in org.bitcoinj.core">Transaction</a>&nbsp;tx,
-                <a href="../../../../org/bitcoinj/core/StoredBlock.html" title="class in org.bitcoinj.core">StoredBlock</a>&nbsp;block,
-                <a href="../../../../org/bitcoinj/core/AbstractBlockChain.NewBlockType.html" title="enum in org.bitcoinj.core">AbstractBlockChain.NewBlockType</a>&nbsp;blockType,
-                int&nbsp;relativityOffset)</code>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
-&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>void</code></td>
 <td class="colLast"><span class="typeNameLabel">TransactionReceivedInBlockListener.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/core/listeners/TransactionReceivedInBlockListener.html#receiveFromBlock-org.bitcoinj.core.Transaction-org.bitcoinj.core.StoredBlock-org.bitcoinj.core.AbstractBlockChain.NewBlockType-int-">receiveFromBlock</a></span>(<a href="../../../../org/bitcoinj/core/Transaction.html" title="class in org.bitcoinj.core">Transaction</a>&nbsp;tx,
                 <a href="../../../../org/bitcoinj/core/StoredBlock.html" title="class in org.bitcoinj.core">StoredBlock</a>&nbsp;block,
                 <a href="../../../../org/bitcoinj/core/AbstractBlockChain.NewBlockType.html" title="enum in org.bitcoinj.core">AbstractBlockChain.NewBlockType</a>&nbsp;blockType,
                 int&nbsp;relativityOffset)</code>
 <div class="block">Called by the <a href="../../../../org/bitcoinj/core/BlockChain.html" title="class in org.bitcoinj.core"><code>BlockChain</code></a> when we receive a new block that contains a relevant transaction.</div>
 </td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="typeNameLabel">AbstractBlockChainListener.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/core/listeners/AbstractBlockChainListener.html#receiveFromBlock-org.bitcoinj.core.Transaction-org.bitcoinj.core.StoredBlock-org.bitcoinj.core.AbstractBlockChain.NewBlockType-int-">receiveFromBlock</a></span>(<a href="../../../../org/bitcoinj/core/Transaction.html" title="class in org.bitcoinj.core">Transaction</a>&nbsp;tx,
+                <a href="../../../../org/bitcoinj/core/StoredBlock.html" title="class in org.bitcoinj.core">StoredBlock</a>&nbsp;block,
+                <a href="../../../../org/bitcoinj/core/AbstractBlockChain.NewBlockType.html" title="enum in org.bitcoinj.core">AbstractBlockChain.NewBlockType</a>&nbsp;blockType,
+                int&nbsp;relativityOffset)</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
+&nbsp;</td>
 </tr>
 </tbody>
 </table>
@@ -699,15 +699,15 @@
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>abstract <a href="../../../../org/bitcoinj/core/Transaction.html" title="class in org.bitcoinj.core">Transaction</a></code></td>
-<td class="colLast"><span class="typeNameLabel">PaymentChannelClientState.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/protocols/channels/PaymentChannelClientState.html#getContract--">getContract</a></span>()</code>
-<div class="block">Gets the contract which was used to initialize this channel</div>
-</td>
-</tr>
-<tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/bitcoinj/core/Transaction.html" title="class in org.bitcoinj.core">Transaction</a></code></td>
 <td class="colLast"><span class="typeNameLabel">PaymentChannelServerState.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/protocols/channels/PaymentChannelServerState.html#getContract--">getContract</a></span>()</code>
 <div class="block">Gets the multisig contract which was used to initialize this channel</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>abstract <a href="../../../../org/bitcoinj/core/Transaction.html" title="class in org.bitcoinj.core">Transaction</a></code></td>
+<td class="colLast"><span class="typeNameLabel">PaymentChannelClientState.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/protocols/channels/PaymentChannelClientState.html#getContract--">getContract</a></span>()</code>
+<div class="block">Gets the contract which was used to initialize this channel</div>
 </td>
 </tr>
 <tr class="rowColor">
@@ -741,13 +741,13 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code>com.google.common.util.concurrent.ListenableFuture&lt;<a href="../../../../org/bitcoinj/core/Transaction.html" title="class in org.bitcoinj.core">Transaction</a>&gt;</code></td>
-<td class="colLast"><span class="typeNameLabel">PaymentChannelV1ServerState.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/protocols/channels/PaymentChannelV1ServerState.html#close--">close</a></span>()</code>
-<div class="block">Closes this channel and broadcasts the highest value payment transaction on the network.</div>
-</td>
+<td class="colLast"><span class="typeNameLabel">PaymentChannelV2ServerState.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/protocols/channels/PaymentChannelV2ServerState.html#close--">close</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>com.google.common.util.concurrent.ListenableFuture&lt;<a href="../../../../org/bitcoinj/core/Transaction.html" title="class in org.bitcoinj.core">Transaction</a>&gt;</code></td>
-<td class="colLast"><span class="typeNameLabel">PaymentChannelV2ServerState.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/protocols/channels/PaymentChannelV2ServerState.html#close--">close</a></span>()</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">PaymentChannelV1ServerState.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/protocols/channels/PaymentChannelV1ServerState.html#close--">close</a></span>()</code>
+<div class="block">Closes this channel and broadcasts the highest value payment transaction on the network.</div>
+</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>abstract com.google.common.util.concurrent.ListenableFuture&lt;<a href="../../../../org/bitcoinj/core/Transaction.html" title="class in org.bitcoinj.core">Transaction</a>&gt;</code></td>
@@ -964,8 +964,10 @@
 <td class="colLast"><span class="typeNameLabel">DefaultRiskAnalysis.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/DefaultRiskAnalysis.html#nonFinal">nonFinal</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../../../org/bitcoinj/core/Transaction.html" title="class in org.bitcoinj.core">Transaction</a></code></td>
-<td class="colLast"><span class="typeNameLabel">DefaultRiskAnalysis.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/DefaultRiskAnalysis.html#tx">tx</a></span></code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../../org/bitcoinj/core/Transaction.html" title="class in org.bitcoinj.core">Transaction</a></code></td>
+<td class="colLast"><span class="typeNameLabel">Wallet.SendResult.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/Wallet.SendResult.html#tx">tx</a></span></code>
+<div class="block">The Bitcoin transaction message that moves the money.</div>
+</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/bitcoinj/core/Transaction.html" title="class in org.bitcoinj.core">Transaction</a></code></td>
@@ -974,10 +976,8 @@
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code><a href="../../../../org/bitcoinj/core/Transaction.html" title="class in org.bitcoinj.core">Transaction</a></code></td>
-<td class="colLast"><span class="typeNameLabel">Wallet.SendResult.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/Wallet.SendResult.html#tx">tx</a></span></code>
-<div class="block">The Bitcoin transaction message that moves the money.</div>
-</td>
+<td class="colFirst"><code>protected <a href="../../../../org/bitcoinj/core/Transaction.html" title="class in org.bitcoinj.core">Transaction</a></code></td>
+<td class="colLast"><span class="typeNameLabel">DefaultRiskAnalysis.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/DefaultRiskAnalysis.html#tx">tx</a></span></code>&nbsp;</td>
 </tr>
 </tbody>
 </table>
@@ -1139,14 +1139,14 @@
 </td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code><a href="../../../../org/bitcoinj/wallet/DefaultRiskAnalysis.html" title="class in org.bitcoinj.wallet">DefaultRiskAnalysis</a></code></td>
-<td class="colLast"><span class="typeNameLabel">DefaultRiskAnalysis.Analyzer.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/DefaultRiskAnalysis.Analyzer.html#create-org.bitcoinj.wallet.Wallet-org.bitcoinj.core.Transaction-java.util.List-">create</a></span>(<a href="../../../../org/bitcoinj/wallet/Wallet.html" title="class in org.bitcoinj.wallet">Wallet</a>&nbsp;wallet,
+<td class="colFirst"><code><a href="../../../../org/bitcoinj/wallet/RiskAnalysis.html" title="interface in org.bitcoinj.wallet">RiskAnalysis</a></code></td>
+<td class="colLast"><span class="typeNameLabel">RiskAnalysis.Analyzer.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/RiskAnalysis.Analyzer.html#create-org.bitcoinj.wallet.Wallet-org.bitcoinj.core.Transaction-java.util.List-">create</a></span>(<a href="../../../../org/bitcoinj/wallet/Wallet.html" title="class in org.bitcoinj.wallet">Wallet</a>&nbsp;wallet,
       <a href="../../../../org/bitcoinj/core/Transaction.html" title="class in org.bitcoinj.core">Transaction</a>&nbsp;tx,
       <a href="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/bitcoinj/core/Transaction.html" title="class in org.bitcoinj.core">Transaction</a>&gt;&nbsp;dependencies)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code><a href="../../../../org/bitcoinj/wallet/RiskAnalysis.html" title="interface in org.bitcoinj.wallet">RiskAnalysis</a></code></td>
-<td class="colLast"><span class="typeNameLabel">RiskAnalysis.Analyzer.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/RiskAnalysis.Analyzer.html#create-org.bitcoinj.wallet.Wallet-org.bitcoinj.core.Transaction-java.util.List-">create</a></span>(<a href="../../../../org/bitcoinj/wallet/Wallet.html" title="class in org.bitcoinj.wallet">Wallet</a>&nbsp;wallet,
+<td class="colFirst"><code><a href="../../../../org/bitcoinj/wallet/DefaultRiskAnalysis.html" title="class in org.bitcoinj.wallet">DefaultRiskAnalysis</a></code></td>
+<td class="colLast"><span class="typeNameLabel">DefaultRiskAnalysis.Analyzer.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/DefaultRiskAnalysis.Analyzer.html#create-org.bitcoinj.wallet.Wallet-org.bitcoinj.core.Transaction-java.util.List-">create</a></span>(<a href="../../../../org/bitcoinj/wallet/Wallet.html" title="class in org.bitcoinj.wallet">Wallet</a>&nbsp;wallet,
       <a href="../../../../org/bitcoinj/core/Transaction.html" title="class in org.bitcoinj.core">Transaction</a>&nbsp;tx,
       <a href="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/bitcoinj/core/Transaction.html" title="class in org.bitcoinj.core">Transaction</a>&gt;&nbsp;dependencies)</code>&nbsp;</td>
 </tr>
@@ -1260,14 +1260,14 @@
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><code><a href="../../../../org/bitcoinj/wallet/DefaultRiskAnalysis.html" title="class in org.bitcoinj.wallet">DefaultRiskAnalysis</a></code></td>
-<td class="colLast"><span class="typeNameLabel">DefaultRiskAnalysis.Analyzer.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/DefaultRiskAnalysis.Analyzer.html#create-org.bitcoinj.wallet.Wallet-org.bitcoinj.core.Transaction-java.util.List-">create</a></span>(<a href="../../../../org/bitcoinj/wallet/Wallet.html" title="class in org.bitcoinj.wallet">Wallet</a>&nbsp;wallet,
+<td class="colFirst"><code><a href="../../../../org/bitcoinj/wallet/RiskAnalysis.html" title="interface in org.bitcoinj.wallet">RiskAnalysis</a></code></td>
+<td class="colLast"><span class="typeNameLabel">RiskAnalysis.Analyzer.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/RiskAnalysis.Analyzer.html#create-org.bitcoinj.wallet.Wallet-org.bitcoinj.core.Transaction-java.util.List-">create</a></span>(<a href="../../../../org/bitcoinj/wallet/Wallet.html" title="class in org.bitcoinj.wallet">Wallet</a>&nbsp;wallet,
       <a href="../../../../org/bitcoinj/core/Transaction.html" title="class in org.bitcoinj.core">Transaction</a>&nbsp;tx,
       <a href="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/bitcoinj/core/Transaction.html" title="class in org.bitcoinj.core">Transaction</a>&gt;&nbsp;dependencies)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code><a href="../../../../org/bitcoinj/wallet/RiskAnalysis.html" title="interface in org.bitcoinj.wallet">RiskAnalysis</a></code></td>
-<td class="colLast"><span class="typeNameLabel">RiskAnalysis.Analyzer.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/RiskAnalysis.Analyzer.html#create-org.bitcoinj.wallet.Wallet-org.bitcoinj.core.Transaction-java.util.List-">create</a></span>(<a href="../../../../org/bitcoinj/wallet/Wallet.html" title="class in org.bitcoinj.wallet">Wallet</a>&nbsp;wallet,
+<td class="colFirst"><code><a href="../../../../org/bitcoinj/wallet/DefaultRiskAnalysis.html" title="class in org.bitcoinj.wallet">DefaultRiskAnalysis</a></code></td>
+<td class="colLast"><span class="typeNameLabel">DefaultRiskAnalysis.Analyzer.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/DefaultRiskAnalysis.Analyzer.html#create-org.bitcoinj.wallet.Wallet-org.bitcoinj.core.Transaction-java.util.List-">create</a></span>(<a href="../../../../org/bitcoinj/wallet/Wallet.html" title="class in org.bitcoinj.wallet">Wallet</a>&nbsp;wallet,
       <a href="../../../../org/bitcoinj/core/Transaction.html" title="class in org.bitcoinj.core">Transaction</a>&nbsp;tx,
       <a href="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/bitcoinj/core/Transaction.html" title="class in org.bitcoinj.core">Transaction</a>&gt;&nbsp;dependencies)</code>&nbsp;</td>
 </tr>
@@ -1343,15 +1343,6 @@
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><span class="typeNameLabel">AbstractWalletEventListener.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/listeners/AbstractWalletEventListener.html#onCoinsSent-org.bitcoinj.wallet.Wallet-org.bitcoinj.core.Transaction-org.bitcoinj.core.Coin-org.bitcoinj.core.Coin-">onCoinsSent</a></span>(<a href="../../../../org/bitcoinj/wallet/Wallet.html" title="class in org.bitcoinj.wallet">Wallet</a>&nbsp;wallet,
-           <a href="../../../../org/bitcoinj/core/Transaction.html" title="class in org.bitcoinj.core">Transaction</a>&nbsp;tx,
-           <a href="../../../../org/bitcoinj/core/Coin.html" title="class in org.bitcoinj.core">Coin</a>&nbsp;prevBalance,
-           <a href="../../../../org/bitcoinj/core/Coin.html" title="class in org.bitcoinj.core">Coin</a>&nbsp;newBalance)</code>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
-&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>void</code></td>
 <td class="colLast"><span class="typeNameLabel">WalletCoinsSentEventListener.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/listeners/WalletCoinsSentEventListener.html#onCoinsSent-org.bitcoinj.wallet.Wallet-org.bitcoinj.core.Transaction-org.bitcoinj.core.Coin-org.bitcoinj.core.Coin-">onCoinsSent</a></span>(<a href="../../../../org/bitcoinj/wallet/Wallet.html" title="class in org.bitcoinj.wallet">Wallet</a>&nbsp;wallet,
            <a href="../../../../org/bitcoinj/core/Transaction.html" title="class in org.bitcoinj.core">Transaction</a>&nbsp;tx,
            <a href="../../../../org/bitcoinj/core/Coin.html" title="class in org.bitcoinj.core">Coin</a>&nbsp;prevBalance,
@@ -1359,6 +1350,15 @@
 <div class="block">This is called when a transaction is seen that sends coins <b>from</b> this wallet, either
  because it was broadcast across the network or because a block was received.</div>
 </td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="typeNameLabel">AbstractWalletEventListener.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/listeners/AbstractWalletEventListener.html#onCoinsSent-org.bitcoinj.wallet.Wallet-org.bitcoinj.core.Transaction-org.bitcoinj.core.Coin-org.bitcoinj.core.Coin-">onCoinsSent</a></span>(<a href="../../../../org/bitcoinj/wallet/Wallet.html" title="class in org.bitcoinj.wallet">Wallet</a>&nbsp;wallet,
+           <a href="../../../../org/bitcoinj/core/Transaction.html" title="class in org.bitcoinj.core">Transaction</a>&nbsp;tx,
+           <a href="../../../../org/bitcoinj/core/Coin.html" title="class in org.bitcoinj.core">Coin</a>&nbsp;prevBalance,
+           <a href="../../../../org/bitcoinj/core/Coin.html" title="class in org.bitcoinj.core">Coin</a>&nbsp;newBalance)</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
+&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>void</code></td>
@@ -1421,6 +1421,6 @@
 <!--   -->
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
-<p class="legalCopy"><small>Copyright &#169; 2017. All rights reserved.</small></p>
+<p class="legalCopy"><small>Copyright &#169; 2018. All rights reserved.</small></p>
 </body>
 </html>

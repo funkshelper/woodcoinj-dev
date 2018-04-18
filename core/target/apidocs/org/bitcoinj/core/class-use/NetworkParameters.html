@@ -175,7 +175,7 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code>protected <a href="../../../../org/bitcoinj/core/NetworkParameters.html" title="class in org.bitcoinj.core">NetworkParameters</a></code></td>
-<td class="colLast"><span class="typeNameLabel">CheckpointManager.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/core/CheckpointManager.html#params">params</a></span></code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">PeerGroup.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/core/PeerGroup.html#params">params</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>protected <a href="../../../../org/bitcoinj/core/NetworkParameters.html" title="class in org.bitcoinj.core">NetworkParameters</a></code></td>
@@ -183,11 +183,11 @@
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>protected <a href="../../../../org/bitcoinj/core/NetworkParameters.html" title="class in org.bitcoinj.core">NetworkParameters</a></code></td>
-<td class="colLast"><span class="typeNameLabel">AbstractBlockChain.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/core/AbstractBlockChain.html#params">params</a></span></code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">CheckpointManager.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/core/CheckpointManager.html#params">params</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>protected <a href="../../../../org/bitcoinj/core/NetworkParameters.html" title="class in org.bitcoinj.core">NetworkParameters</a></code></td>
-<td class="colLast"><span class="typeNameLabel">PeerGroup.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/core/PeerGroup.html#params">params</a></span></code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">AbstractBlockChain.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/core/AbstractBlockChain.html#params">params</a></span></code>&nbsp;</td>
 </tr>
 </tbody>
 </table>
@@ -212,14 +212,14 @@
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/bitcoinj/core/NetworkParameters.html" title="class in org.bitcoinj.core">NetworkParameters</a></code></td>
-<td class="colLast"><span class="typeNameLabel">Address.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/core/Address.html#getParameters--">getParameters</a></span>()</code>
-<div class="block">Examines the version byte of the address and attempts to find a matching NetworkParameters.</div>
+<td class="colLast"><span class="typeNameLabel">BitcoinSerializer.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/core/BitcoinSerializer.html#getParameters--">getParameters</a></span>()</code>
+<div class="block">Get the network parameters for this serializer.</div>
 </td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/bitcoinj/core/NetworkParameters.html" title="class in org.bitcoinj.core">NetworkParameters</a></code></td>
-<td class="colLast"><span class="typeNameLabel">BitcoinSerializer.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/core/BitcoinSerializer.html#getParameters--">getParameters</a></span>()</code>
-<div class="block">Get the network parameters for this serializer.</div>
+<td class="colLast"><span class="typeNameLabel">Address.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/core/Address.html#getParameters--">getParameters</a></span>()</code>
+<div class="block">Examines the version byte of the address and attempts to find a matching NetworkParameters.</div>
 </td>
 </tr>
 <tr class="altColor">
@@ -230,8 +230,8 @@
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/bitcoinj/core/NetworkParameters.html" title="class in org.bitcoinj.core">NetworkParameters</a></code></td>
-<td class="colLast"><span class="typeNameLabel">Context.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/core/Context.html#getParams--">getParams</a></span>()</code>
-<div class="block">Returns the <a href="../../../../org/bitcoinj/core/NetworkParameters.html" title="class in org.bitcoinj.core"><code>NetworkParameters</code></a> specified when this context was (auto) created.</div>
+<td class="colLast"><span class="typeNameLabel">UTXOProvider.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/core/UTXOProvider.html#getParams--">getParams</a></span>()</code>
+<div class="block">The <a href="../../../../org/bitcoinj/core/NetworkParameters.html" title="class in org.bitcoinj.core"><code>NetworkParameters</code></a> of this provider.</div>
 </td>
 </tr>
 <tr class="altColor">
@@ -242,8 +242,8 @@
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/bitcoinj/core/NetworkParameters.html" title="class in org.bitcoinj.core">NetworkParameters</a></code></td>
-<td class="colLast"><span class="typeNameLabel">UTXOProvider.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/core/UTXOProvider.html#getParams--">getParams</a></span>()</code>
-<div class="block">The <a href="../../../../org/bitcoinj/core/NetworkParameters.html" title="class in org.bitcoinj.core"><code>NetworkParameters</code></a> of this provider.</div>
+<td class="colLast"><span class="typeNameLabel">Context.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/core/Context.html#getParams--">getParams</a></span>()</code>
+<div class="block">Returns the <a href="../../../../org/bitcoinj/core/NetworkParameters.html" title="class in org.bitcoinj.core"><code>NetworkParameters</code></a> specified when this context was (auto) created.</div>
 </td>
 </tr>
 <tr class="altColor">
@@ -323,17 +323,17 @@
                     <a href="../../../../org/bitcoinj/core/NetworkParameters.html" title="class in org.bitcoinj.core">NetworkParameters</a>&nbsp;params)</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>static <a href="../../../../org/bitcoinj/core/Address.html" title="class in org.bitcoinj.core">Address</a></code></td>
-<td class="colLast"><span class="typeNameLabel">Address.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/core/Address.html#fromBase58-org.bitcoinj.core.NetworkParameters-java.lang.String-">fromBase58</a></span>(<a href="../../../../org/bitcoinj/core/NetworkParameters.html" title="class in org.bitcoinj.core">NetworkParameters</a>&nbsp;params,
-          <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;base58)</code>
-<div class="block">Construct an address from its Base58 representation.</div>
-</td>
-</tr>
-<tr class="rowColor">
 <td class="colFirst"><code>static <a href="../../../../org/bitcoinj/core/DumpedPrivateKey.html" title="class in org.bitcoinj.core">DumpedPrivateKey</a></code></td>
 <td class="colLast"><span class="typeNameLabel">DumpedPrivateKey.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/core/DumpedPrivateKey.html#fromBase58-org.bitcoinj.core.NetworkParameters-java.lang.String-">fromBase58</a></span>(<a href="../../../../org/bitcoinj/core/NetworkParameters.html" title="class in org.bitcoinj.core">NetworkParameters</a>&nbsp;params,
           <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;base58)</code>
 <div class="block">Construct a private key from its Base58 representation.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../org/bitcoinj/core/Address.html" title="class in org.bitcoinj.core">Address</a></code></td>
+<td class="colLast"><span class="typeNameLabel">Address.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/core/Address.html#fromBase58-org.bitcoinj.core.NetworkParameters-java.lang.String-">fromBase58</a></span>(<a href="../../../../org/bitcoinj/core/NetworkParameters.html" title="class in org.bitcoinj.core">NetworkParameters</a>&nbsp;params,
+          <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;base58)</code>
+<div class="block">Construct an address from its Base58 representation.</div>
 </td>
 </tr>
 <tr class="altColor">
@@ -1514,11 +1514,11 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code>protected <a href="../../../../org/bitcoinj/core/NetworkParameters.html" title="class in org.bitcoinj.core">NetworkParameters</a></code></td>
-<td class="colLast"><span class="typeNameLabel">DatabaseFullPrunedBlockStore.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/store/DatabaseFullPrunedBlockStore.html#params">params</a></span></code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">SPVBlockStore.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/store/SPVBlockStore.html#params">params</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>protected <a href="../../../../org/bitcoinj/core/NetworkParameters.html" title="class in org.bitcoinj.core">NetworkParameters</a></code></td>
-<td class="colLast"><span class="typeNameLabel">SPVBlockStore.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/store/SPVBlockStore.html#params">params</a></span></code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">DatabaseFullPrunedBlockStore.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/store/DatabaseFullPrunedBlockStore.html#params">params</a></span></code>&nbsp;</td>
 </tr>
 </tbody>
 </table>
@@ -1529,16 +1529,6 @@
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tbody>
-<tr class="altColor">
-<td class="colFirst"><code><a href="../../../../org/bitcoinj/core/NetworkParameters.html" title="class in org.bitcoinj.core">NetworkParameters</a></code></td>
-<td class="colLast"><span class="typeNameLabel">DatabaseFullPrunedBlockStore.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/store/DatabaseFullPrunedBlockStore.html#getParams--">getParams</a></span>()</code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code><a href="../../../../org/bitcoinj/core/NetworkParameters.html" title="class in org.bitcoinj.core">NetworkParameters</a></code></td>
-<td class="colLast"><span class="typeNameLabel">BlockStore.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/store/BlockStore.html#getParams--">getParams</a></span>()</code>
-<div class="block">Get the <a href="../../../../org/bitcoinj/core/NetworkParameters.html" title="class in org.bitcoinj.core"><code>NetworkParameters</code></a> of this store.</div>
-</td>
-</tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/bitcoinj/core/NetworkParameters.html" title="class in org.bitcoinj.core">NetworkParameters</a></code></td>
 <td class="colLast"><span class="typeNameLabel">SPVBlockStore.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/store/SPVBlockStore.html#getParams--">getParams</a></span>()</code>&nbsp;</td>
@@ -1558,6 +1548,16 @@
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/bitcoinj/core/NetworkParameters.html" title="class in org.bitcoinj.core">NetworkParameters</a></code></td>
 <td class="colLast"><span class="typeNameLabel">LevelDBBlockStore.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/store/LevelDBBlockStore.html#getParams--">getParams</a></span>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../org/bitcoinj/core/NetworkParameters.html" title="class in org.bitcoinj.core">NetworkParameters</a></code></td>
+<td class="colLast"><span class="typeNameLabel">DatabaseFullPrunedBlockStore.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/store/DatabaseFullPrunedBlockStore.html#getParams--">getParams</a></span>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../org/bitcoinj/core/NetworkParameters.html" title="class in org.bitcoinj.core">NetworkParameters</a></code></td>
+<td class="colLast"><span class="typeNameLabel">BlockStore.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/store/BlockStore.html#getParams--">getParams</a></span>()</code>
+<div class="block">Get the <a href="../../../../org/bitcoinj/core/NetworkParameters.html" title="class in org.bitcoinj.core"><code>NetworkParameters</code></a> of this store.</div>
+</td>
 </tr>
 </tbody>
 </table>
@@ -1774,13 +1774,13 @@
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>protected void</code></td>
-<td class="colLast"><span class="typeNameLabel">DeterministicKeyChain.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/DeterministicKeyChain.html#formatAddresses-boolean-org.bitcoinj.core.NetworkParameters-java.lang.StringBuilder-">formatAddresses</a></span>(boolean&nbsp;includePrivateKeys,
+<td class="colLast"><span class="typeNameLabel">MarriedKeyChain.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/MarriedKeyChain.html#formatAddresses-boolean-org.bitcoinj.core.NetworkParameters-java.lang.StringBuilder-">formatAddresses</a></span>(boolean&nbsp;includePrivateKeys,
                <a href="../../../../org/bitcoinj/core/NetworkParameters.html" title="class in org.bitcoinj.core">NetworkParameters</a>&nbsp;params,
                <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuilder.html?is-external=true" title="class or interface in java.lang">StringBuilder</a>&nbsp;builder2)</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>protected void</code></td>
-<td class="colLast"><span class="typeNameLabel">MarriedKeyChain.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/MarriedKeyChain.html#formatAddresses-boolean-org.bitcoinj.core.NetworkParameters-java.lang.StringBuilder-">formatAddresses</a></span>(boolean&nbsp;includePrivateKeys,
+<td class="colLast"><span class="typeNameLabel">DeterministicKeyChain.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/DeterministicKeyChain.html#formatAddresses-boolean-org.bitcoinj.core.NetworkParameters-java.lang.StringBuilder-">formatAddresses</a></span>(boolean&nbsp;includePrivateKeys,
                <a href="../../../../org/bitcoinj/core/NetworkParameters.html" title="class in org.bitcoinj.core">NetworkParameters</a>&nbsp;params,
                <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/StringBuilder.html?is-external=true" title="class or interface in java.lang">StringBuilder</a>&nbsp;builder2)</code>&nbsp;</td>
 </tr>
@@ -1966,6 +1966,6 @@
 <!--   -->
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
-<p class="legalCopy"><small>Copyright &#169; 2017. All rights reserved.</small></p>
+<p class="legalCopy"><small>Copyright &#169; 2018. All rights reserved.</small></p>
 </body>
 </html>

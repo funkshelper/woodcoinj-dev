@@ -116,15 +116,15 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/bitcoinj/wallet/RedeemData.html" title="class in org.bitcoinj.wallet">RedeemData</a></code></td>
-<td class="colLast"><span class="typeNameLabel">TransactionInput.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/core/TransactionInput.html#getConnectedRedeemData-org.bitcoinj.wallet.KeyBag-">getConnectedRedeemData</a></span>(<a href="../../../../org/bitcoinj/wallet/KeyBag.html" title="interface in org.bitcoinj.wallet">KeyBag</a>&nbsp;keyBag)</code>
-<div class="block">Alias for getOutpoint().getConnectedRedeemData(keyBag)</div>
+<td class="colLast"><span class="typeNameLabel">TransactionOutPoint.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/core/TransactionOutPoint.html#getConnectedRedeemData-org.bitcoinj.wallet.KeyBag-">getConnectedRedeemData</a></span>(<a href="../../../../org/bitcoinj/wallet/KeyBag.html" title="interface in org.bitcoinj.wallet">KeyBag</a>&nbsp;keyBag)</code>
+<div class="block">Returns the RedeemData identified in the connected output, for either pay-to-address scripts, pay-to-key
+ or P2SH scripts.</div>
 </td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/bitcoinj/wallet/RedeemData.html" title="class in org.bitcoinj.wallet">RedeemData</a></code></td>
-<td class="colLast"><span class="typeNameLabel">TransactionOutPoint.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/core/TransactionOutPoint.html#getConnectedRedeemData-org.bitcoinj.wallet.KeyBag-">getConnectedRedeemData</a></span>(<a href="../../../../org/bitcoinj/wallet/KeyBag.html" title="interface in org.bitcoinj.wallet">KeyBag</a>&nbsp;keyBag)</code>
-<div class="block">Returns the RedeemData identified in the connected output, for either pay-to-address scripts, pay-to-key
- or P2SH scripts.</div>
+<td class="colLast"><span class="typeNameLabel">TransactionInput.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/core/TransactionInput.html#getConnectedRedeemData-org.bitcoinj.wallet.KeyBag-">getConnectedRedeemData</a></span>(<a href="../../../../org/bitcoinj/wallet/KeyBag.html" title="interface in org.bitcoinj.wallet">KeyBag</a>&nbsp;keyBag)</code>
+<div class="block">Alias for getOutpoint().getConnectedRedeemData(keyBag)</div>
 </td>
 </tr>
 </tbody>
@@ -143,17 +143,19 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/bitcoinj/wallet/RedeemData.html" title="class in org.bitcoinj.wallet">RedeemData</a></code></td>
+<td class="colLast"><span class="typeNameLabel">MarriedKeyChain.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/MarriedKeyChain.html#findRedeemDataByScriptHash-com.google.protobuf.ByteString-">findRedeemDataByScriptHash</a></span>(com.google.protobuf.ByteString&nbsp;bytes)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../org/bitcoinj/wallet/RedeemData.html" title="class in org.bitcoinj.wallet">RedeemData</a></code></td>
 <td class="colLast"><span class="typeNameLabel">DeterministicKeyChain.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/DeterministicKeyChain.html#findRedeemDataByScriptHash-com.google.protobuf.ByteString-">findRedeemDataByScriptHash</a></span>(com.google.protobuf.ByteString&nbsp;bytes)</code>
 <div class="block">Returns the redeem script by its hash or null if this keychain did not generate the script.</div>
 </td>
 </tr>
-<tr class="rowColor">
-<td class="colFirst"><code><a href="../../../../org/bitcoinj/wallet/RedeemData.html" title="class in org.bitcoinj.wallet">RedeemData</a></code></td>
-<td class="colLast"><span class="typeNameLabel">MarriedKeyChain.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/MarriedKeyChain.html#findRedeemDataByScriptHash-com.google.protobuf.ByteString-">findRedeemDataByScriptHash</a></span>(com.google.protobuf.ByteString&nbsp;bytes)</code>&nbsp;</td>
-</tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/bitcoinj/wallet/RedeemData.html" title="class in org.bitcoinj.wallet">RedeemData</a></code></td>
-<td class="colLast"><span class="typeNameLabel">DecryptingKeyBag.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/DecryptingKeyBag.html#findRedeemDataFromScriptHash-byte:A-">findRedeemDataFromScriptHash</a></span>(byte[]&nbsp;scriptHash)</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">Wallet.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/Wallet.html#findRedeemDataFromScriptHash-byte:A-">findRedeemDataFromScriptHash</a></span>(byte[]&nbsp;payToScriptHash)</code>
+<div class="block">Locates a redeem data (redeem script and keys) from the keyChainGroup given the hash of the script.</div>
+</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/bitcoinj/wallet/RedeemData.html" title="class in org.bitcoinj.wallet">RedeemData</a></code></td>
@@ -167,20 +169,18 @@
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/bitcoinj/wallet/RedeemData.html" title="class in org.bitcoinj.wallet">RedeemData</a></code></td>
-<td class="colLast"><span class="typeNameLabel">Wallet.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/Wallet.html#findRedeemDataFromScriptHash-byte:A-">findRedeemDataFromScriptHash</a></span>(byte[]&nbsp;payToScriptHash)</code>
-<div class="block">Locates a redeem data (redeem script and keys) from the keyChainGroup given the hash of the script.</div>
-</td>
+<td class="colLast"><span class="typeNameLabel">DecryptingKeyBag.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/DecryptingKeyBag.html#findRedeemDataFromScriptHash-byte:A-">findRedeemDataFromScriptHash</a></span>(byte[]&nbsp;scriptHash)</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/bitcoinj/wallet/RedeemData.html" title="class in org.bitcoinj.wallet">RedeemData</a></code></td>
-<td class="colLast"><span class="typeNameLabel">DeterministicKeyChain.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/DeterministicKeyChain.html#getRedeemData-org.bitcoinj.crypto.DeterministicKey-">getRedeemData</a></span>(<a href="../../../../org/bitcoinj/crypto/DeterministicKey.html" title="class in org.bitcoinj.crypto">DeterministicKey</a>&nbsp;followedKey)</code>
-<div class="block">Get redeem data for a key.</div>
+<td class="colLast"><span class="typeNameLabel">MarriedKeyChain.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/MarriedKeyChain.html#getRedeemData-org.bitcoinj.crypto.DeterministicKey-">getRedeemData</a></span>(<a href="../../../../org/bitcoinj/crypto/DeterministicKey.html" title="class in org.bitcoinj.crypto">DeterministicKey</a>&nbsp;followedKey)</code>
+<div class="block">Get the redeem data for a key in this married chain</div>
 </td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/bitcoinj/wallet/RedeemData.html" title="class in org.bitcoinj.wallet">RedeemData</a></code></td>
-<td class="colLast"><span class="typeNameLabel">MarriedKeyChain.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/MarriedKeyChain.html#getRedeemData-org.bitcoinj.crypto.DeterministicKey-">getRedeemData</a></span>(<a href="../../../../org/bitcoinj/crypto/DeterministicKey.html" title="class in org.bitcoinj.crypto">DeterministicKey</a>&nbsp;followedKey)</code>
-<div class="block">Get the redeem data for a key in this married chain</div>
+<td class="colLast"><span class="typeNameLabel">DeterministicKeyChain.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/DeterministicKeyChain.html#getRedeemData-org.bitcoinj.crypto.DeterministicKey-">getRedeemData</a></span>(<a href="../../../../org/bitcoinj/crypto/DeterministicKey.html" title="class in org.bitcoinj.crypto">DeterministicKey</a>&nbsp;followedKey)</code>
+<div class="block">Get redeem data for a key.</div>
 </td>
 </tr>
 <tr class="altColor">
@@ -249,6 +249,6 @@
 <!--   -->
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
-<p class="legalCopy"><small>Copyright &#169; 2017. All rights reserved.</small></p>
+<p class="legalCopy"><small>Copyright &#169; 2018. All rights reserved.</small></p>
 </body>
 </html>

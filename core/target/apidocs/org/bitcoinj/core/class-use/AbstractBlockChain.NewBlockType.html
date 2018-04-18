@@ -151,15 +151,6 @@ the order they are declared.</div>
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><span class="typeNameLabel">AbstractBlockChainListener.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/core/listeners/AbstractBlockChainListener.html#notifyTransactionIsInBlock-org.bitcoinj.core.Sha256Hash-org.bitcoinj.core.StoredBlock-org.bitcoinj.core.AbstractBlockChain.NewBlockType-int-">notifyTransactionIsInBlock</a></span>(<a href="../../../../org/bitcoinj/core/Sha256Hash.html" title="class in org.bitcoinj.core">Sha256Hash</a>&nbsp;txHash,
-                          <a href="../../../../org/bitcoinj/core/StoredBlock.html" title="class in org.bitcoinj.core">StoredBlock</a>&nbsp;block,
-                          <a href="../../../../org/bitcoinj/core/AbstractBlockChain.NewBlockType.html" title="enum in org.bitcoinj.core">AbstractBlockChain.NewBlockType</a>&nbsp;blockType,
-                          int&nbsp;relativityOffset)</code>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
-&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><span class="typeNameLabel">TransactionReceivedInBlockListener.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/core/listeners/TransactionReceivedInBlockListener.html#notifyTransactionIsInBlock-org.bitcoinj.core.Sha256Hash-org.bitcoinj.core.StoredBlock-org.bitcoinj.core.AbstractBlockChain.NewBlockType-int-">notifyTransactionIsInBlock</a></span>(<a href="../../../../org/bitcoinj/core/Sha256Hash.html" title="class in org.bitcoinj.core">Sha256Hash</a>&nbsp;txHash,
                           <a href="../../../../org/bitcoinj/core/StoredBlock.html" title="class in org.bitcoinj.core">StoredBlock</a>&nbsp;block,
                           <a href="../../../../org/bitcoinj/core/AbstractBlockChain.NewBlockType.html" title="enum in org.bitcoinj.core">AbstractBlockChain.NewBlockType</a>&nbsp;blockType,
@@ -168,16 +159,16 @@ the order they are declared.</div>
  transaction hash in its merkle tree.</div>
 </td>
 </tr>
-<tr class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><span class="typeNameLabel">AbstractBlockChainListener.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/core/listeners/AbstractBlockChainListener.html#receiveFromBlock-org.bitcoinj.core.Transaction-org.bitcoinj.core.StoredBlock-org.bitcoinj.core.AbstractBlockChain.NewBlockType-int-">receiveFromBlock</a></span>(<a href="../../../../org/bitcoinj/core/Transaction.html" title="class in org.bitcoinj.core">Transaction</a>&nbsp;tx,
-                <a href="../../../../org/bitcoinj/core/StoredBlock.html" title="class in org.bitcoinj.core">StoredBlock</a>&nbsp;block,
-                <a href="../../../../org/bitcoinj/core/AbstractBlockChain.NewBlockType.html" title="enum in org.bitcoinj.core">AbstractBlockChain.NewBlockType</a>&nbsp;blockType,
-                int&nbsp;relativityOffset)</code>
+<tr class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><span class="typeNameLabel">AbstractBlockChainListener.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/core/listeners/AbstractBlockChainListener.html#notifyTransactionIsInBlock-org.bitcoinj.core.Sha256Hash-org.bitcoinj.core.StoredBlock-org.bitcoinj.core.AbstractBlockChain.NewBlockType-int-">notifyTransactionIsInBlock</a></span>(<a href="../../../../org/bitcoinj/core/Sha256Hash.html" title="class in org.bitcoinj.core">Sha256Hash</a>&nbsp;txHash,
+                          <a href="../../../../org/bitcoinj/core/StoredBlock.html" title="class in org.bitcoinj.core">StoredBlock</a>&nbsp;block,
+                          <a href="../../../../org/bitcoinj/core/AbstractBlockChain.NewBlockType.html" title="enum in org.bitcoinj.core">AbstractBlockChain.NewBlockType</a>&nbsp;blockType,
+                          int&nbsp;relativityOffset)</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
 &nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><span class="typeNameLabel">TransactionReceivedInBlockListener.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/core/listeners/TransactionReceivedInBlockListener.html#receiveFromBlock-org.bitcoinj.core.Transaction-org.bitcoinj.core.StoredBlock-org.bitcoinj.core.AbstractBlockChain.NewBlockType-int-">receiveFromBlock</a></span>(<a href="../../../../org/bitcoinj/core/Transaction.html" title="class in org.bitcoinj.core">Transaction</a>&nbsp;tx,
                 <a href="../../../../org/bitcoinj/core/StoredBlock.html" title="class in org.bitcoinj.core">StoredBlock</a>&nbsp;block,
@@ -185,6 +176,15 @@ the order they are declared.</div>
                 int&nbsp;relativityOffset)</code>
 <div class="block">Called by the <a href="../../../../org/bitcoinj/core/BlockChain.html" title="class in org.bitcoinj.core"><code>BlockChain</code></a> when we receive a new block that contains a relevant transaction.</div>
 </td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="typeNameLabel">AbstractBlockChainListener.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/core/listeners/AbstractBlockChainListener.html#receiveFromBlock-org.bitcoinj.core.Transaction-org.bitcoinj.core.StoredBlock-org.bitcoinj.core.AbstractBlockChain.NewBlockType-int-">receiveFromBlock</a></span>(<a href="../../../../org/bitcoinj/core/Transaction.html" title="class in org.bitcoinj.core">Transaction</a>&nbsp;tx,
+                <a href="../../../../org/bitcoinj/core/StoredBlock.html" title="class in org.bitcoinj.core">StoredBlock</a>&nbsp;block,
+                <a href="../../../../org/bitcoinj/core/AbstractBlockChain.NewBlockType.html" title="enum in org.bitcoinj.core">AbstractBlockChain.NewBlockType</a>&nbsp;blockType,
+                int&nbsp;relativityOffset)</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
+&nbsp;</td>
 </tr>
 </tbody>
 </table>
@@ -302,6 +302,6 @@ the order they are declared.</div>
 <!--   -->
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
-<p class="legalCopy"><small>Copyright &#169; 2017. All rights reserved.</small></p>
+<p class="legalCopy"><small>Copyright &#169; 2018. All rights reserved.</small></p>
 </body>
 </html>

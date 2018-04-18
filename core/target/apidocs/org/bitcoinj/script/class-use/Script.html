@@ -311,13 +311,13 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code>protected <a href="../../../../org/bitcoinj/script/Script.html" title="class in org.bitcoinj.script">Script</a></code></td>
-<td class="colLast"><span class="typeNameLabel">PaymentChannelV1ServerState.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/protocols/channels/PaymentChannelV1ServerState.html#createOutputScript--">createOutputScript</a></span>()</code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../../../org/bitcoinj/script/Script.html" title="class in org.bitcoinj.script">Script</a></code></td>
 <td class="colLast"><span class="typeNameLabel">PaymentChannelV2ServerState.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/protocols/channels/PaymentChannelV2ServerState.html#createOutputScript--">createOutputScript</a></span>()</code>
 <div class="block">Creates a P2SH script outputting to the client and server pubkeys</div>
 </td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected <a href="../../../../org/bitcoinj/script/Script.html" title="class in org.bitcoinj.script">Script</a></code></td>
+<td class="colLast"><span class="typeNameLabel">PaymentChannelV1ServerState.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/protocols/channels/PaymentChannelV1ServerState.html#createOutputScript--">createOutputScript</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>protected abstract <a href="../../../../org/bitcoinj/script/Script.html" title="class in org.bitcoinj.script">Script</a></code></td>
@@ -332,20 +332,12 @@
 <td class="colLast"><span class="typeNameLabel">PaymentChannelV1ClientState.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/protocols/channels/PaymentChannelV1ClientState.html#getContractScript--">getContractScript</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected abstract <a href="../../../../org/bitcoinj/script/Script.html" title="class in org.bitcoinj.script">Script</a></code></td>
-<td class="colLast"><span class="typeNameLabel">PaymentChannelClientState.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/protocols/channels/PaymentChannelClientState.html#getContractScript--">getContractScript</a></span>()</code>&nbsp;</td>
-</tr>
-<tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/bitcoinj/script/Script.html" title="class in org.bitcoinj.script">Script</a></code></td>
 <td class="colLast"><span class="typeNameLabel">PaymentChannelServerState.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/protocols/channels/PaymentChannelServerState.html#getContractScript--">getContractScript</a></span>()</code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../../../org/bitcoinj/script/Script.html" title="class in org.bitcoinj.script">Script</a></code></td>
-<td class="colLast"><span class="typeNameLabel">PaymentChannelV2ClientState.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/protocols/channels/PaymentChannelV2ClientState.html#getSignedScript--">getSignedScript</a></span>()</code>&nbsp;</td>
-</tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../../../org/bitcoinj/script/Script.html" title="class in org.bitcoinj.script">Script</a></code></td>
-<td class="colLast"><span class="typeNameLabel">PaymentChannelV1ServerState.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/protocols/channels/PaymentChannelV1ServerState.html#getSignedScript--">getSignedScript</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>protected abstract <a href="../../../../org/bitcoinj/script/Script.html" title="class in org.bitcoinj.script">Script</a></code></td>
+<td class="colLast"><span class="typeNameLabel">PaymentChannelClientState.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/protocols/channels/PaymentChannelClientState.html#getContractScript--">getContractScript</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>protected <a href="../../../../org/bitcoinj/script/Script.html" title="class in org.bitcoinj.script">Script</a></code></td>
@@ -353,18 +345,26 @@
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>protected <a href="../../../../org/bitcoinj/script/Script.html" title="class in org.bitcoinj.script">Script</a></code></td>
+<td class="colLast"><span class="typeNameLabel">PaymentChannelV2ClientState.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/protocols/channels/PaymentChannelV2ClientState.html#getSignedScript--">getSignedScript</a></span>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected <a href="../../../../org/bitcoinj/script/Script.html" title="class in org.bitcoinj.script">Script</a></code></td>
+<td class="colLast"><span class="typeNameLabel">PaymentChannelV1ServerState.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/protocols/channels/PaymentChannelV1ServerState.html#getSignedScript--">getSignedScript</a></span>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="../../../../org/bitcoinj/script/Script.html" title="class in org.bitcoinj.script">Script</a></code></td>
 <td class="colLast"><span class="typeNameLabel">PaymentChannelV1ClientState.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/protocols/channels/PaymentChannelV1ClientState.html#getSignedScript--">getSignedScript</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>protected abstract <a href="../../../../org/bitcoinj/script/Script.html" title="class in org.bitcoinj.script">Script</a></code></td>
-<td class="colLast"><span class="typeNameLabel">PaymentChannelClientState.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/protocols/channels/PaymentChannelClientState.html#getSignedScript--">getSignedScript</a></span>()</code>
-<div class="block">Gets the script that is signed.</div>
+<td class="colLast"><span class="typeNameLabel">PaymentChannelServerState.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/protocols/channels/PaymentChannelServerState.html#getSignedScript--">getSignedScript</a></span>()</code>
+<div class="block">Gets the script that signatures should sign against.</div>
 </td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>protected abstract <a href="../../../../org/bitcoinj/script/Script.html" title="class in org.bitcoinj.script">Script</a></code></td>
-<td class="colLast"><span class="typeNameLabel">PaymentChannelServerState.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/protocols/channels/PaymentChannelServerState.html#getSignedScript--">getSignedScript</a></span>()</code>
-<div class="block">Gets the script that signatures should sign against.</div>
+<td class="colLast"><span class="typeNameLabel">PaymentChannelClientState.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/protocols/channels/PaymentChannelClientState.html#getSignedScript--">getSignedScript</a></span>()</code>
+<div class="block">Gets the script that is signed.</div>
 </td>
 </tr>
 </tbody>
@@ -710,14 +710,14 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/bitcoinj/script/Script.html" title="class in org.bitcoinj.script">Script</a></code></td>
-<td class="colLast"><span class="typeNameLabel">DeterministicKeyChain.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/DeterministicKeyChain.html#freshOutputScript-org.bitcoinj.wallet.KeyChain.KeyPurpose-">freshOutputScript</a></span>(<a href="../../../../org/bitcoinj/wallet/KeyChain.KeyPurpose.html" title="enum in org.bitcoinj.wallet">KeyChain.KeyPurpose</a>&nbsp;purpose)</code>
-<div class="block">Create a new key and return the matching output script.</div>
+<td class="colLast"><span class="typeNameLabel">MarriedKeyChain.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/MarriedKeyChain.html#freshOutputScript-org.bitcoinj.wallet.KeyChain.KeyPurpose-">freshOutputScript</a></span>(<a href="../../../../org/bitcoinj/wallet/KeyChain.KeyPurpose.html" title="enum in org.bitcoinj.wallet">KeyChain.KeyPurpose</a>&nbsp;purpose)</code>
+<div class="block">Create a new married key and return the matching output script</div>
 </td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/bitcoinj/script/Script.html" title="class in org.bitcoinj.script">Script</a></code></td>
-<td class="colLast"><span class="typeNameLabel">MarriedKeyChain.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/MarriedKeyChain.html#freshOutputScript-org.bitcoinj.wallet.KeyChain.KeyPurpose-">freshOutputScript</a></span>(<a href="../../../../org/bitcoinj/wallet/KeyChain.KeyPurpose.html" title="enum in org.bitcoinj.wallet">KeyChain.KeyPurpose</a>&nbsp;purpose)</code>
-<div class="block">Create a new married key and return the matching output script</div>
+<td class="colLast"><span class="typeNameLabel">DeterministicKeyChain.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/DeterministicKeyChain.html#freshOutputScript-org.bitcoinj.wallet.KeyChain.KeyPurpose-">freshOutputScript</a></span>(<a href="../../../../org/bitcoinj/wallet/KeyChain.KeyPurpose.html" title="enum in org.bitcoinj.wallet">KeyChain.KeyPurpose</a>&nbsp;purpose)</code>
+<div class="block">Create a new key and return the matching output script.</div>
 </td>
 </tr>
 </tbody>
@@ -878,6 +878,6 @@
 <!--   -->
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
-<p class="legalCopy"><small>Copyright &#169; 2017. All rights reserved.</small></p>
+<p class="legalCopy"><small>Copyright &#169; 2018. All rights reserved.</small></p>
 </body>
 </html>
