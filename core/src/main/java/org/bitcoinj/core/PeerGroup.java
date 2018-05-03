@@ -83,7 +83,7 @@ public class PeerGroup implements TransactionBroadcaster {
      * were only sending transactions to two peers and sometimes this wasn't reliable enough: transactions wouldn't
      * get through.
      */
-    public static final int DEFAULT_CONNECTIONS = 4;
+    public static final int DEFAULT_CONNECTIONS = 12;
     private static final int TOR_TIMEOUT_SECONDS = 60;
     private volatile int vMaxPeersToDiscoverCount = 100;
     private static final long DEFAULT_PEER_DISCOVERY_TIMEOUT_MILLIS = 5000;
@@ -2106,11 +2106,11 @@ public class PeerGroup implements TransactionBroadcaster {
         lock.lock();
         try {
             if (minBroadcastConnections == 0) {
-                int max = 2; //getMaxConnections()
+                int max = getMaxConnections(); //getMaxConnections()
                 if (max <= 1) 
                     return max;
                 else
-                    return (int) Math.round(2 * 0.8); //getMaxConnections()
+                    return (int) Math.round(getMaxConnections() * 0.6); //getMaxConnections()
             }
             return minBroadcastConnections;
         } finally {
