@@ -6,11 +6,11 @@ wallettemplate/utils/BitcoinUIModel$ProgressBarUpdater.class
 wallettemplate/WalletSetPasswordController$1.class
 wallettemplate/Main.class
 wallettemplate/WalletPasswordController$1.class
-wallettemplate/Main$OverlayUI.class
 wallettemplate/controls/NotificationBarPane$Item.class
+wallettemplate/Main$OverlayUI.class
 wallettemplate/MainController.class
-wallettemplate/utils/KeyDerivationTasks$2.class
 wallettemplate/utils/easing/ElasticInterpolator.class
+wallettemplate/utils/KeyDerivationTasks$2.class
 wallettemplate/WalletSettingsController.class
 wallettemplate/utils/easing/EasingMode.class
 wallettemplate/utils/KeyDerivationTasks$1.class
@@ -21,8 +21,8 @@ wallettemplate/WalletPasswordController.class
 wallettemplate/Main$1.class
 wallettemplate/utils/easing/EasingInterpolator.class
 wallettemplate/utils/BitcoinUIModel.class
-wallettemplate/WalletSettingsController$1.class
 wallettemplate/utils/ThrottledRunLater.class
+wallettemplate/WalletSettingsController$1.class
 wallettemplate/utils/AlertWindowController.class
 wallettemplate/utils/WTUtils$UncheckedRunnable.class
 wallettemplate/controls/NotificationBarPane.class
@@ -30,6 +30,6 @@ wallettemplate/utils/BitcoinUIModel$1.class
 wallettemplate/controls/ClickableBitcoinAddress.class
 wallettemplate/SendMoneyController$1.class
 wallettemplate/utils/easing/EasingInterpolator$1.class
-wallettemplate/utils/TextFieldValidator.class
 wallettemplate/utils/KeyDerivationTasks.class
+wallettemplate/utils/TextFieldValidator.class
 wallettemplate/controls/BitcoinAddressValidator.class

@@ -173,9 +173,12 @@ public class TransactionBroadcast {
     private class ConfidenceChange implements TransactionConfidence.Listener {
         @Override
         public void onConfidenceChanged(TransactionConfidence conf, ChangeReason reason) {
+            System.out.println("Initiate confidence");
             // The number of peers that announced this tx has gone up.
             int numSeenPeers = conf.numBroadcastPeers() + rejects.size();
+            log.info("Robert this is only our seen peers {}", numSeenPeers);
             boolean mined = tx.getAppearsInHashes() != null;
+            log.info("Robert this is only our mined {}", mined);
             log.info("broadcastTransaction: {}:  TX {} seen by {} peers{}", reason, tx.getHashAsString(),
                     numSeenPeers, mined ? " and mined" : "");
 

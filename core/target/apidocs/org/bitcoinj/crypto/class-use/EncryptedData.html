@@ -196,16 +196,16 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/bitcoinj/crypto/EncryptedData.html" title="class in org.bitcoinj.crypto">EncryptedData</a></code></td>
-<td class="colLast"><span class="typeNameLabel">KeyCrypter.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/crypto/KeyCrypter.html#encrypt-byte:A-org.spongycastle.crypto.params.KeyParameter-">encrypt</a></span>(byte[]&nbsp;plainBytes,
+<td class="colLast"><span class="typeNameLabel">KeyCrypterScrypt.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/crypto/KeyCrypterScrypt.html#encrypt-byte:A-org.spongycastle.crypto.params.KeyParameter-">encrypt</a></span>(byte[]&nbsp;plainBytes,
        org.spongycastle.crypto.params.KeyParameter&nbsp;aesKey)</code>
-<div class="block">Encrypt the supplied bytes, converting them into ciphertext.</div>
+<div class="block">Password based encryption using AES - CBC 256 bits.</div>
 </td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/bitcoinj/crypto/EncryptedData.html" title="class in org.bitcoinj.crypto">EncryptedData</a></code></td>
-<td class="colLast"><span class="typeNameLabel">KeyCrypterScrypt.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/crypto/KeyCrypterScrypt.html#encrypt-byte:A-org.spongycastle.crypto.params.KeyParameter-">encrypt</a></span>(byte[]&nbsp;plainBytes,
+<td class="colLast"><span class="typeNameLabel">KeyCrypter.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/crypto/KeyCrypter.html#encrypt-byte:A-org.spongycastle.crypto.params.KeyParameter-">encrypt</a></span>(byte[]&nbsp;plainBytes,
        org.spongycastle.crypto.params.KeyParameter&nbsp;aesKey)</code>
-<div class="block">Password based encryption using AES - CBC 256 bits.</div>
+<div class="block">Encrypt the supplied bytes, converting them into ciphertext.</div>
 </td>
 </tr>
 <tr class="altColor">
@@ -225,16 +225,16 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code>byte[]</code></td>
-<td class="colLast"><span class="typeNameLabel">KeyCrypter.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/crypto/KeyCrypter.html#decrypt-org.bitcoinj.crypto.EncryptedData-org.spongycastle.crypto.params.KeyParameter-">decrypt</a></span>(<a href="../../../../org/bitcoinj/crypto/EncryptedData.html" title="class in org.bitcoinj.crypto">EncryptedData</a>&nbsp;encryptedBytesToDecode,
+<td class="colLast"><span class="typeNameLabel">KeyCrypterScrypt.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/crypto/KeyCrypterScrypt.html#decrypt-org.bitcoinj.crypto.EncryptedData-org.spongycastle.crypto.params.KeyParameter-">decrypt</a></span>(<a href="../../../../org/bitcoinj/crypto/EncryptedData.html" title="class in org.bitcoinj.crypto">EncryptedData</a>&nbsp;dataToDecrypt,
        org.spongycastle.crypto.params.KeyParameter&nbsp;aesKey)</code>
-<div class="block">Decrypt the provided encrypted bytes, converting them into unencrypted bytes.</div>
+<div class="block">Decrypt bytes previously encrypted with this class.</div>
 </td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>byte[]</code></td>
-<td class="colLast"><span class="typeNameLabel">KeyCrypterScrypt.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/crypto/KeyCrypterScrypt.html#decrypt-org.bitcoinj.crypto.EncryptedData-org.spongycastle.crypto.params.KeyParameter-">decrypt</a></span>(<a href="../../../../org/bitcoinj/crypto/EncryptedData.html" title="class in org.bitcoinj.crypto">EncryptedData</a>&nbsp;dataToDecrypt,
+<td class="colLast"><span class="typeNameLabel">KeyCrypter.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/crypto/KeyCrypter.html#decrypt-org.bitcoinj.crypto.EncryptedData-org.spongycastle.crypto.params.KeyParameter-">decrypt</a></span>(<a href="../../../../org/bitcoinj/crypto/EncryptedData.html" title="class in org.bitcoinj.crypto">EncryptedData</a>&nbsp;encryptedBytesToDecode,
        org.spongycastle.crypto.params.KeyParameter&nbsp;aesKey)</code>
-<div class="block">Decrypt bytes previously encrypted with this class.</div>
+<div class="block">Decrypt the provided encrypted bytes, converting them into unencrypted bytes.</div>
 </td>
 </tr>
 </tbody>
@@ -344,6 +344,6 @@
 <!--   -->
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
-<p class="legalCopy"><small>Copyright &#169; 2017. All rights reserved.</small></p>
+<p class="legalCopy"><small>Copyright &#169; 2018. All rights reserved.</small></p>
 </body>
 </html>

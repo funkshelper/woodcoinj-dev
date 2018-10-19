@@ -2106,11 +2106,11 @@ public class PeerGroup implements TransactionBroadcaster {
         lock.lock();
         try {
             if (minBroadcastConnections == 0) {
-                int max = getMaxConnections();
-                if (max <= 1)
+                int max = getMaxConnections(); //getMaxConnections()
+                if (max <= 1) 
                     return max;
                 else
-                    return (int) Math.round(getMaxConnections() * 0.8);
+                    return (int) Math.round(getMaxConnections() * 0.6); //getMaxConnections()
             }
             return minBroadcastConnections;
         } finally {

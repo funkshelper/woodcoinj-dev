@@ -212,13 +212,13 @@
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><span class="typeNameLabel">AbstractBlockChain.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/core/AbstractBlockChain.html#add-org.bitcoinj.core.FilteredBlock-">add</a></span>(<a href="../../../../org/bitcoinj/core/FilteredBlock.html" title="class in org.bitcoinj.core">FilteredBlock</a>&nbsp;block)</code>
-<div class="block">Processes a received block and tries to add it to the chain.</div>
-</td>
+<td class="colLast"><span class="typeNameLabel">BlockChain.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/core/BlockChain.html#add-org.bitcoinj.core.FilteredBlock-">add</a></span>(<a href="../../../../org/bitcoinj/core/FilteredBlock.html" title="class in org.bitcoinj.core">FilteredBlock</a>&nbsp;block)</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><span class="typeNameLabel">BlockChain.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/core/BlockChain.html#add-org.bitcoinj.core.FilteredBlock-">add</a></span>(<a href="../../../../org/bitcoinj/core/FilteredBlock.html" title="class in org.bitcoinj.core">FilteredBlock</a>&nbsp;block)</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">AbstractBlockChain.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/core/AbstractBlockChain.html#add-org.bitcoinj.core.FilteredBlock-">add</a></span>(<a href="../../../../org/bitcoinj/core/FilteredBlock.html" title="class in org.bitcoinj.core">FilteredBlock</a>&nbsp;block)</code>
+<div class="block">Processes a received block and tries to add it to the chain.</div>
+</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>protected <a href="../../../../org/bitcoinj/core/StoredBlock.html" title="class in org.bitcoinj.core">StoredBlock</a></code></td>
@@ -226,16 +226,16 @@
                <a href="../../../../org/bitcoinj/core/Block.html" title="class in org.bitcoinj.core">Block</a>&nbsp;block)</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code>protected <a href="../../../../org/bitcoinj/core/StoredBlock.html" title="class in org.bitcoinj.core">StoredBlock</a></code></td>
+<td class="colLast"><span class="typeNameLabel">BlockChain.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/core/BlockChain.html#addToBlockStore-org.bitcoinj.core.StoredBlock-org.bitcoinj.core.Block-">addToBlockStore</a></span>(<a href="../../../../org/bitcoinj/core/StoredBlock.html" title="class in org.bitcoinj.core">StoredBlock</a>&nbsp;storedPrev,
+               <a href="../../../../org/bitcoinj/core/Block.html" title="class in org.bitcoinj.core">Block</a>&nbsp;blockHeader)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code>protected abstract <a href="../../../../org/bitcoinj/core/StoredBlock.html" title="class in org.bitcoinj.core">StoredBlock</a></code></td>
 <td class="colLast"><span class="typeNameLabel">AbstractBlockChain.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/core/AbstractBlockChain.html#addToBlockStore-org.bitcoinj.core.StoredBlock-org.bitcoinj.core.Block-">addToBlockStore</a></span>(<a href="../../../../org/bitcoinj/core/StoredBlock.html" title="class in org.bitcoinj.core">StoredBlock</a>&nbsp;storedPrev,
                <a href="../../../../org/bitcoinj/core/Block.html" title="class in org.bitcoinj.core">Block</a>&nbsp;block)</code>
 <div class="block">Adds/updates the given <a href="../../../../org/bitcoinj/core/Block.html" title="class in org.bitcoinj.core"><code>Block</code></a> with the block store.</div>
 </td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../../../org/bitcoinj/core/StoredBlock.html" title="class in org.bitcoinj.core">StoredBlock</a></code></td>
-<td class="colLast"><span class="typeNameLabel">BlockChain.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/core/BlockChain.html#addToBlockStore-org.bitcoinj.core.StoredBlock-org.bitcoinj.core.Block-">addToBlockStore</a></span>(<a href="../../../../org/bitcoinj/core/StoredBlock.html" title="class in org.bitcoinj.core">StoredBlock</a>&nbsp;storedPrev,
-               <a href="../../../../org/bitcoinj/core/Block.html" title="class in org.bitcoinj.core">Block</a>&nbsp;blockHeader)</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>protected <a href="../../../../org/bitcoinj/core/StoredBlock.html" title="class in org.bitcoinj.core">StoredBlock</a></code></td>
@@ -244,18 +244,18 @@
                <a href="../../../../org/bitcoinj/core/TransactionOutputChanges.html" title="class in org.bitcoinj.core">TransactionOutputChanges</a>&nbsp;txOutChanges)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><code>protected <a href="../../../../org/bitcoinj/core/StoredBlock.html" title="class in org.bitcoinj.core">StoredBlock</a></code></td>
+<td class="colLast"><span class="typeNameLabel">BlockChain.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/core/BlockChain.html#addToBlockStore-org.bitcoinj.core.StoredBlock-org.bitcoinj.core.Block-org.bitcoinj.core.TransactionOutputChanges-">addToBlockStore</a></span>(<a href="../../../../org/bitcoinj/core/StoredBlock.html" title="class in org.bitcoinj.core">StoredBlock</a>&nbsp;storedPrev,
+               <a href="../../../../org/bitcoinj/core/Block.html" title="class in org.bitcoinj.core">Block</a>&nbsp;blockHeader,
+               <a href="../../../../org/bitcoinj/core/TransactionOutputChanges.html" title="class in org.bitcoinj.core">TransactionOutputChanges</a>&nbsp;txOutChanges)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code>protected abstract <a href="../../../../org/bitcoinj/core/StoredBlock.html" title="class in org.bitcoinj.core">StoredBlock</a></code></td>
 <td class="colLast"><span class="typeNameLabel">AbstractBlockChain.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/core/AbstractBlockChain.html#addToBlockStore-org.bitcoinj.core.StoredBlock-org.bitcoinj.core.Block-org.bitcoinj.core.TransactionOutputChanges-">addToBlockStore</a></span>(<a href="../../../../org/bitcoinj/core/StoredBlock.html" title="class in org.bitcoinj.core">StoredBlock</a>&nbsp;storedPrev,
                <a href="../../../../org/bitcoinj/core/Block.html" title="class in org.bitcoinj.core">Block</a>&nbsp;header,
                <a href="../../../../org/bitcoinj/core/TransactionOutputChanges.html" title="class in org.bitcoinj.core">TransactionOutputChanges</a>&nbsp;txOutputChanges)</code>
 <div class="block">Adds/updates the given <a href="../../../../org/bitcoinj/core/StoredBlock.html" title="class in org.bitcoinj.core"><code>StoredBlock</code></a> with the block store.</div>
 </td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../../../org/bitcoinj/core/StoredBlock.html" title="class in org.bitcoinj.core">StoredBlock</a></code></td>
-<td class="colLast"><span class="typeNameLabel">BlockChain.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/core/BlockChain.html#addToBlockStore-org.bitcoinj.core.StoredBlock-org.bitcoinj.core.Block-org.bitcoinj.core.TransactionOutputChanges-">addToBlockStore</a></span>(<a href="../../../../org/bitcoinj/core/StoredBlock.html" title="class in org.bitcoinj.core">StoredBlock</a>&nbsp;storedPrev,
-               <a href="../../../../org/bitcoinj/core/Block.html" title="class in org.bitcoinj.core">Block</a>&nbsp;blockHeader,
-               <a href="../../../../org/bitcoinj/core/TransactionOutputChanges.html" title="class in org.bitcoinj.core">TransactionOutputChanges</a>&nbsp;txOutChanges)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/bitcoinj/core/StoredBlock.html" title="class in org.bitcoinj.core">StoredBlock</a></code></td>
@@ -344,14 +344,14 @@
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><span class="typeNameLabel">Transaction.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/core/Transaction.html#verify--">verify</a></span>()</code>
-<div class="block">Checks the transaction contents for sanity, in ways that can be done in a standalone manner.</div>
+<td class="colLast"><span class="typeNameLabel">TransactionInput.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/core/TransactionInput.html#verify--">verify</a></span>()</code>
+<div class="block">For a connected transaction, runs the script against the connected pubkey and verifies they are correct.</div>
 </td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><span class="typeNameLabel">TransactionInput.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/core/TransactionInput.html#verify--">verify</a></span>()</code>
-<div class="block">For a connected transaction, runs the script against the connected pubkey and verifies they are correct.</div>
+<td class="colLast"><span class="typeNameLabel">Transaction.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/core/Transaction.html#verify--">verify</a></span>()</code>
+<div class="block">Checks the transaction contents for sanity, in ways that can be done in a standalone manner.</div>
 </td>
 </tr>
 <tr class="rowColor">
@@ -396,12 +396,6 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><span class="typeNameLabel">AbstractBlockChainListener.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/core/listeners/AbstractBlockChainListener.html#notifyNewBestBlock-org.bitcoinj.core.StoredBlock-">notifyNewBestBlock</a></span>(<a href="../../../../org/bitcoinj/core/StoredBlock.html" title="class in org.bitcoinj.core">StoredBlock</a>&nbsp;block)</code>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
-&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>void</code></td>
 <td class="colLast"><span class="typeNameLabel">NewBestBlockListener.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/core/listeners/NewBestBlockListener.html#notifyNewBestBlock-org.bitcoinj.core.StoredBlock-">notifyNewBestBlock</a></span>(<a href="../../../../org/bitcoinj/core/StoredBlock.html" title="class in org.bitcoinj.core">StoredBlock</a>&nbsp;block)</code>
 <div class="block">Called when a new block on the best chain is seen, after relevant
  transactions are extracted and sent to us via either
@@ -409,16 +403,13 @@
  or <code>TransactionReceivedInBlockListener#notifyTransactionIsInBlock(org.bitcoinj.core.Sha256Hash, org.bitcoinj.core.StoredBlock, org.bitcoinj.core.BlockChain.NewBlockType, int)</code>.</div>
 </td>
 </tr>
-<tr class="altColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><span class="typeNameLabel">AbstractBlockChainListener.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/core/listeners/AbstractBlockChainListener.html#notifyTransactionIsInBlock-org.bitcoinj.core.Sha256Hash-org.bitcoinj.core.StoredBlock-org.bitcoinj.core.AbstractBlockChain.NewBlockType-int-">notifyTransactionIsInBlock</a></span>(<a href="../../../../org/bitcoinj/core/Sha256Hash.html" title="class in org.bitcoinj.core">Sha256Hash</a>&nbsp;txHash,
-                          <a href="../../../../org/bitcoinj/core/StoredBlock.html" title="class in org.bitcoinj.core">StoredBlock</a>&nbsp;block,
-                          <a href="../../../../org/bitcoinj/core/AbstractBlockChain.NewBlockType.html" title="enum in org.bitcoinj.core">AbstractBlockChain.NewBlockType</a>&nbsp;blockType,
-                          int&nbsp;relativityOffset)</code>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="typeNameLabel">AbstractBlockChainListener.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/core/listeners/AbstractBlockChainListener.html#notifyNewBestBlock-org.bitcoinj.core.StoredBlock-">notifyNewBestBlock</a></span>(<a href="../../../../org/bitcoinj/core/StoredBlock.html" title="class in org.bitcoinj.core">StoredBlock</a>&nbsp;block)</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
 &nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><span class="typeNameLabel">TransactionReceivedInBlockListener.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/core/listeners/TransactionReceivedInBlockListener.html#notifyTransactionIsInBlock-org.bitcoinj.core.Sha256Hash-org.bitcoinj.core.StoredBlock-org.bitcoinj.core.AbstractBlockChain.NewBlockType-int-">notifyTransactionIsInBlock</a></span>(<a href="../../../../org/bitcoinj/core/Sha256Hash.html" title="class in org.bitcoinj.core">Sha256Hash</a>&nbsp;txHash,
                           <a href="../../../../org/bitcoinj/core/StoredBlock.html" title="class in org.bitcoinj.core">StoredBlock</a>&nbsp;block,
@@ -428,16 +419,16 @@
  transaction hash in its merkle tree.</div>
 </td>
 </tr>
-<tr class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><span class="typeNameLabel">AbstractBlockChainListener.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/core/listeners/AbstractBlockChainListener.html#receiveFromBlock-org.bitcoinj.core.Transaction-org.bitcoinj.core.StoredBlock-org.bitcoinj.core.AbstractBlockChain.NewBlockType-int-">receiveFromBlock</a></span>(<a href="../../../../org/bitcoinj/core/Transaction.html" title="class in org.bitcoinj.core">Transaction</a>&nbsp;tx,
-                <a href="../../../../org/bitcoinj/core/StoredBlock.html" title="class in org.bitcoinj.core">StoredBlock</a>&nbsp;block,
-                <a href="../../../../org/bitcoinj/core/AbstractBlockChain.NewBlockType.html" title="enum in org.bitcoinj.core">AbstractBlockChain.NewBlockType</a>&nbsp;blockType,
-                int&nbsp;relativityOffset)</code>
+<tr class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><span class="typeNameLabel">AbstractBlockChainListener.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/core/listeners/AbstractBlockChainListener.html#notifyTransactionIsInBlock-org.bitcoinj.core.Sha256Hash-org.bitcoinj.core.StoredBlock-org.bitcoinj.core.AbstractBlockChain.NewBlockType-int-">notifyTransactionIsInBlock</a></span>(<a href="../../../../org/bitcoinj/core/Sha256Hash.html" title="class in org.bitcoinj.core">Sha256Hash</a>&nbsp;txHash,
+                          <a href="../../../../org/bitcoinj/core/StoredBlock.html" title="class in org.bitcoinj.core">StoredBlock</a>&nbsp;block,
+                          <a href="../../../../org/bitcoinj/core/AbstractBlockChain.NewBlockType.html" title="enum in org.bitcoinj.core">AbstractBlockChain.NewBlockType</a>&nbsp;blockType,
+                          int&nbsp;relativityOffset)</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
 &nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><span class="typeNameLabel">TransactionReceivedInBlockListener.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/core/listeners/TransactionReceivedInBlockListener.html#receiveFromBlock-org.bitcoinj.core.Transaction-org.bitcoinj.core.StoredBlock-org.bitcoinj.core.AbstractBlockChain.NewBlockType-int-">receiveFromBlock</a></span>(<a href="../../../../org/bitcoinj/core/Transaction.html" title="class in org.bitcoinj.core">Transaction</a>&nbsp;tx,
                 <a href="../../../../org/bitcoinj/core/StoredBlock.html" title="class in org.bitcoinj.core">StoredBlock</a>&nbsp;block,
@@ -446,15 +437,16 @@
 <div class="block">Called by the <a href="../../../../org/bitcoinj/core/BlockChain.html" title="class in org.bitcoinj.core"><code>BlockChain</code></a> when we receive a new block that contains a relevant transaction.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><span class="typeNameLabel">AbstractBlockChainListener.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/core/listeners/AbstractBlockChainListener.html#reorganize-org.bitcoinj.core.StoredBlock-java.util.List-java.util.List-">reorganize</a></span>(<a href="../../../../org/bitcoinj/core/StoredBlock.html" title="class in org.bitcoinj.core">StoredBlock</a>&nbsp;splitPoint,
-          <a href="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/bitcoinj/core/StoredBlock.html" title="class in org.bitcoinj.core">StoredBlock</a>&gt;&nbsp;oldBlocks,
-          <a href="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/bitcoinj/core/StoredBlock.html" title="class in org.bitcoinj.core">StoredBlock</a>&gt;&nbsp;newBlocks)</code>
+<td class="colLast"><span class="typeNameLabel">AbstractBlockChainListener.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/core/listeners/AbstractBlockChainListener.html#receiveFromBlock-org.bitcoinj.core.Transaction-org.bitcoinj.core.StoredBlock-org.bitcoinj.core.AbstractBlockChain.NewBlockType-int-">receiveFromBlock</a></span>(<a href="../../../../org/bitcoinj/core/Transaction.html" title="class in org.bitcoinj.core">Transaction</a>&nbsp;tx,
+                <a href="../../../../org/bitcoinj/core/StoredBlock.html" title="class in org.bitcoinj.core">StoredBlock</a>&nbsp;block,
+                <a href="../../../../org/bitcoinj/core/AbstractBlockChain.NewBlockType.html" title="enum in org.bitcoinj.core">AbstractBlockChain.NewBlockType</a>&nbsp;blockType,
+                int&nbsp;relativityOffset)</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
 &nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><span class="typeNameLabel">ReorganizeListener.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/core/listeners/ReorganizeListener.html#reorganize-org.bitcoinj.core.StoredBlock-java.util.List-java.util.List-">reorganize</a></span>(<a href="../../../../org/bitcoinj/core/StoredBlock.html" title="class in org.bitcoinj.core">StoredBlock</a>&nbsp;splitPoint,
           <a href="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/bitcoinj/core/StoredBlock.html" title="class in org.bitcoinj.core">StoredBlock</a>&gt;&nbsp;oldBlocks,
@@ -462,6 +454,14 @@
 <div class="block">Called by the <a href="../../../../org/bitcoinj/core/BlockChain.html" title="class in org.bitcoinj.core"><code>BlockChain</code></a> when the best chain
  (representing total work done) has changed.</div>
 </td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="typeNameLabel">AbstractBlockChainListener.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/core/listeners/AbstractBlockChainListener.html#reorganize-org.bitcoinj.core.StoredBlock-java.util.List-java.util.List-">reorganize</a></span>(<a href="../../../../org/bitcoinj/core/StoredBlock.html" title="class in org.bitcoinj.core">StoredBlock</a>&nbsp;splitPoint,
+          <a href="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/bitcoinj/core/StoredBlock.html" title="class in org.bitcoinj.core">StoredBlock</a>&gt;&nbsp;oldBlocks,
+          <a href="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/bitcoinj/core/StoredBlock.html" title="class in org.bitcoinj.core">StoredBlock</a>&gt;&nbsp;newBlocks)</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
+&nbsp;</td>
 </tr>
 </tbody>
 </table>
@@ -798,6 +798,6 @@
 <!--   -->
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
-<p class="legalCopy"><small>Copyright &#169; 2017. All rights reserved.</small></p>
+<p class="legalCopy"><small>Copyright &#169; 2018. All rights reserved.</small></p>
 </body>
 </html>

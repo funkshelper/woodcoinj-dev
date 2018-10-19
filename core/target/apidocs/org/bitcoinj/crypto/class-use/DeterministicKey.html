@@ -402,7 +402,7 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/bitcoinj/crypto/DeterministicKey.html" title="class in org.bitcoinj.crypto">DeterministicKey</a></code></td>
-<td class="colLast"><span class="typeNameLabel">KeyChainGroup.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/KeyChainGroup.html#currentKey-org.bitcoinj.wallet.KeyChain.KeyPurpose-">currentKey</a></span>(<a href="../../../../org/bitcoinj/wallet/KeyChain.KeyPurpose.html" title="enum in org.bitcoinj.wallet">KeyChain.KeyPurpose</a>&nbsp;purpose)</code>
+<td class="colLast"><span class="typeNameLabel">Wallet.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/Wallet.html#currentKey-org.bitcoinj.wallet.KeyChain.KeyPurpose-">currentKey</a></span>(<a href="../../../../org/bitcoinj/wallet/KeyChain.KeyPurpose.html" title="enum in org.bitcoinj.wallet">KeyChain.KeyPurpose</a>&nbsp;purpose)</code>
 <div class="block">Returns a key that hasn't been seen in a transaction yet, and which is suitable for displaying in a wallet
  user interface as "a convenient key to receive funds on" when the purpose parameter is
  <a href="../../../../org/bitcoinj/wallet/KeyChain.KeyPurpose.html#RECEIVE_FUNDS"><code>KeyChain.KeyPurpose.RECEIVE_FUNDS</code></a>.</div>
@@ -410,7 +410,7 @@
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/bitcoinj/crypto/DeterministicKey.html" title="class in org.bitcoinj.crypto">DeterministicKey</a></code></td>
-<td class="colLast"><span class="typeNameLabel">Wallet.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/Wallet.html#currentKey-org.bitcoinj.wallet.KeyChain.KeyPurpose-">currentKey</a></span>(<a href="../../../../org/bitcoinj/wallet/KeyChain.KeyPurpose.html" title="enum in org.bitcoinj.wallet">KeyChain.KeyPurpose</a>&nbsp;purpose)</code>
+<td class="colLast"><span class="typeNameLabel">KeyChainGroup.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/KeyChainGroup.html#currentKey-org.bitcoinj.wallet.KeyChain.KeyPurpose-">currentKey</a></span>(<a href="../../../../org/bitcoinj/wallet/KeyChain.KeyPurpose.html" title="enum in org.bitcoinj.wallet">KeyChain.KeyPurpose</a>&nbsp;purpose)</code>
 <div class="block">Returns a key that hasn't been seen in a transaction yet, and which is suitable for displaying in a wallet
  user interface as "a convenient key to receive funds on" when the purpose parameter is
  <a href="../../../../org/bitcoinj/wallet/KeyChain.KeyPurpose.html#RECEIVE_FUNDS"><code>KeyChain.KeyPurpose.RECEIVE_FUNDS</code></a>.</div>
@@ -433,13 +433,13 @@
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/bitcoinj/crypto/DeterministicKey.html" title="class in org.bitcoinj.crypto">DeterministicKey</a></code></td>
-<td class="colLast"><span class="typeNameLabel">KeyChainGroup.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/KeyChainGroup.html#freshKey-org.bitcoinj.wallet.KeyChain.KeyPurpose-">freshKey</a></span>(<a href="../../../../org/bitcoinj/wallet/KeyChain.KeyPurpose.html" title="enum in org.bitcoinj.wallet">KeyChain.KeyPurpose</a>&nbsp;purpose)</code>
+<td class="colLast"><span class="typeNameLabel">Wallet.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/Wallet.html#freshKey-org.bitcoinj.wallet.KeyChain.KeyPurpose-">freshKey</a></span>(<a href="../../../../org/bitcoinj/wallet/KeyChain.KeyPurpose.html" title="enum in org.bitcoinj.wallet">KeyChain.KeyPurpose</a>&nbsp;purpose)</code>
 <div class="block">Returns a key that has not been returned by this method before (fresh).</div>
 </td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/bitcoinj/crypto/DeterministicKey.html" title="class in org.bitcoinj.crypto">DeterministicKey</a></code></td>
-<td class="colLast"><span class="typeNameLabel">Wallet.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/Wallet.html#freshKey-org.bitcoinj.wallet.KeyChain.KeyPurpose-">freshKey</a></span>(<a href="../../../../org/bitcoinj/wallet/KeyChain.KeyPurpose.html" title="enum in org.bitcoinj.wallet">KeyChain.KeyPurpose</a>&nbsp;purpose)</code>
+<td class="colLast"><span class="typeNameLabel">KeyChainGroup.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/KeyChainGroup.html#freshKey-org.bitcoinj.wallet.KeyChain.KeyPurpose-">freshKey</a></span>(<a href="../../../../org/bitcoinj/wallet/KeyChain.KeyPurpose.html" title="enum in org.bitcoinj.wallet">KeyChain.KeyPurpose</a>&nbsp;purpose)</code>
 <div class="block">Returns a key that has not been returned by this method before (fresh).</div>
 </td>
 </tr>
@@ -463,15 +463,15 @@
 </td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../../../org/bitcoinj/crypto/DeterministicKey.html" title="class in org.bitcoinj.crypto">DeterministicKey</a></code></td>
-<td class="colLast"><span class="typeNameLabel">DeterministicKeyChain.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/DeterministicKeyChain.html#getKeyByPath-java.util.List-">getKeyByPath</a></span>(<a href="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/bitcoinj/crypto/ChildNumber.html" title="class in org.bitcoinj.crypto">ChildNumber</a>&gt;&nbsp;path)</code>
-<div class="block">Returns the deterministic key for the given absolute path in the hierarchy.</div>
-</td>
-</tr>
-<tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/bitcoinj/crypto/DeterministicKey.html" title="class in org.bitcoinj.crypto">DeterministicKey</a></code></td>
 <td class="colLast"><span class="typeNameLabel">Wallet.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/Wallet.html#getKeyByPath-java.util.List-">getKeyByPath</a></span>(<a href="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/bitcoinj/crypto/ChildNumber.html" title="class in org.bitcoinj.crypto">ChildNumber</a>&gt;&nbsp;path)</code>
 <div class="block">Returns a key for the given HD path, assuming it's already been derived.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected <a href="../../../../org/bitcoinj/crypto/DeterministicKey.html" title="class in org.bitcoinj.crypto">DeterministicKey</a></code></td>
+<td class="colLast"><span class="typeNameLabel">DeterministicKeyChain.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/DeterministicKeyChain.html#getKeyByPath-java.util.List-">getKeyByPath</a></span>(<a href="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/bitcoinj/crypto/ChildNumber.html" title="class in org.bitcoinj.crypto">ChildNumber</a>&gt;&nbsp;path)</code>
+<div class="block">Returns the deterministic key for the given absolute path in the hierarchy.</div>
 </td>
 </tr>
 <tr class="altColor">
@@ -483,15 +483,15 @@
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/bitcoinj/crypto/DeterministicKey.html" title="class in org.bitcoinj.crypto">DeterministicKey</a></code></td>
-<td class="colLast"><span class="typeNameLabel">DeterministicKeyChain.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/DeterministicKeyChain.html#getWatchingKey--">getWatchingKey</a></span>()</code>
-<div class="block">An alias for <code>getKeyByPath(getAccountPath())</code>.</div>
+<td class="colLast"><span class="typeNameLabel">Wallet.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/Wallet.html#getWatchingKey--">getWatchingKey</a></span>()</code>
+<div class="block">Returns a public-only DeterministicKey that can be used to set up a watching wallet: that is, a wallet that
+ can import transactions from the block chain just as the normal wallet can, but which cannot spend.</div>
 </td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/bitcoinj/crypto/DeterministicKey.html" title="class in org.bitcoinj.crypto">DeterministicKey</a></code></td>
-<td class="colLast"><span class="typeNameLabel">Wallet.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/Wallet.html#getWatchingKey--">getWatchingKey</a></span>()</code>
-<div class="block">Returns a public-only DeterministicKey that can be used to set up a watching wallet: that is, a wallet that
- can import transactions from the block chain just as the normal wallet can, but which cannot spend.</div>
+<td class="colLast"><span class="typeNameLabel">DeterministicKeyChain.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/DeterministicKeyChain.html#getWatchingKey--">getWatchingKey</a></span>()</code>
+<div class="block">An alias for <code>getKeyByPath(getAccountPath())</code>.</div>
 </td>
 </tr>
 <tr class="rowColor">
@@ -525,16 +525,16 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/bitcoinj/crypto/DeterministicKey.html" title="class in org.bitcoinj.crypto">DeterministicKey</a>&gt;</code></td>
-<td class="colLast"><span class="typeNameLabel">KeyChainGroup.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/KeyChainGroup.html#freshKeys-org.bitcoinj.wallet.KeyChain.KeyPurpose-int-">freshKeys</a></span>(<a href="../../../../org/bitcoinj/wallet/KeyChain.KeyPurpose.html" title="enum in org.bitcoinj.wallet">KeyChain.KeyPurpose</a>&nbsp;purpose,
+<td class="colLast"><span class="typeNameLabel">Wallet.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/Wallet.html#freshKeys-org.bitcoinj.wallet.KeyChain.KeyPurpose-int-">freshKeys</a></span>(<a href="../../../../org/bitcoinj/wallet/KeyChain.KeyPurpose.html" title="enum in org.bitcoinj.wallet">KeyChain.KeyPurpose</a>&nbsp;purpose,
          int&nbsp;numberOfKeys)</code>
-<div class="block">Returns a key/s that have not been returned by this method before (fresh).</div>
+<div class="block">Returns a key/s that has not been returned by this method before (fresh).</div>
 </td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/bitcoinj/crypto/DeterministicKey.html" title="class in org.bitcoinj.crypto">DeterministicKey</a>&gt;</code></td>
-<td class="colLast"><span class="typeNameLabel">Wallet.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/Wallet.html#freshKeys-org.bitcoinj.wallet.KeyChain.KeyPurpose-int-">freshKeys</a></span>(<a href="../../../../org/bitcoinj/wallet/KeyChain.KeyPurpose.html" title="enum in org.bitcoinj.wallet">KeyChain.KeyPurpose</a>&nbsp;purpose,
+<td class="colLast"><span class="typeNameLabel">KeyChainGroup.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/KeyChainGroup.html#freshKeys-org.bitcoinj.wallet.KeyChain.KeyPurpose-int-">freshKeys</a></span>(<a href="../../../../org/bitcoinj/wallet/KeyChain.KeyPurpose.html" title="enum in org.bitcoinj.wallet">KeyChain.KeyPurpose</a>&nbsp;purpose,
          int&nbsp;numberOfKeys)</code>
-<div class="block">Returns a key/s that has not been returned by this method before (fresh).</div>
+<div class="block">Returns a key/s that have not been returned by this method before (fresh).</div>
 </td>
 </tr>
 <tr class="altColor">
@@ -578,25 +578,17 @@
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/bitcoinj/wallet/RedeemData.html" title="class in org.bitcoinj.wallet">RedeemData</a></code></td>
-<td class="colLast"><span class="typeNameLabel">DeterministicKeyChain.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/DeterministicKeyChain.html#getRedeemData-org.bitcoinj.crypto.DeterministicKey-">getRedeemData</a></span>(<a href="../../../../org/bitcoinj/crypto/DeterministicKey.html" title="class in org.bitcoinj.crypto">DeterministicKey</a>&nbsp;followedKey)</code>
-<div class="block">Get redeem data for a key.</div>
-</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code><a href="../../../../org/bitcoinj/wallet/RedeemData.html" title="class in org.bitcoinj.wallet">RedeemData</a></code></td>
 <td class="colLast"><span class="typeNameLabel">MarriedKeyChain.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/MarriedKeyChain.html#getRedeemData-org.bitcoinj.crypto.DeterministicKey-">getRedeemData</a></span>(<a href="../../../../org/bitcoinj/crypto/DeterministicKey.html" title="class in org.bitcoinj.crypto">DeterministicKey</a>&nbsp;followedKey)</code>
 <div class="block">Get the redeem data for a key in this married chain</div>
 </td>
 </tr>
-<tr class="rowColor">
-<td class="colFirst"><code><a href="../../../../org/bitcoinj/wallet/DeterministicKeyChain.html" title="class in org.bitcoinj.wallet">DeterministicKeyChain</a></code></td>
-<td class="colLast"><span class="typeNameLabel">DefaultKeyChainFactory.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/DefaultKeyChainFactory.html#makeWatchingKeyChain-org.bitcoinj.wallet.Protos.Key-org.bitcoinj.wallet.Protos.Key-org.bitcoinj.crypto.DeterministicKey-boolean-boolean-">makeWatchingKeyChain</a></span>(<a href="../../../../org/bitcoinj/wallet/Protos.Key.html" title="class in org.bitcoinj.wallet">Protos.Key</a>&nbsp;key,
-                    <a href="../../../../org/bitcoinj/wallet/Protos.Key.html" title="class in org.bitcoinj.wallet">Protos.Key</a>&nbsp;firstSubKey,
-                    <a href="../../../../org/bitcoinj/crypto/DeterministicKey.html" title="class in org.bitcoinj.crypto">DeterministicKey</a>&nbsp;accountKey,
-                    boolean&nbsp;isFollowingKey,
-                    boolean&nbsp;isMarried)</code>&nbsp;</td>
-</tr>
 <tr class="altColor">
+<td class="colFirst"><code><a href="../../../../org/bitcoinj/wallet/RedeemData.html" title="class in org.bitcoinj.wallet">RedeemData</a></code></td>
+<td class="colLast"><span class="typeNameLabel">DeterministicKeyChain.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/DeterministicKeyChain.html#getRedeemData-org.bitcoinj.crypto.DeterministicKey-">getRedeemData</a></span>(<a href="../../../../org/bitcoinj/crypto/DeterministicKey.html" title="class in org.bitcoinj.crypto">DeterministicKey</a>&nbsp;followedKey)</code>
+<div class="block">Get redeem data for a key.</div>
+</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/bitcoinj/wallet/DeterministicKeyChain.html" title="class in org.bitcoinj.wallet">DeterministicKeyChain</a></code></td>
 <td class="colLast"><span class="typeNameLabel">KeyChainFactory.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/KeyChainFactory.html#makeWatchingKeyChain-org.bitcoinj.wallet.Protos.Key-org.bitcoinj.wallet.Protos.Key-org.bitcoinj.crypto.DeterministicKey-boolean-boolean-">makeWatchingKeyChain</a></span>(<a href="../../../../org/bitcoinj/wallet/Protos.Key.html" title="class in org.bitcoinj.wallet">Protos.Key</a>&nbsp;key,
                     <a href="../../../../org/bitcoinj/wallet/Protos.Key.html" title="class in org.bitcoinj.wallet">Protos.Key</a>&nbsp;firstSubKey,
@@ -605,6 +597,14 @@
                     boolean&nbsp;isMarried)</code>
 <div class="block">Make a watching keychain.</div>
 </td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../org/bitcoinj/wallet/DeterministicKeyChain.html" title="class in org.bitcoinj.wallet">DeterministicKeyChain</a></code></td>
+<td class="colLast"><span class="typeNameLabel">DefaultKeyChainFactory.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/DefaultKeyChainFactory.html#makeWatchingKeyChain-org.bitcoinj.wallet.Protos.Key-org.bitcoinj.wallet.Protos.Key-org.bitcoinj.crypto.DeterministicKey-boolean-boolean-">makeWatchingKeyChain</a></span>(<a href="../../../../org/bitcoinj/wallet/Protos.Key.html" title="class in org.bitcoinj.wallet">Protos.Key</a>&nbsp;key,
+                    <a href="../../../../org/bitcoinj/wallet/Protos.Key.html" title="class in org.bitcoinj.wallet">Protos.Key</a>&nbsp;firstSubKey,
+                    <a href="../../../../org/bitcoinj/crypto/DeterministicKey.html" title="class in org.bitcoinj.crypto">DeterministicKey</a>&nbsp;accountKey,
+                    boolean&nbsp;isFollowingKey,
+                    boolean&nbsp;isMarried)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/bitcoinj/crypto/DeterministicKey.html" title="class in org.bitcoinj.crypto">DeterministicKey</a></code></td>
@@ -720,6 +720,6 @@
 <!--   -->
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
-<p class="legalCopy"><small>Copyright &#169; 2017. All rights reserved.</small></p>
+<p class="legalCopy"><small>Copyright &#169; 2018. All rights reserved.</small></p>
 </body>
 </html>

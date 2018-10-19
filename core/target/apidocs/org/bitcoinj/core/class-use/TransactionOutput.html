@@ -157,15 +157,15 @@
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/bitcoinj/core/TransactionOutput.html" title="class in org.bitcoinj.core">TransactionOutput</a></code></td>
-<td class="colLast"><span class="typeNameLabel">TransactionInput.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/core/TransactionInput.html#getConnectedOutput--">getConnectedOutput</a></span>()</code>
-<div class="block">Returns the connected output, assuming the input was connected with
- <a href="../../../../org/bitcoinj/core/TransactionInput.html#connect-org.bitcoinj.core.TransactionOutput-"><code>TransactionInput.connect(TransactionOutput)</code></a> or variants at some point.</div>
+<td class="colLast"><span class="typeNameLabel">TransactionOutPoint.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/core/TransactionOutPoint.html#getConnectedOutput--">getConnectedOutput</a></span>()</code>
+<div class="block">An outpoint is a part of a transaction input that points to the output of another transaction.</div>
 </td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/bitcoinj/core/TransactionOutput.html" title="class in org.bitcoinj.core">TransactionOutput</a></code></td>
-<td class="colLast"><span class="typeNameLabel">TransactionOutPoint.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/core/TransactionOutPoint.html#getConnectedOutput--">getConnectedOutput</a></span>()</code>
-<div class="block">An outpoint is a part of a transaction input that points to the output of another transaction.</div>
+<td class="colLast"><span class="typeNameLabel">TransactionInput.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/core/TransactionInput.html#getConnectedOutput--">getConnectedOutput</a></span>()</code>
+<div class="block">Returns the connected output, assuming the input was connected with
+ <a href="../../../../org/bitcoinj/core/TransactionInput.html#connect-org.bitcoinj.core.TransactionOutput-"><code>TransactionInput.connect(TransactionOutput)</code></a> or variants at some point.</div>
 </td>
 </tr>
 <tr class="rowColor">
@@ -299,11 +299,11 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/bitcoinj/core/TransactionOutput.html" title="class in org.bitcoinj.core">TransactionOutput</a></code></td>
-<td class="colLast"><span class="typeNameLabel">PaymentChannelV1ServerState.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/protocols/channels/PaymentChannelV1ServerState.html#getClientOutput--">getClientOutput</a></span>()</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">PaymentChannelV2ServerState.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/protocols/channels/PaymentChannelV2ServerState.html#getClientOutput--">getClientOutput</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/bitcoinj/core/TransactionOutput.html" title="class in org.bitcoinj.core">TransactionOutput</a></code></td>
-<td class="colLast"><span class="typeNameLabel">PaymentChannelV2ServerState.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/protocols/channels/PaymentChannelV2ServerState.html#getClientOutput--">getClientOutput</a></span>()</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">PaymentChannelV1ServerState.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/protocols/channels/PaymentChannelV1ServerState.html#getClientOutput--">getClientOutput</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>abstract <a href="../../../../org/bitcoinj/core/TransactionOutput.html" title="class in org.bitcoinj.core">TransactionOutput</a></code></td>
@@ -416,18 +416,6 @@
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/bitcoinj/wallet/CoinSelection.html" title="class in org.bitcoinj.wallet">CoinSelection</a></code></td>
-<td class="colLast"><span class="typeNameLabel">CoinSelector.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/CoinSelector.html#select-org.bitcoinj.core.Coin-java.util.List-">select</a></span>(<a href="../../../../org/bitcoinj/core/Coin.html" title="class in org.bitcoinj.core">Coin</a>&nbsp;target,
-      <a href="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/bitcoinj/core/TransactionOutput.html" title="class in org.bitcoinj.core">TransactionOutput</a>&gt;&nbsp;candidates)</code>
-<div class="block">Creates a CoinSelection that tries to meet the target amount of value.</div>
-</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code><a href="../../../../org/bitcoinj/wallet/CoinSelection.html" title="class in org.bitcoinj.wallet">CoinSelection</a></code></td>
-<td class="colLast"><span class="typeNameLabel">DefaultCoinSelector.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/DefaultCoinSelector.html#select-org.bitcoinj.core.Coin-java.util.List-">select</a></span>(<a href="../../../../org/bitcoinj/core/Coin.html" title="class in org.bitcoinj.core">Coin</a>&nbsp;target,
-      <a href="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/bitcoinj/core/TransactionOutput.html" title="class in org.bitcoinj.core">TransactionOutput</a>&gt;&nbsp;candidates)</code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code><a href="../../../../org/bitcoinj/wallet/CoinSelection.html" title="class in org.bitcoinj.wallet">CoinSelection</a></code></td>
 <td class="colLast"><span class="typeNameLabel">KeyTimeCoinSelector.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/KeyTimeCoinSelector.html#select-org.bitcoinj.core.Coin-java.util.List-">select</a></span>(<a href="../../../../org/bitcoinj/core/Coin.html" title="class in org.bitcoinj.core">Coin</a>&nbsp;target,
       <a href="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/bitcoinj/core/TransactionOutput.html" title="class in org.bitcoinj.core">TransactionOutput</a>&gt;&nbsp;candidates)</code>&nbsp;</td>
 </tr>
@@ -435,6 +423,18 @@
 <td class="colFirst"><code><a href="../../../../org/bitcoinj/wallet/CoinSelection.html" title="class in org.bitcoinj.wallet">CoinSelection</a></code></td>
 <td class="colLast"><span class="typeNameLabel">FilteringCoinSelector.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/FilteringCoinSelector.html#select-org.bitcoinj.core.Coin-java.util.List-">select</a></span>(<a href="../../../../org/bitcoinj/core/Coin.html" title="class in org.bitcoinj.core">Coin</a>&nbsp;target,
       <a href="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/bitcoinj/core/TransactionOutput.html" title="class in org.bitcoinj.core">TransactionOutput</a>&gt;&nbsp;candidates)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../org/bitcoinj/wallet/CoinSelection.html" title="class in org.bitcoinj.wallet">CoinSelection</a></code></td>
+<td class="colLast"><span class="typeNameLabel">DefaultCoinSelector.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/DefaultCoinSelector.html#select-org.bitcoinj.core.Coin-java.util.List-">select</a></span>(<a href="../../../../org/bitcoinj/core/Coin.html" title="class in org.bitcoinj.core">Coin</a>&nbsp;target,
+      <a href="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/bitcoinj/core/TransactionOutput.html" title="class in org.bitcoinj.core">TransactionOutput</a>&gt;&nbsp;candidates)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../org/bitcoinj/wallet/CoinSelection.html" title="class in org.bitcoinj.wallet">CoinSelection</a></code></td>
+<td class="colLast"><span class="typeNameLabel">CoinSelector.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/CoinSelector.html#select-org.bitcoinj.core.Coin-java.util.List-">select</a></span>(<a href="../../../../org/bitcoinj/core/Coin.html" title="class in org.bitcoinj.core">Coin</a>&nbsp;target,
+      <a href="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/bitcoinj/core/TransactionOutput.html" title="class in org.bitcoinj.core">TransactionOutput</a>&gt;&nbsp;candidates)</code>
+<div class="block">Creates a CoinSelection that tries to meet the target amount of value.</div>
+</td>
 </tr>
 </tbody>
 </table>
@@ -502,6 +502,6 @@
 <!--   -->
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
-<p class="legalCopy"><small>Copyright &#169; 2017. All rights reserved.</small></p>
+<p class="legalCopy"><small>Copyright &#169; 2018. All rights reserved.</small></p>
 </body>
 </html>

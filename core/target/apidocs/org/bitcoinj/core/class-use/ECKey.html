@@ -536,11 +536,11 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code>protected <a href="../../../../org/bitcoinj/core/ECKey.html" title="class in org.bitcoinj.core">ECKey</a></code></td>
-<td class="colLast"><span class="typeNameLabel">PaymentChannelV1ServerState.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/protocols/channels/PaymentChannelV1ServerState.html#clientKey">clientKey</a></span></code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">PaymentChannelV2ServerState.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/protocols/channels/PaymentChannelV2ServerState.html#clientKey">clientKey</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>protected <a href="../../../../org/bitcoinj/core/ECKey.html" title="class in org.bitcoinj.core">ECKey</a></code></td>
-<td class="colLast"><span class="typeNameLabel">PaymentChannelV2ServerState.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/protocols/channels/PaymentChannelV2ServerState.html#clientKey">clientKey</a></span></code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">PaymentChannelV1ServerState.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/protocols/channels/PaymentChannelV1ServerState.html#clientKey">clientKey</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>protected <a href="../../../../org/bitcoinj/core/ECKey.html" title="class in org.bitcoinj.core">ECKey</a></code></td>
@@ -557,11 +557,11 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code>protected <a href="../../../../org/bitcoinj/core/ECKey.html" title="class in org.bitcoinj.core">ECKey</a></code></td>
-<td class="colLast"><span class="typeNameLabel">PaymentChannelV1ServerState.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/protocols/channels/PaymentChannelV1ServerState.html#getClientKey--">getClientKey</a></span>()</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">PaymentChannelV2ServerState.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/protocols/channels/PaymentChannelV2ServerState.html#getClientKey--">getClientKey</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>protected <a href="../../../../org/bitcoinj/core/ECKey.html" title="class in org.bitcoinj.core">ECKey</a></code></td>
-<td class="colLast"><span class="typeNameLabel">PaymentChannelV2ServerState.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/protocols/channels/PaymentChannelV2ServerState.html#getClientKey--">getClientKey</a></span>()</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">PaymentChannelV1ServerState.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/protocols/channels/PaymentChannelV1ServerState.html#getClientKey--">getClientKey</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>protected abstract <a href="../../../../org/bitcoinj/core/ECKey.html" title="class in org.bitcoinj.core">ECKey</a></code></td>
@@ -793,15 +793,15 @@
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><code>static byte[]</code></td>
-<td class="colLast"><span class="typeNameLabel">Script.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/script/Script.html#createMultiSigOutputScript-int-java.util.List-">createMultiSigOutputScript</a></span>(int&nbsp;threshold,
+<td class="colFirst"><code>static <a href="../../../../org/bitcoinj/script/Script.html" title="class in org.bitcoinj.script">Script</a></code></td>
+<td class="colLast"><span class="typeNameLabel">ScriptBuilder.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/script/ScriptBuilder.html#createMultiSigOutputScript-int-java.util.List-">createMultiSigOutputScript</a></span>(int&nbsp;threshold,
                           <a href="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/bitcoinj/core/ECKey.html" title="class in org.bitcoinj.core">ECKey</a>&gt;&nbsp;pubkeys)</code>
 <div class="block">Creates a program that requires at least N of the given keys to sign, using OP_CHECKMULTISIG.</div>
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>static <a href="../../../../org/bitcoinj/script/Script.html" title="class in org.bitcoinj.script">Script</a></code></td>
-<td class="colLast"><span class="typeNameLabel">ScriptBuilder.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/script/ScriptBuilder.html#createMultiSigOutputScript-int-java.util.List-">createMultiSigOutputScript</a></span>(int&nbsp;threshold,
+<td class="colFirst"><code>static byte[]</code></td>
+<td class="colLast"><span class="typeNameLabel">Script.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/script/Script.html#createMultiSigOutputScript-int-java.util.List-">createMultiSigOutputScript</a></span>(int&nbsp;threshold,
                           <a href="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/bitcoinj/core/ECKey.html" title="class in org.bitcoinj.core">ECKey</a>&gt;&nbsp;pubkeys)</code>
 <div class="block">Creates a program that requires at least N of the given keys to sign, using OP_CHECKMULTISIG.</div>
 </td>
@@ -879,7 +879,9 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/bitcoinj/core/ECKey.html" title="class in org.bitcoinj.core">ECKey</a></code></td>
-<td class="colLast"><span class="typeNameLabel">DecryptingKeyBag.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/DecryptingKeyBag.html#findKeyFromPubHash-byte:A-">findKeyFromPubHash</a></span>(byte[]&nbsp;pubkeyHash)</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">Wallet.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/Wallet.html#findKeyFromPubHash-byte:A-">findKeyFromPubHash</a></span>(byte[]&nbsp;pubkeyHash)</code>
+<div class="block">Locates a keypair from the basicKeyChain given the hash of the public key.</div>
+</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/bitcoinj/core/ECKey.html" title="class in org.bitcoinj.core">ECKey</a></code></td>
@@ -893,17 +895,17 @@
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/bitcoinj/core/ECKey.html" title="class in org.bitcoinj.core">ECKey</a></code></td>
-<td class="colLast"><span class="typeNameLabel">BasicKeyChain.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/BasicKeyChain.html#findKeyFromPubHash-byte:A-">findKeyFromPubHash</a></span>(byte[]&nbsp;pubkeyHash)</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">DecryptingKeyBag.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/DecryptingKeyBag.html#findKeyFromPubHash-byte:A-">findKeyFromPubHash</a></span>(byte[]&nbsp;pubkeyHash)</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/bitcoinj/core/ECKey.html" title="class in org.bitcoinj.core">ECKey</a></code></td>
-<td class="colLast"><span class="typeNameLabel">Wallet.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/Wallet.html#findKeyFromPubHash-byte:A-">findKeyFromPubHash</a></span>(byte[]&nbsp;pubkeyHash)</code>
-<div class="block">Locates a keypair from the basicKeyChain given the hash of the public key.</div>
-</td>
+<td class="colLast"><span class="typeNameLabel">BasicKeyChain.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/BasicKeyChain.html#findKeyFromPubHash-byte:A-">findKeyFromPubHash</a></span>(byte[]&nbsp;pubkeyHash)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/bitcoinj/core/ECKey.html" title="class in org.bitcoinj.core">ECKey</a></code></td>
-<td class="colLast"><span class="typeNameLabel">DecryptingKeyBag.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/DecryptingKeyBag.html#findKeyFromPubKey-byte:A-">findKeyFromPubKey</a></span>(byte[]&nbsp;pubkey)</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">Wallet.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/Wallet.html#findKeyFromPubKey-byte:A-">findKeyFromPubKey</a></span>(byte[]&nbsp;pubkey)</code>
+<div class="block">Locates a keypair from the basicKeyChain given the raw public key bytes.</div>
+</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/bitcoinj/core/ECKey.html" title="class in org.bitcoinj.core">ECKey</a></code></td>
@@ -917,13 +919,11 @@
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/bitcoinj/core/ECKey.html" title="class in org.bitcoinj.core">ECKey</a></code></td>
-<td class="colLast"><span class="typeNameLabel">BasicKeyChain.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/BasicKeyChain.html#findKeyFromPubKey-byte:A-">findKeyFromPubKey</a></span>(byte[]&nbsp;pubkey)</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">DecryptingKeyBag.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/DecryptingKeyBag.html#findKeyFromPubKey-byte:A-">findKeyFromPubKey</a></span>(byte[]&nbsp;pubkey)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/bitcoinj/core/ECKey.html" title="class in org.bitcoinj.core">ECKey</a></code></td>
-<td class="colLast"><span class="typeNameLabel">Wallet.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/Wallet.html#findKeyFromPubKey-byte:A-">findKeyFromPubKey</a></span>(byte[]&nbsp;pubkey)</code>
-<div class="block">Locates a keypair from the basicKeyChain given the raw public key bytes.</div>
-</td>
+<td class="colLast"><span class="typeNameLabel">BasicKeyChain.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/BasicKeyChain.html#findKeyFromPubKey-byte:A-">findKeyFromPubKey</a></span>(byte[]&nbsp;pubkey)</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/bitcoinj/core/ECKey.html" title="class in org.bitcoinj.core">ECKey</a></code></td>
@@ -964,27 +964,27 @@
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/bitcoinj/core/ECKey.html" title="class in org.bitcoinj.core">ECKey</a>&gt;</code></td>
-<td class="colLast"><span class="typeNameLabel">KeyChainGroup.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/KeyChainGroup.html#getImportedKeys--">getImportedKeys</a></span>()</code>
+<td class="colLast"><span class="typeNameLabel">Wallet.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/Wallet.html#getImportedKeys--">getImportedKeys</a></span>()</code>
 <div class="block">Returns a list of the non-deterministic keys that have been imported into the wallet, or the empty list if none.</div>
 </td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/bitcoinj/core/ECKey.html" title="class in org.bitcoinj.core">ECKey</a>&gt;</code></td>
-<td class="colLast"><span class="typeNameLabel">Wallet.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/Wallet.html#getImportedKeys--">getImportedKeys</a></span>()</code>
+<td class="colLast"><span class="typeNameLabel">KeyChainGroup.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/KeyChainGroup.html#getImportedKeys--">getImportedKeys</a></span>()</code>
 <div class="block">Returns a list of the non-deterministic keys that have been imported into the wallet, or the empty list if none.</div>
 </td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/bitcoinj/core/ECKey.html" title="class in org.bitcoinj.core">ECKey</a>&gt;</code></td>
-<td class="colLast"><span class="typeNameLabel">DeterministicKeyChain.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/DeterministicKeyChain.html#getIssuedReceiveKeys--">getIssuedReceiveKeys</a></span>()</code>
-<div class="block">Returns only the external keys that have been issued by this chain, lookahead not included.</div>
+<td class="colLast"><span class="typeNameLabel">Wallet.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/Wallet.html#getIssuedReceiveKeys--">getIssuedReceiveKeys</a></span>()</code>
+<div class="block">Returns only the keys that have been issued by <a href="../../../../org/bitcoinj/wallet/Wallet.html#freshReceiveKey--"><code>Wallet.freshReceiveKey()</code></a>, <a href="../../../../org/bitcoinj/wallet/Wallet.html#freshReceiveAddress--"><code>Wallet.freshReceiveAddress()</code></a>,
+ <a href="../../../../org/bitcoinj/wallet/Wallet.html#currentReceiveKey--"><code>Wallet.currentReceiveKey()</code></a> or <a href="../../../../org/bitcoinj/wallet/Wallet.html#currentReceiveAddress--"><code>Wallet.currentReceiveAddress()</code></a>.</div>
 </td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/bitcoinj/core/ECKey.html" title="class in org.bitcoinj.core">ECKey</a>&gt;</code></td>
-<td class="colLast"><span class="typeNameLabel">Wallet.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/Wallet.html#getIssuedReceiveKeys--">getIssuedReceiveKeys</a></span>()</code>
-<div class="block">Returns only the keys that have been issued by <a href="../../../../org/bitcoinj/wallet/Wallet.html#freshReceiveKey--"><code>Wallet.freshReceiveKey()</code></a>, <a href="../../../../org/bitcoinj/wallet/Wallet.html#freshReceiveAddress--"><code>Wallet.freshReceiveAddress()</code></a>,
- <a href="../../../../org/bitcoinj/wallet/Wallet.html#currentReceiveKey--"><code>Wallet.currentReceiveKey()</code></a> or <a href="../../../../org/bitcoinj/wallet/Wallet.html#currentReceiveAddress--"><code>Wallet.currentReceiveAddress()</code></a>.</div>
+<td class="colLast"><span class="typeNameLabel">DeterministicKeyChain.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/DeterministicKeyChain.html#getIssuedReceiveKeys--">getIssuedReceiveKeys</a></span>()</code>
+<div class="block">Returns only the external keys that have been issued by this chain, lookahead not included.</div>
 </td>
 </tr>
 <tr class="rowColor">
@@ -1022,11 +1022,13 @@
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><span class="typeNameLabel">KeyChainGroup.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/KeyChainGroup.html#hasKey-org.bitcoinj.core.ECKey-">hasKey</a></span>(<a href="../../../../org/bitcoinj/core/ECKey.html" title="class in org.bitcoinj.core">ECKey</a>&nbsp;key)</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">Wallet.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/Wallet.html#hasKey-org.bitcoinj.core.ECKey-">hasKey</a></span>(<a href="../../../../org/bitcoinj/core/ECKey.html" title="class in org.bitcoinj.core">ECKey</a>&nbsp;key)</code>
+<div class="block">Returns true if the given key is in the wallet, false otherwise.</div>
+</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><span class="typeNameLabel">DeterministicKeyChain.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/DeterministicKeyChain.html#hasKey-org.bitcoinj.core.ECKey-">hasKey</a></span>(<a href="../../../../org/bitcoinj/core/ECKey.html" title="class in org.bitcoinj.core">ECKey</a>&nbsp;key)</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">KeyChainGroup.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/KeyChainGroup.html#hasKey-org.bitcoinj.core.ECKey-">hasKey</a></span>(<a href="../../../../org/bitcoinj/core/ECKey.html" title="class in org.bitcoinj.core">ECKey</a>&nbsp;key)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
@@ -1036,24 +1038,22 @@
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><span class="typeNameLabel">BasicKeyChain.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/BasicKeyChain.html#hasKey-org.bitcoinj.core.ECKey-">hasKey</a></span>(<a href="../../../../org/bitcoinj/core/ECKey.html" title="class in org.bitcoinj.core">ECKey</a>&nbsp;key)</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">DeterministicKeyChain.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/DeterministicKeyChain.html#hasKey-org.bitcoinj.core.ECKey-">hasKey</a></span>(<a href="../../../../org/bitcoinj/core/ECKey.html" title="class in org.bitcoinj.core">ECKey</a>&nbsp;key)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><span class="typeNameLabel">Wallet.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/Wallet.html#hasKey-org.bitcoinj.core.ECKey-">hasKey</a></span>(<a href="../../../../org/bitcoinj/core/ECKey.html" title="class in org.bitcoinj.core">ECKey</a>&nbsp;key)</code>
-<div class="block">Returns true if the given key is in the wallet, false otherwise.</div>
-</td>
+<td class="colLast"><span class="typeNameLabel">BasicKeyChain.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/BasicKeyChain.html#hasKey-org.bitcoinj.core.ECKey-">hasKey</a></span>(<a href="../../../../org/bitcoinj/core/ECKey.html" title="class in org.bitcoinj.core">ECKey</a>&nbsp;key)</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><span class="typeNameLabel">BasicKeyChain.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/BasicKeyChain.html#importKey-org.bitcoinj.core.ECKey-">importKey</a></span>(<a href="../../../../org/bitcoinj/core/ECKey.html" title="class in org.bitcoinj.core">ECKey</a>&nbsp;key)</code>
-<div class="block">Imports a key to the key chain.</div>
-</td>
-</tr>
-<tr class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><span class="typeNameLabel">Wallet.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/Wallet.html#importKey-org.bitcoinj.core.ECKey-">importKey</a></span>(<a href="../../../../org/bitcoinj/core/ECKey.html" title="class in org.bitcoinj.core">ECKey</a>&nbsp;key)</code>
 <div class="block">Imports the given ECKey to the wallet.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="typeNameLabel">BasicKeyChain.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/BasicKeyChain.html#importKey-org.bitcoinj.core.ECKey-">importKey</a></span>(<a href="../../../../org/bitcoinj/core/ECKey.html" title="class in org.bitcoinj.core">ECKey</a>&nbsp;key)</code>
+<div class="block">Imports a key to the key chain.</div>
 </td>
 </tr>
 <tr class="altColor">
@@ -1087,14 +1087,14 @@
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><span class="typeNameLabel">BasicKeyChain.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/BasicKeyChain.html#removeKey-org.bitcoinj.core.ECKey-">removeKey</a></span>(<a href="../../../../org/bitcoinj/core/ECKey.html" title="class in org.bitcoinj.core">ECKey</a>&nbsp;key)</code>
-<div class="block">Removes the given key from the keychain.</div>
+<td class="colLast"><span class="typeNameLabel">Wallet.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/Wallet.html#removeKey-org.bitcoinj.core.ECKey-">removeKey</a></span>(<a href="../../../../org/bitcoinj/core/ECKey.html" title="class in org.bitcoinj.core">ECKey</a>&nbsp;key)</code>
+<div class="block">Removes the given key from the basicKeyChain.</div>
 </td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><span class="typeNameLabel">Wallet.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/Wallet.html#removeKey-org.bitcoinj.core.ECKey-">removeKey</a></span>(<a href="../../../../org/bitcoinj/core/ECKey.html" title="class in org.bitcoinj.core">ECKey</a>&nbsp;key)</code>
-<div class="block">Removes the given key from the basicKeyChain.</div>
+<td class="colLast"><span class="typeNameLabel">BasicKeyChain.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/BasicKeyChain.html#removeKey-org.bitcoinj.core.ECKey-">removeKey</a></span>(<a href="../../../../org/bitcoinj/core/ECKey.html" title="class in org.bitcoinj.core">ECKey</a>&nbsp;key)</code>
+<div class="block">Removes the given key from the keychain.</div>
 </td>
 </tr>
 <tr class="rowColor">
@@ -1157,14 +1157,14 @@
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>int</code></td>
-<td class="colLast"><span class="typeNameLabel">KeyChainGroup.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/KeyChainGroup.html#importKeys-java.util.List-">importKeys</a></span>(<a href="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/bitcoinj/core/ECKey.html" title="class in org.bitcoinj.core">ECKey</a>&gt;&nbsp;keys)</code>
-<div class="block">Imports the given keys into the basic chain, creating it if necessary.</div>
+<td class="colLast"><span class="typeNameLabel">Wallet.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/Wallet.html#importKeys-java.util.List-">importKeys</a></span>(<a href="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/bitcoinj/core/ECKey.html" title="class in org.bitcoinj.core">ECKey</a>&gt;&nbsp;keys)</code>
+<div class="block">Imports the given keys to the wallet.</div>
 </td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>int</code></td>
-<td class="colLast"><span class="typeNameLabel">Wallet.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/Wallet.html#importKeys-java.util.List-">importKeys</a></span>(<a href="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/bitcoinj/core/ECKey.html" title="class in org.bitcoinj.core">ECKey</a>&gt;&nbsp;keys)</code>
-<div class="block">Imports the given keys to the wallet.</div>
+<td class="colLast"><span class="typeNameLabel">KeyChainGroup.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/KeyChainGroup.html#importKeys-java.util.List-">importKeys</a></span>(<a href="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/bitcoinj/core/ECKey.html" title="class in org.bitcoinj.core">ECKey</a>&gt;&nbsp;keys)</code>
+<div class="block">Imports the given keys into the basic chain, creating it if necessary.</div>
 </td>
 </tr>
 <tr class="rowColor">
@@ -1176,16 +1176,16 @@
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>int</code></td>
-<td class="colLast"><span class="typeNameLabel">KeyChainGroup.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/KeyChainGroup.html#importKeysAndEncrypt-java.util.List-org.spongycastle.crypto.params.KeyParameter-">importKeysAndEncrypt</a></span>(<a href="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/bitcoinj/core/ECKey.html" title="class in org.bitcoinj.core">ECKey</a>&gt;&nbsp;keys,
+<td class="colLast"><span class="typeNameLabel">Wallet.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/Wallet.html#importKeysAndEncrypt-java.util.List-org.spongycastle.crypto.params.KeyParameter-">importKeysAndEncrypt</a></span>(<a href="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/bitcoinj/core/ECKey.html" title="class in org.bitcoinj.core">ECKey</a>&gt;&nbsp;keys,
                     org.spongycastle.crypto.params.KeyParameter&nbsp;aesKey)</code>
-<div class="block">Imports the given unencrypted keys into the basic chain, encrypting them along the way with the given key.</div>
+<div class="block">Takes a list of keys and an AES key, then encrypts and imports them in one step using the current keycrypter.</div>
 </td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>int</code></td>
-<td class="colLast"><span class="typeNameLabel">Wallet.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/Wallet.html#importKeysAndEncrypt-java.util.List-org.spongycastle.crypto.params.KeyParameter-">importKeysAndEncrypt</a></span>(<a href="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/bitcoinj/core/ECKey.html" title="class in org.bitcoinj.core">ECKey</a>&gt;&nbsp;keys,
+<td class="colLast"><span class="typeNameLabel">KeyChainGroup.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/KeyChainGroup.html#importKeysAndEncrypt-java.util.List-org.spongycastle.crypto.params.KeyParameter-">importKeysAndEncrypt</a></span>(<a href="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/bitcoinj/core/ECKey.html" title="class in org.bitcoinj.core">ECKey</a>&gt;&nbsp;keys,
                     org.spongycastle.crypto.params.KeyParameter&nbsp;aesKey)</code>
-<div class="block">Takes a list of keys and an AES key, then encrypts and imports them in one step using the current keycrypter.</div>
+<div class="block">Imports the given unencrypted keys into the basic chain, encrypting them along the way with the given key.</div>
 </td>
 </tr>
 <tr class="altColor">
@@ -1209,16 +1209,16 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><span class="typeNameLabel">AbstractWalletEventListener.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/listeners/AbstractWalletEventListener.html#onKeysAdded-java.util.List-">onKeysAdded</a></span>(<a href="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/bitcoinj/core/ECKey.html" title="class in org.bitcoinj.core">ECKey</a>&gt;&nbsp;keys)</code>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
-&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>void</code></td>
 <td class="colLast"><span class="typeNameLabel">KeyChainEventListener.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/listeners/KeyChainEventListener.html#onKeysAdded-java.util.List-">onKeysAdded</a></span>(<a href="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/bitcoinj/core/ECKey.html" title="class in org.bitcoinj.core">ECKey</a>&gt;&nbsp;keys)</code>
 <div class="block">Called whenever a new key is added to the key chain, whether that be via an explicit addition or due to some
  other automatic derivation.</div>
 </td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="typeNameLabel">AbstractWalletEventListener.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/listeners/AbstractWalletEventListener.html#onKeysAdded-java.util.List-">onKeysAdded</a></span>(<a href="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/bitcoinj/core/ECKey.html" title="class in org.bitcoinj.core">ECKey</a>&gt;&nbsp;keys)</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
+&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>void</code></td>
@@ -1278,6 +1278,6 @@
 <!--   -->
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
-<p class="legalCopy"><small>Copyright &#169; 2017. All rights reserved.</small></p>
+<p class="legalCopy"><small>Copyright &#169; 2018. All rights reserved.</small></p>
 </body>
 </html>
