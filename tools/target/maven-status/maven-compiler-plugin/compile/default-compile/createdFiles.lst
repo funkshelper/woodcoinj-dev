@@ -2,8 +2,8 @@ org/bitcoinj/tools/TestFeeLevel.class
 org/bitcoinj/tools/WalletTool$1.class
 org/bitcoinj/tools/WalletTool$Condition.class
 org/bitcoinj/tools/WalletTool$3.class
-org/bitcoinj/tools/WalletTool$OutputSpec.class
 org/bitcoinj/tools/WalletTool.class
+org/bitcoinj/tools/WalletTool$OutputSpec.class
 org/bitcoinj/tools/WalletTool$WaitForEnum.class
 org/bitcoinj/tools/BuildCheckpoints$1.class
 org/bitcoinj/tools/TestFeeLevel$1.class
@@ -13,8 +13,8 @@ org/bitcoinj/tools/WalletTool$ActionEnum.class
 org/bitcoinj/tools/WalletTool$Condition$Type.class
 org/bitcoinj/tools/BuildCheckpoints.class
 org/bitcoinj/tools/WalletTool$WalletEventListener.class
-org/bitcoinj/tools/WalletTool$ValidationMode.class
 org/bitcoinj/tools/WalletTool$4.class
+org/bitcoinj/tools/WalletTool$ValidationMode.class
 org/bitcoinj/tools/WatchMempool$1.class
 org/bitcoinj/tools/WatchMempool.class
 org/bitcoinj/tools/BlockImporter.class

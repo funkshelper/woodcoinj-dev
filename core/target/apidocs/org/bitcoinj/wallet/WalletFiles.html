@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -177,24 +177,28 @@ extends <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code><a href="../../../org/bitcoinj/wallet/Wallet.html" title="class in org.bitcoinj.wallet">Wallet</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bitcoinj/wallet/WalletFiles.html#getWallet--">getWallet</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bitcoinj/wallet/WalletFiles.html#saveLater--">saveLater</a></span>()</code>
 <div class="block">Queues up a save in the background.</div>
 </td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bitcoinj/wallet/WalletFiles.html#saveNow--">saveNow</a></span>()</code>
 <div class="block">Actually write the wallet file to disk, using an atomic rename when possible.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bitcoinj/wallet/WalletFiles.html#setListener-org.bitcoinj.wallet.WalletFiles.Listener-">setListener</a></span>(<a href="../../../org/bitcoinj/wallet/WalletFiles.Listener.html" title="interface in org.bitcoinj.wallet">WalletFiles.Listener</a>&nbsp;listener)</code>
 <div class="block">The given listener will be called on the autosave thread before and after the wallet is saved to disk.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bitcoinj/wallet/WalletFiles.html#shutdownAndWait--">shutdownAndWait</a></span>()</code>
 <div class="block">Shut down auto-saving.</div>
@@ -245,6 +249,15 @@ extends <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a name="getWallet--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getWallet</h4>
+<pre>public&nbsp;<a href="../../../org/bitcoinj/wallet/Wallet.html" title="class in org.bitcoinj.wallet">Wallet</a>&nbsp;getWallet()</pre>
+</li>
+</ul>
 <a name="setListener-org.bitcoinj.wallet.WalletFiles.Listener-">
 <!--   -->
 </a>
@@ -360,6 +373,6 @@ extends <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?
 <!--   -->
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
-<p class="legalCopy"><small>Copyright &#169; 2017. All rights reserved.</small></p>
+<p class="legalCopy"><small>Copyright &#169; 2022. All rights reserved.</small></p>
 </body>
 </html>

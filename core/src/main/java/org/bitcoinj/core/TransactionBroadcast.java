@@ -49,7 +49,7 @@ public class TransactionBroadcast {
     /** Used for shuffling the peers before broadcast: unit tests can replace this to make themselves deterministic. */
     @VisibleForTesting
     public static Random random = new Random();
-    
+
     // Tracks which nodes sent us a reject message about this broadcast, if any. Useful for debugging.
     private Map<Peer, RejectMessage> rejects = Collections.synchronizedMap(new HashMap<Peer, RejectMessage>());
 
@@ -142,13 +142,16 @@ public class TransactionBroadcast {
             // to skip the inv here - we wouldn't send invs anyway.
             int numConnected = peers.size();
             int numToBroadcastTo = (int) Math.max(1, Math.round(Math.ceil(peers.size() / 2.0)));
+            System.out.println("numToBroadcastTo rob" + numToBroadcastTo);
             numWaitingFor = (int) Math.ceil((peers.size() - numToBroadcastTo) / 2.0);
+            System.out.println("numWaitingFor rob" + numWaitingFor);
             Collections.shuffle(peers, random);
             peers = peers.subList(0, numToBroadcastTo);
             log.info("broadcastTransaction: We have {} peers, adding {} to the memory pool", numConnected, tx.getHashAsString());
             log.info("Sending to {} peers, will wait for {}, sending to: {}", numToBroadcastTo, numWaitingFor, Joiner.on(",").join(peers));
             for (Peer peer : peers) {
                 try {
+                    System.out.println("have sended to peer rob");
                     peer.sendMessage(tx);
                     // We don't record the peer as having seen the tx in the memory pool because we want to track only
                     // how many peers announced to us.

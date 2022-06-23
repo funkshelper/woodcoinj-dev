@@ -35,9 +35,9 @@ public class MainNetParams extends AbstractBitcoinNetParams {
     public MainNetParams() {
         super();
 
-        genesisBlock.setDifficultyTarget(0x1e0ffff0L);  // this is ok -- fh
+        //genesisBlock.setDifficultyTarget(0x1e0ffff0L);  // this is ok -- fh
         targetTimespan = TARGET_TIMESPAN; // fast diff. adjust in woodcoin, 30 blocks
-        interval = INTERVAL;  // -- changed fh 
+        interval = INTERVAL;  // -- changed fh
         maxTarget = Utils.decodeCompactBits(0x1e0fffffL);
         addressHeader = 73;  // was 48, now 73 --- fh
         dumpedPrivateKeyHeader = 128 + addressHeader;
@@ -56,16 +56,17 @@ public class MainNetParams extends AbstractBitcoinNetParams {
         genesisBlock.setTime(1413817324L); // 1413817324  was 1317972665L -- fh
         genesisBlock.setNonce(1591189L); // 1591189  was 2084524493L
         id = ID_MAINNET;
-        subsidyDecreaseBlockCount = 210000;  // lets check this - what do we do with this? 
+        subsidyDecreaseBlockCount = 210000;  // lets check this - what do we do with this?
         spendableCoinbaseDepth = 100; // same with this..
-        String genesisHash = "30758383eae55ae5c7752b73388c1c85bdfbe930ad25ad877252841ed1e734a4";
-	System.out.println("Checking genesis hash in mainnetparams");
+        String genesisHash = genesisBlock.getHashAsString();
+	       System.out.println("Checking genesis hash in mainnetparams");
+         System.out.println("genesis hash " + genesisHash);
         checkState(genesisHash.equals("30758383eae55ae5c7752b73388c1c85bdfbe930ad25ad877252841ed1e734a4"), genesisHash);
 
        // checkpoints.put(339143, Sha256Hash.wrap("17f1ef1b7ec9f9b9ae9f4a9edd69a82c578133d3471feadf0b48c8c2819ac048"));
         dnsSeeds = new String[] {
-                "dnsseed.woodcoin.org", 
-		"dnsseed.woodcoin.sking.io",       // 
+                "dnsseed.stuffseed.org",
+                "dnsseed.seedfunk.org"
         };
         httpSeeds = new HttpDiscovery.Details[] {
                 // Andreas Schildbach
@@ -77,8 +78,8 @@ public class MainNetParams extends AbstractBitcoinNetParams {
         };
 
         addrSeeds = new int[] {
-              0xc7e7d7fd, 0x2d37843d, 0x50565541, 0x253b180f, 0x68ec6078, //  0xb5a4b052, 0x21f062d1, 0x72ab89b2, 0x74a45318, 0x8312e6bc, 0xb916965f, 0x8aa7c858, 0xfe7effad,
-        };
+               0xc7e7d7fd, 0x2d37843d, 0x50565541, 0x253b180f, 0x68ec6078, //  0xb5a4b052, 0x21f062d1, 0x72ab89b2, 0x74a45318, 0x8312e6bc, 0xb916965f, 0x8aa7c858, 0xfe7effad,
+         };
     }
 
     private static MainNetParams instance;

@@ -218,14 +218,14 @@
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/bitcoinj/core/Sha256Hash.html" title="class in org.bitcoinj.core">Sha256Hash</a></code></td>
-<td class="colLast"><span class="typeNameLabel">FilteredBlock.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/core/FilteredBlock.html#getHash--">getHash</a></span>()</code>
-<div class="block">Gets the hash of the block represented in this Filtered Block</div>
+<td class="colLast"><span class="typeNameLabel">TransactionOutPoint.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/core/TransactionOutPoint.html#getHash--">getHash</a></span>()</code>
+<div class="block">Returns the hash of the transaction this outpoint references/spends/is connected to.</div>
 </td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/bitcoinj/core/Sha256Hash.html" title="class in org.bitcoinj.core">Sha256Hash</a></code></td>
-<td class="colLast"><span class="typeNameLabel">Transaction.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/core/Transaction.html#getHash--">getHash</a></span>()</code>
-<div class="block">Returns the transaction hash as you see them in the block explorer.</div>
+<td class="colLast"><span class="typeNameLabel">UTXO.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/core/UTXO.html#getHash--">getHash</a></span>()</code>
+<div class="block">The hash of the transaction which holds this output.</div>
 </td>
 </tr>
 <tr class="rowColor">
@@ -236,13 +236,14 @@
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/bitcoinj/core/Sha256Hash.html" title="class in org.bitcoinj.core">Sha256Hash</a></code></td>
-<td class="colLast"><span class="typeNameLabel">PrunedException.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/core/PrunedException.html#getHash--">getHash</a></span>()</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">Block.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/core/Block.html#getHash--">getHash</a></span>()</code>
+<div class="block">Returns the hash of the block (which for a valid, solved block should be
+ below the target).</div>
+</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/bitcoinj/core/Sha256Hash.html" title="class in org.bitcoinj.core">Sha256Hash</a></code></td>
-<td class="colLast"><span class="typeNameLabel">UTXO.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/core/UTXO.html#getHash--">getHash</a></span>()</code>
-<div class="block">The hash of the transaction which holds this output.</div>
-</td>
+<td class="colLast"><span class="typeNameLabel">PrunedException.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/core/PrunedException.html#getHash--">getHash</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/bitcoinj/core/Sha256Hash.html" title="class in org.bitcoinj.core">Sha256Hash</a></code></td>
@@ -252,15 +253,14 @@
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/bitcoinj/core/Sha256Hash.html" title="class in org.bitcoinj.core">Sha256Hash</a></code></td>
-<td class="colLast"><span class="typeNameLabel">Block.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/core/Block.html#getHash--">getHash</a></span>()</code>
-<div class="block">Returns the hash of the block (which for a valid, solved block should be
- below the target).</div>
+<td class="colLast"><span class="typeNameLabel">FilteredBlock.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/core/FilteredBlock.html#getHash--">getHash</a></span>()</code>
+<div class="block">Gets the hash of the block represented in this Filtered Block</div>
 </td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/bitcoinj/core/Sha256Hash.html" title="class in org.bitcoinj.core">Sha256Hash</a></code></td>
-<td class="colLast"><span class="typeNameLabel">TransactionOutPoint.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/core/TransactionOutPoint.html#getHash--">getHash</a></span>()</code>
-<div class="block">Returns the hash of the transaction this outpoint references/spends/is connected to.</div>
+<td class="colLast"><span class="typeNameLabel">Transaction.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/core/Transaction.html#getHash--">getHash</a></span>()</code>
+<div class="block">Returns the transaction hash as you see them in the block explorer.</div>
 </td>
 </tr>
 <tr class="rowColor">
@@ -495,19 +495,19 @@
 </td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../../../org/bitcoinj/core/StoredBlock.html" title="class in org.bitcoinj.core">StoredBlock</a></code></td>
-<td class="colLast"><span class="typeNameLabel">FullPrunedBlockChain.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/core/FullPrunedBlockChain.html#getStoredBlockInCurrentScope-org.bitcoinj.core.Sha256Hash-">getStoredBlockInCurrentScope</a></span>(<a href="../../../../org/bitcoinj/core/Sha256Hash.html" title="class in org.bitcoinj.core">Sha256Hash</a>&nbsp;hash)</code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
 <td class="colFirst"><code>protected abstract <a href="../../../../org/bitcoinj/core/StoredBlock.html" title="class in org.bitcoinj.core">StoredBlock</a></code></td>
 <td class="colLast"><span class="typeNameLabel">AbstractBlockChain.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/core/AbstractBlockChain.html#getStoredBlockInCurrentScope-org.bitcoinj.core.Sha256Hash-">getStoredBlockInCurrentScope</a></span>(<a href="../../../../org/bitcoinj/core/Sha256Hash.html" title="class in org.bitcoinj.core">Sha256Hash</a>&nbsp;hash)</code>
 <div class="block">For a standard BlockChain, this should return blockStore.get(hash),
  for a FullPrunedBlockChain blockStore.getOnceUndoableStoredBlock(hash)</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>protected <a href="../../../../org/bitcoinj/core/StoredBlock.html" title="class in org.bitcoinj.core">StoredBlock</a></code></td>
 <td class="colLast"><span class="typeNameLabel">BlockChain.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/core/BlockChain.html#getStoredBlockInCurrentScope-org.bitcoinj.core.Sha256Hash-">getStoredBlockInCurrentScope</a></span>(<a href="../../../../org/bitcoinj/core/Sha256Hash.html" title="class in org.bitcoinj.core">Sha256Hash</a>&nbsp;hash)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="../../../../org/bitcoinj/core/StoredBlock.html" title="class in org.bitcoinj.core">StoredBlock</a></code></td>
+<td class="colLast"><span class="typeNameLabel">FullPrunedBlockChain.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/core/FullPrunedBlockChain.html#getStoredBlockInCurrentScope-org.bitcoinj.core.Sha256Hash-">getStoredBlockInCurrentScope</a></span>(<a href="../../../../org/bitcoinj/core/Sha256Hash.html" title="class in org.bitcoinj.core">Sha256Hash</a>&nbsp;hash)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
@@ -836,15 +836,15 @@
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><span class="typeNameLabel">PaymentChannelServer.ServerConnection.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/protocols/channels/PaymentChannelServer.ServerConnection.html#channelOpen-org.bitcoinj.core.Sha256Hash-">channelOpen</a></span>(<a href="../../../../org/bitcoinj/core/Sha256Hash.html" title="class in org.bitcoinj.core">Sha256Hash</a>&nbsp;contractHash)</code>
-<div class="block">Triggered when the channel is opened and payments can begin</div>
-</td>
-</tr>
-<tr class="rowColor">
 <td class="colFirst"><code>abstract void</code></td>
 <td class="colLast"><span class="typeNameLabel">ServerConnectionEventHandler.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/protocols/channels/ServerConnectionEventHandler.html#channelOpen-org.bitcoinj.core.Sha256Hash-">channelOpen</a></span>(<a href="../../../../org/bitcoinj/core/Sha256Hash.html" title="class in org.bitcoinj.core">Sha256Hash</a>&nbsp;channelId)</code>
 <div class="block">Triggered when the channel is opened and application messages/payments can begin</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="typeNameLabel">PaymentChannelServer.ServerConnection.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/protocols/channels/PaymentChannelServer.ServerConnection.html#channelOpen-org.bitcoinj.core.Sha256Hash-">channelOpen</a></span>(<a href="../../../../org/bitcoinj/core/Sha256Hash.html" title="class in org.bitcoinj.core">Sha256Hash</a>&nbsp;contractHash)</code>
+<div class="block">Triggered when the channel is opened and payments can begin</div>
 </td>
 </tr>
 <tr class="altColor">
@@ -986,19 +986,19 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code>protected <a href="../../../../org/bitcoinj/core/Sha256Hash.html" title="class in org.bitcoinj.core">Sha256Hash</a></code></td>
-<td class="colLast"><span class="typeNameLabel">DatabaseFullPrunedBlockStore.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/store/DatabaseFullPrunedBlockStore.html#chainHeadHash">chainHeadHash</a></span></code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">LevelDBFullPrunedBlockStore.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/store/LevelDBFullPrunedBlockStore.html#chainHeadHash">chainHeadHash</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>protected <a href="../../../../org/bitcoinj/core/Sha256Hash.html" title="class in org.bitcoinj.core">Sha256Hash</a></code></td>
-<td class="colLast"><span class="typeNameLabel">LevelDBFullPrunedBlockStore.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/store/LevelDBFullPrunedBlockStore.html#chainHeadHash">chainHeadHash</a></span></code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">DatabaseFullPrunedBlockStore.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/store/DatabaseFullPrunedBlockStore.html#chainHeadHash">chainHeadHash</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>protected <a href="../../../../org/bitcoinj/core/Sha256Hash.html" title="class in org.bitcoinj.core">Sha256Hash</a></code></td>
-<td class="colLast"><span class="typeNameLabel">DatabaseFullPrunedBlockStore.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/store/DatabaseFullPrunedBlockStore.html#verifiedChainHeadHash">verifiedChainHeadHash</a></span></code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">LevelDBFullPrunedBlockStore.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/store/LevelDBFullPrunedBlockStore.html#verifiedChainHeadHash">verifiedChainHeadHash</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>protected <a href="../../../../org/bitcoinj/core/Sha256Hash.html" title="class in org.bitcoinj.core">Sha256Hash</a></code></td>
-<td class="colLast"><span class="typeNameLabel">LevelDBFullPrunedBlockStore.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/store/LevelDBFullPrunedBlockStore.html#verifiedChainHeadHash">verifiedChainHeadHash</a></span></code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">DatabaseFullPrunedBlockStore.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/store/DatabaseFullPrunedBlockStore.html#verifiedChainHeadHash">verifiedChainHeadHash</a></span></code>&nbsp;</td>
 </tr>
 </tbody>
 </table>
@@ -1028,7 +1028,15 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/bitcoinj/core/StoredBlock.html" title="class in org.bitcoinj.core">StoredBlock</a></code></td>
-<td class="colLast"><span class="typeNameLabel">DatabaseFullPrunedBlockStore.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/store/DatabaseFullPrunedBlockStore.html#get-org.bitcoinj.core.Sha256Hash-">get</a></span>(<a href="../../../../org/bitcoinj/core/Sha256Hash.html" title="class in org.bitcoinj.core">Sha256Hash</a>&nbsp;hash)</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">MemoryBlockStore.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/store/MemoryBlockStore.html#get-org.bitcoinj.core.Sha256Hash-">get</a></span>(<a href="../../../../org/bitcoinj/core/Sha256Hash.html" title="class in org.bitcoinj.core">Sha256Hash</a>&nbsp;hash)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../org/bitcoinj/core/StoredBlock.html" title="class in org.bitcoinj.core">StoredBlock</a></code></td>
+<td class="colLast"><span class="typeNameLabel">LevelDBBlockStore.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/store/LevelDBBlockStore.html#get-org.bitcoinj.core.Sha256Hash-">get</a></span>(<a href="../../../../org/bitcoinj/core/Sha256Hash.html" title="class in org.bitcoinj.core">Sha256Hash</a>&nbsp;hash)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../org/bitcoinj/core/StoredBlock.html" title="class in org.bitcoinj.core">StoredBlock</a></code></td>
+<td class="colLast"><span class="typeNameLabel">LevelDBFullPrunedBlockStore.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/store/LevelDBFullPrunedBlockStore.html#get-org.bitcoinj.core.Sha256Hash-">get</a></span>(<a href="../../../../org/bitcoinj/core/Sha256Hash.html" title="class in org.bitcoinj.core">Sha256Hash</a>&nbsp;hash)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/bitcoinj/core/StoredBlock.html" title="class in org.bitcoinj.core">StoredBlock</a></code></td>
@@ -1038,113 +1046,105 @@
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/bitcoinj/core/StoredBlock.html" title="class in org.bitcoinj.core">StoredBlock</a></code></td>
-<td class="colLast"><span class="typeNameLabel">SPVBlockStore.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/store/SPVBlockStore.html#get-org.bitcoinj.core.Sha256Hash-">get</a></span>(<a href="../../../../org/bitcoinj/core/Sha256Hash.html" title="class in org.bitcoinj.core">Sha256Hash</a>&nbsp;hash)</code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code><a href="../../../../org/bitcoinj/core/StoredBlock.html" title="class in org.bitcoinj.core">StoredBlock</a></code></td>
 <td class="colLast"><span class="typeNameLabel">MemoryFullPrunedBlockStore.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/store/MemoryFullPrunedBlockStore.html#get-org.bitcoinj.core.Sha256Hash-">get</a></span>(<a href="../../../../org/bitcoinj/core/Sha256Hash.html" title="class in org.bitcoinj.core">Sha256Hash</a>&nbsp;hash)</code>&nbsp;</td>
 </tr>
-<tr class="altColor">
-<td class="colFirst"><code><a href="../../../../org/bitcoinj/core/StoredBlock.html" title="class in org.bitcoinj.core">StoredBlock</a></code></td>
-<td class="colLast"><span class="typeNameLabel">MemoryBlockStore.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/store/MemoryBlockStore.html#get-org.bitcoinj.core.Sha256Hash-">get</a></span>(<a href="../../../../org/bitcoinj/core/Sha256Hash.html" title="class in org.bitcoinj.core">Sha256Hash</a>&nbsp;hash)</code>&nbsp;</td>
-</tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/bitcoinj/core/StoredBlock.html" title="class in org.bitcoinj.core">StoredBlock</a></code></td>
-<td class="colLast"><span class="typeNameLabel">LevelDBFullPrunedBlockStore.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/store/LevelDBFullPrunedBlockStore.html#get-org.bitcoinj.core.Sha256Hash-">get</a></span>(<a href="../../../../org/bitcoinj/core/Sha256Hash.html" title="class in org.bitcoinj.core">Sha256Hash</a>&nbsp;hash)</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">SPVBlockStore.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/store/SPVBlockStore.html#get-org.bitcoinj.core.Sha256Hash-">get</a></span>(<a href="../../../../org/bitcoinj/core/Sha256Hash.html" title="class in org.bitcoinj.core">Sha256Hash</a>&nbsp;hash)</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/bitcoinj/core/StoredBlock.html" title="class in org.bitcoinj.core">StoredBlock</a></code></td>
-<td class="colLast"><span class="typeNameLabel">LevelDBBlockStore.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/store/LevelDBBlockStore.html#get-org.bitcoinj.core.Sha256Hash-">get</a></span>(<a href="../../../../org/bitcoinj/core/Sha256Hash.html" title="class in org.bitcoinj.core">Sha256Hash</a>&nbsp;hash)</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">DatabaseFullPrunedBlockStore.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/store/DatabaseFullPrunedBlockStore.html#get-org.bitcoinj.core.Sha256Hash-">get</a></span>(<a href="../../../../org/bitcoinj/core/Sha256Hash.html" title="class in org.bitcoinj.core">Sha256Hash</a>&nbsp;hash)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code><a href="../../../../org/bitcoinj/core/StoredBlock.html" title="class in org.bitcoinj.core">StoredBlock</a></code></td>
-<td class="colLast"><span class="typeNameLabel">DatabaseFullPrunedBlockStore.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/store/DatabaseFullPrunedBlockStore.html#get-org.bitcoinj.core.Sha256Hash-boolean-">get</a></span>(<a href="../../../../org/bitcoinj/core/Sha256Hash.html" title="class in org.bitcoinj.core">Sha256Hash</a>&nbsp;hash,
-   boolean&nbsp;wasUndoableOnly)</code>&nbsp;</td>
-</tr>
-<tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/bitcoinj/core/StoredBlock.html" title="class in org.bitcoinj.core">StoredBlock</a></code></td>
 <td class="colLast"><span class="typeNameLabel">LevelDBFullPrunedBlockStore.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/store/LevelDBFullPrunedBlockStore.html#get-org.bitcoinj.core.Sha256Hash-boolean-">get</a></span>(<a href="../../../../org/bitcoinj/core/Sha256Hash.html" title="class in org.bitcoinj.core">Sha256Hash</a>&nbsp;hash,
    boolean&nbsp;wasUndoableOnly)</code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
-<td class="colFirst"><code><a href="../../../../org/bitcoinj/core/StoredBlock.html" title="class in org.bitcoinj.core">StoredBlock</a></code></td>
-<td class="colLast"><span class="typeNameLabel">DatabaseFullPrunedBlockStore.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/store/DatabaseFullPrunedBlockStore.html#getOnceUndoableStoredBlock-org.bitcoinj.core.Sha256Hash-">getOnceUndoableStoredBlock</a></span>(<a href="../../../../org/bitcoinj/core/Sha256Hash.html" title="class in org.bitcoinj.core">Sha256Hash</a>&nbsp;hash)</code>&nbsp;</td>
-</tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/bitcoinj/core/StoredBlock.html" title="class in org.bitcoinj.core">StoredBlock</a></code></td>
-<td class="colLast"><span class="typeNameLabel">MemoryFullPrunedBlockStore.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/store/MemoryFullPrunedBlockStore.html#getOnceUndoableStoredBlock-org.bitcoinj.core.Sha256Hash-">getOnceUndoableStoredBlock</a></span>(<a href="../../../../org/bitcoinj/core/Sha256Hash.html" title="class in org.bitcoinj.core">Sha256Hash</a>&nbsp;hash)</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">DatabaseFullPrunedBlockStore.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/store/DatabaseFullPrunedBlockStore.html#get-org.bitcoinj.core.Sha256Hash-boolean-">get</a></span>(<a href="../../../../org/bitcoinj/core/Sha256Hash.html" title="class in org.bitcoinj.core">Sha256Hash</a>&nbsp;hash,
+   boolean&nbsp;wasUndoableOnly)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code><a href="../../../../org/bitcoinj/core/StoredBlock.html" title="class in org.bitcoinj.core">StoredBlock</a></code></td>
-<td class="colLast"><span class="typeNameLabel">LevelDBFullPrunedBlockStore.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/store/LevelDBFullPrunedBlockStore.html#getOnceUndoableStoredBlock-org.bitcoinj.core.Sha256Hash-">getOnceUndoableStoredBlock</a></span>(<a href="../../../../org/bitcoinj/core/Sha256Hash.html" title="class in org.bitcoinj.core">Sha256Hash</a>&nbsp;hash)</code>&nbsp;</td>
-</tr>
-<tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/bitcoinj/core/StoredBlock.html" title="class in org.bitcoinj.core">StoredBlock</a></code></td>
 <td class="colLast"><span class="typeNameLabel">FullPrunedBlockStore.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/store/FullPrunedBlockStore.html#getOnceUndoableStoredBlock-org.bitcoinj.core.Sha256Hash-">getOnceUndoableStoredBlock</a></span>(<a href="../../../../org/bitcoinj/core/Sha256Hash.html" title="class in org.bitcoinj.core">Sha256Hash</a>&nbsp;hash)</code>
 <div class="block">Returns the StoredBlock that was added as a StoredUndoableBlock given a hash.</div>
 </td>
 </tr>
-<tr class="rowColor">
-<td class="colFirst"><code><a href="../../../../org/bitcoinj/core/UTXO.html" title="class in org.bitcoinj.core">UTXO</a></code></td>
-<td class="colLast"><span class="typeNameLabel">DatabaseFullPrunedBlockStore.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/store/DatabaseFullPrunedBlockStore.html#getTransactionOutput-org.bitcoinj.core.Sha256Hash-long-">getTransactionOutput</a></span>(<a href="../../../../org/bitcoinj/core/Sha256Hash.html" title="class in org.bitcoinj.core">Sha256Hash</a>&nbsp;hash,
-                    long&nbsp;index)</code>&nbsp;</td>
-</tr>
 <tr class="altColor">
-<td class="colFirst"><code><a href="../../../../org/bitcoinj/core/UTXO.html" title="class in org.bitcoinj.core">UTXO</a></code></td>
-<td class="colLast"><span class="typeNameLabel">MemoryFullPrunedBlockStore.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/store/MemoryFullPrunedBlockStore.html#getTransactionOutput-org.bitcoinj.core.Sha256Hash-long-">getTransactionOutput</a></span>(<a href="../../../../org/bitcoinj/core/Sha256Hash.html" title="class in org.bitcoinj.core">Sha256Hash</a>&nbsp;hash,
-                    long&nbsp;index)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../../org/bitcoinj/core/StoredBlock.html" title="class in org.bitcoinj.core">StoredBlock</a></code></td>
+<td class="colLast"><span class="typeNameLabel">LevelDBFullPrunedBlockStore.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/store/LevelDBFullPrunedBlockStore.html#getOnceUndoableStoredBlock-org.bitcoinj.core.Sha256Hash-">getOnceUndoableStoredBlock</a></span>(<a href="../../../../org/bitcoinj/core/Sha256Hash.html" title="class in org.bitcoinj.core">Sha256Hash</a>&nbsp;hash)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code><a href="../../../../org/bitcoinj/core/UTXO.html" title="class in org.bitcoinj.core">UTXO</a></code></td>
-<td class="colLast"><span class="typeNameLabel">LevelDBFullPrunedBlockStore.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/store/LevelDBFullPrunedBlockStore.html#getTransactionOutput-org.bitcoinj.core.Sha256Hash-long-">getTransactionOutput</a></span>(<a href="../../../../org/bitcoinj/core/Sha256Hash.html" title="class in org.bitcoinj.core">Sha256Hash</a>&nbsp;hash,
-                    long&nbsp;index)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../../org/bitcoinj/core/StoredBlock.html" title="class in org.bitcoinj.core">StoredBlock</a></code></td>
+<td class="colLast"><span class="typeNameLabel">MemoryFullPrunedBlockStore.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/store/MemoryFullPrunedBlockStore.html#getOnceUndoableStoredBlock-org.bitcoinj.core.Sha256Hash-">getOnceUndoableStoredBlock</a></span>(<a href="../../../../org/bitcoinj/core/Sha256Hash.html" title="class in org.bitcoinj.core">Sha256Hash</a>&nbsp;hash)</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code><a href="../../../../org/bitcoinj/core/StoredBlock.html" title="class in org.bitcoinj.core">StoredBlock</a></code></td>
+<td class="colLast"><span class="typeNameLabel">DatabaseFullPrunedBlockStore.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/store/DatabaseFullPrunedBlockStore.html#getOnceUndoableStoredBlock-org.bitcoinj.core.Sha256Hash-">getOnceUndoableStoredBlock</a></span>(<a href="../../../../org/bitcoinj/core/Sha256Hash.html" title="class in org.bitcoinj.core">Sha256Hash</a>&nbsp;hash)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/bitcoinj/core/UTXO.html" title="class in org.bitcoinj.core">UTXO</a></code></td>
 <td class="colLast"><span class="typeNameLabel">FullPrunedBlockStore.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/store/FullPrunedBlockStore.html#getTransactionOutput-org.bitcoinj.core.Sha256Hash-long-">getTransactionOutput</a></span>(<a href="../../../../org/bitcoinj/core/Sha256Hash.html" title="class in org.bitcoinj.core">Sha256Hash</a>&nbsp;hash,
                     long&nbsp;index)</code>
 <div class="block">Gets a <a href="../../../../org/bitcoinj/core/UTXO.html" title="class in org.bitcoinj.core"><code>UTXO</code></a> with the given hash and index, or null if none is found</div>
 </td>
 </tr>
-<tr class="rowColor">
-<td class="colFirst"><code><a href="../../../../org/bitcoinj/core/StoredUndoableBlock.html" title="class in org.bitcoinj.core">StoredUndoableBlock</a></code></td>
-<td class="colLast"><span class="typeNameLabel">DatabaseFullPrunedBlockStore.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/store/DatabaseFullPrunedBlockStore.html#getUndoBlock-org.bitcoinj.core.Sha256Hash-">getUndoBlock</a></span>(<a href="../../../../org/bitcoinj/core/Sha256Hash.html" title="class in org.bitcoinj.core">Sha256Hash</a>&nbsp;hash)</code>&nbsp;</td>
-</tr>
 <tr class="altColor">
-<td class="colFirst"><code><a href="../../../../org/bitcoinj/core/StoredUndoableBlock.html" title="class in org.bitcoinj.core">StoredUndoableBlock</a></code></td>
-<td class="colLast"><span class="typeNameLabel">MemoryFullPrunedBlockStore.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/store/MemoryFullPrunedBlockStore.html#getUndoBlock-org.bitcoinj.core.Sha256Hash-">getUndoBlock</a></span>(<a href="../../../../org/bitcoinj/core/Sha256Hash.html" title="class in org.bitcoinj.core">Sha256Hash</a>&nbsp;hash)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../../org/bitcoinj/core/UTXO.html" title="class in org.bitcoinj.core">UTXO</a></code></td>
+<td class="colLast"><span class="typeNameLabel">LevelDBFullPrunedBlockStore.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/store/LevelDBFullPrunedBlockStore.html#getTransactionOutput-org.bitcoinj.core.Sha256Hash-long-">getTransactionOutput</a></span>(<a href="../../../../org/bitcoinj/core/Sha256Hash.html" title="class in org.bitcoinj.core">Sha256Hash</a>&nbsp;hash,
+                    long&nbsp;index)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code><a href="../../../../org/bitcoinj/core/StoredUndoableBlock.html" title="class in org.bitcoinj.core">StoredUndoableBlock</a></code></td>
-<td class="colLast"><span class="typeNameLabel">LevelDBFullPrunedBlockStore.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/store/LevelDBFullPrunedBlockStore.html#getUndoBlock-org.bitcoinj.core.Sha256Hash-">getUndoBlock</a></span>(<a href="../../../../org/bitcoinj/core/Sha256Hash.html" title="class in org.bitcoinj.core">Sha256Hash</a>&nbsp;hash)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../../org/bitcoinj/core/UTXO.html" title="class in org.bitcoinj.core">UTXO</a></code></td>
+<td class="colLast"><span class="typeNameLabel">MemoryFullPrunedBlockStore.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/store/MemoryFullPrunedBlockStore.html#getTransactionOutput-org.bitcoinj.core.Sha256Hash-long-">getTransactionOutput</a></span>(<a href="../../../../org/bitcoinj/core/Sha256Hash.html" title="class in org.bitcoinj.core">Sha256Hash</a>&nbsp;hash,
+                    long&nbsp;index)</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code><a href="../../../../org/bitcoinj/core/UTXO.html" title="class in org.bitcoinj.core">UTXO</a></code></td>
+<td class="colLast"><span class="typeNameLabel">DatabaseFullPrunedBlockStore.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/store/DatabaseFullPrunedBlockStore.html#getTransactionOutput-org.bitcoinj.core.Sha256Hash-long-">getTransactionOutput</a></span>(<a href="../../../../org/bitcoinj/core/Sha256Hash.html" title="class in org.bitcoinj.core">Sha256Hash</a>&nbsp;hash,
+                    long&nbsp;index)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/bitcoinj/core/StoredUndoableBlock.html" title="class in org.bitcoinj.core">StoredUndoableBlock</a></code></td>
 <td class="colLast"><span class="typeNameLabel">FullPrunedBlockStore.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/store/FullPrunedBlockStore.html#getUndoBlock-org.bitcoinj.core.Sha256Hash-">getUndoBlock</a></span>(<a href="../../../../org/bitcoinj/core/Sha256Hash.html" title="class in org.bitcoinj.core">Sha256Hash</a>&nbsp;hash)</code>
 <div class="block">Returns a <a href="../../../../org/bitcoinj/core/StoredUndoableBlock.html" title="class in org.bitcoinj.core"><code>StoredUndoableBlock</code></a> whose block.getHash() method will be equal to the parameter.</div>
 </td>
 </tr>
-<tr class="rowColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><span class="typeNameLabel">DatabaseFullPrunedBlockStore.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/store/DatabaseFullPrunedBlockStore.html#hasUnspentOutputs-org.bitcoinj.core.Sha256Hash-int-">hasUnspentOutputs</a></span>(<a href="../../../../org/bitcoinj/core/Sha256Hash.html" title="class in org.bitcoinj.core">Sha256Hash</a>&nbsp;hash,
-                 int&nbsp;numOutputs)</code>&nbsp;</td>
-</tr>
 <tr class="altColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><span class="typeNameLabel">MemoryFullPrunedBlockStore.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/store/MemoryFullPrunedBlockStore.html#hasUnspentOutputs-org.bitcoinj.core.Sha256Hash-int-">hasUnspentOutputs</a></span>(<a href="../../../../org/bitcoinj/core/Sha256Hash.html" title="class in org.bitcoinj.core">Sha256Hash</a>&nbsp;hash,
-                 int&nbsp;numOutputs)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../../org/bitcoinj/core/StoredUndoableBlock.html" title="class in org.bitcoinj.core">StoredUndoableBlock</a></code></td>
+<td class="colLast"><span class="typeNameLabel">LevelDBFullPrunedBlockStore.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/store/LevelDBFullPrunedBlockStore.html#getUndoBlock-org.bitcoinj.core.Sha256Hash-">getUndoBlock</a></span>(<a href="../../../../org/bitcoinj/core/Sha256Hash.html" title="class in org.bitcoinj.core">Sha256Hash</a>&nbsp;hash)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><span class="typeNameLabel">LevelDBFullPrunedBlockStore.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/store/LevelDBFullPrunedBlockStore.html#hasUnspentOutputs-org.bitcoinj.core.Sha256Hash-int-">hasUnspentOutputs</a></span>(<a href="../../../../org/bitcoinj/core/Sha256Hash.html" title="class in org.bitcoinj.core">Sha256Hash</a>&nbsp;hash,
-                 int&nbsp;numOutputs)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../../org/bitcoinj/core/StoredUndoableBlock.html" title="class in org.bitcoinj.core">StoredUndoableBlock</a></code></td>
+<td class="colLast"><span class="typeNameLabel">MemoryFullPrunedBlockStore.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/store/MemoryFullPrunedBlockStore.html#getUndoBlock-org.bitcoinj.core.Sha256Hash-">getUndoBlock</a></span>(<a href="../../../../org/bitcoinj/core/Sha256Hash.html" title="class in org.bitcoinj.core">Sha256Hash</a>&nbsp;hash)</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code><a href="../../../../org/bitcoinj/core/StoredUndoableBlock.html" title="class in org.bitcoinj.core">StoredUndoableBlock</a></code></td>
+<td class="colLast"><span class="typeNameLabel">DatabaseFullPrunedBlockStore.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/store/DatabaseFullPrunedBlockStore.html#getUndoBlock-org.bitcoinj.core.Sha256Hash-">getUndoBlock</a></span>(<a href="../../../../org/bitcoinj/core/Sha256Hash.html" title="class in org.bitcoinj.core">Sha256Hash</a>&nbsp;hash)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><span class="typeNameLabel">FullPrunedBlockStore.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/store/FullPrunedBlockStore.html#hasUnspentOutputs-org.bitcoinj.core.Sha256Hash-int-">hasUnspentOutputs</a></span>(<a href="../../../../org/bitcoinj/core/Sha256Hash.html" title="class in org.bitcoinj.core">Sha256Hash</a>&nbsp;hash,
                  int&nbsp;numOutputs)</code>
 <div class="block">True if this store has any unspent outputs from a transaction with a hash equal to the first parameter</div>
 </td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><span class="typeNameLabel">LevelDBFullPrunedBlockStore.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/store/LevelDBFullPrunedBlockStore.html#hasUnspentOutputs-org.bitcoinj.core.Sha256Hash-int-">hasUnspentOutputs</a></span>(<a href="../../../../org/bitcoinj/core/Sha256Hash.html" title="class in org.bitcoinj.core">Sha256Hash</a>&nbsp;hash,
+                 int&nbsp;numOutputs)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><span class="typeNameLabel">MemoryFullPrunedBlockStore.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/store/MemoryFullPrunedBlockStore.html#hasUnspentOutputs-org.bitcoinj.core.Sha256Hash-int-">hasUnspentOutputs</a></span>(<a href="../../../../org/bitcoinj/core/Sha256Hash.html" title="class in org.bitcoinj.core">Sha256Hash</a>&nbsp;hash,
+                 int&nbsp;numOutputs)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><span class="typeNameLabel">DatabaseFullPrunedBlockStore.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/store/DatabaseFullPrunedBlockStore.html#hasUnspentOutputs-org.bitcoinj.core.Sha256Hash-int-">hasUnspentOutputs</a></span>(<a href="../../../../org/bitcoinj/core/Sha256Hash.html" title="class in org.bitcoinj.core">Sha256Hash</a>&nbsp;hash,
+                 int&nbsp;numOutputs)</code>&nbsp;</td>
 </tr>
 </tbody>
 </table>
@@ -1290,6 +1290,6 @@
 <!--   -->
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
-<p class="legalCopy"><small>Copyright &#169; 2017. All rights reserved.</small></p>
+<p class="legalCopy"><small>Copyright &#169; 2022. All rights reserved.</small></p>
 </body>
 </html>

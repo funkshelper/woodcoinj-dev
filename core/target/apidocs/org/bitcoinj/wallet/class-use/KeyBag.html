@@ -129,15 +129,15 @@
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/bitcoinj/wallet/RedeemData.html" title="class in org.bitcoinj.wallet">RedeemData</a></code></td>
-<td class="colLast"><span class="typeNameLabel">TransactionInput.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/core/TransactionInput.html#getConnectedRedeemData-org.bitcoinj.wallet.KeyBag-">getConnectedRedeemData</a></span>(<a href="../../../../org/bitcoinj/wallet/KeyBag.html" title="interface in org.bitcoinj.wallet">KeyBag</a>&nbsp;keyBag)</code>
-<div class="block">Alias for getOutpoint().getConnectedRedeemData(keyBag)</div>
+<td class="colLast"><span class="typeNameLabel">TransactionOutPoint.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/core/TransactionOutPoint.html#getConnectedRedeemData-org.bitcoinj.wallet.KeyBag-">getConnectedRedeemData</a></span>(<a href="../../../../org/bitcoinj/wallet/KeyBag.html" title="interface in org.bitcoinj.wallet">KeyBag</a>&nbsp;keyBag)</code>
+<div class="block">Returns the RedeemData identified in the connected output, for either pay-to-address scripts, pay-to-key
+ or P2SH scripts.</div>
 </td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/bitcoinj/wallet/RedeemData.html" title="class in org.bitcoinj.wallet">RedeemData</a></code></td>
-<td class="colLast"><span class="typeNameLabel">TransactionOutPoint.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/core/TransactionOutPoint.html#getConnectedRedeemData-org.bitcoinj.wallet.KeyBag-">getConnectedRedeemData</a></span>(<a href="../../../../org/bitcoinj/wallet/KeyBag.html" title="interface in org.bitcoinj.wallet">KeyBag</a>&nbsp;keyBag)</code>
-<div class="block">Returns the RedeemData identified in the connected output, for either pay-to-address scripts, pay-to-key
- or P2SH scripts.</div>
+<td class="colLast"><span class="typeNameLabel">TransactionInput.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/core/TransactionInput.html#getConnectedRedeemData-org.bitcoinj.wallet.KeyBag-">getConnectedRedeemData</a></span>(<a href="../../../../org/bitcoinj/wallet/KeyBag.html" title="interface in org.bitcoinj.wallet">KeyBag</a>&nbsp;keyBag)</code>
+<div class="block">Alias for getOutpoint().getConnectedRedeemData(keyBag)</div>
 </td>
 </tr>
 </tbody>
@@ -156,7 +156,7 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><span class="typeNameLabel">MissingSigResolutionSigner.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/signers/MissingSigResolutionSigner.html#signInputs-org.bitcoinj.signers.TransactionSigner.ProposedTransaction-org.bitcoinj.wallet.KeyBag-">signInputs</a></span>(<a href="../../../../org/bitcoinj/signers/TransactionSigner.ProposedTransaction.html" title="class in org.bitcoinj.signers">TransactionSigner.ProposedTransaction</a>&nbsp;propTx,
+<td class="colLast"><span class="typeNameLabel">LocalTransactionSigner.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/signers/LocalTransactionSigner.html#signInputs-org.bitcoinj.signers.TransactionSigner.ProposedTransaction-org.bitcoinj.wallet.KeyBag-">signInputs</a></span>(<a href="../../../../org/bitcoinj/signers/TransactionSigner.ProposedTransaction.html" title="class in org.bitcoinj.signers">TransactionSigner.ProposedTransaction</a>&nbsp;propTx,
           <a href="../../../../org/bitcoinj/wallet/KeyBag.html" title="interface in org.bitcoinj.wallet">KeyBag</a>&nbsp;keyBag)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -168,7 +168,7 @@
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><span class="typeNameLabel">LocalTransactionSigner.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/signers/LocalTransactionSigner.html#signInputs-org.bitcoinj.signers.TransactionSigner.ProposedTransaction-org.bitcoinj.wallet.KeyBag-">signInputs</a></span>(<a href="../../../../org/bitcoinj/signers/TransactionSigner.ProposedTransaction.html" title="class in org.bitcoinj.signers">TransactionSigner.ProposedTransaction</a>&nbsp;propTx,
+<td class="colLast"><span class="typeNameLabel">MissingSigResolutionSigner.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/signers/MissingSigResolutionSigner.html#signInputs-org.bitcoinj.signers.TransactionSigner.ProposedTransaction-org.bitcoinj.wallet.KeyBag-">signInputs</a></span>(<a href="../../../../org/bitcoinj/signers/TransactionSigner.ProposedTransaction.html" title="class in org.bitcoinj.signers">TransactionSigner.ProposedTransaction</a>&nbsp;propTx,
           <a href="../../../../org/bitcoinj/wallet/KeyBag.html" title="interface in org.bitcoinj.wallet">KeyBag</a>&nbsp;keyBag)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -290,6 +290,6 @@
 <!--   -->
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
-<p class="legalCopy"><small>Copyright &#169; 2017. All rights reserved.</small></p>
+<p class="legalCopy"><small>Copyright &#169; 2022. All rights reserved.</small></p>
 </body>
 </html>

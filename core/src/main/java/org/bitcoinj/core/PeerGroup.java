@@ -51,22 +51,22 @@ import static com.google.common.base.Preconditions.*;
 /**
  * <p>Runs a set of connections to the P2P network, brings up connections to replace disconnected nodes and manages
  * the interaction between them all. Most applications will want to use one of these.</p>
- * 
+ *
  * <p>PeerGroup tries to maintain a constant number of connections to a set of distinct peers.
  * Each peer runs a network listener in its own thread.  When a connection is lost, a new peer
  * will be tried after a delay as long as the number of connections less than the maximum.</p>
- * 
+ *
  * <p>Connections are made to addresses from a provided list.  When that list is exhausted,
  * we start again from the head of the list.</p>
- * 
+ *
  * <p>The PeerGroup can broadcast a transaction to the currently connected set of peers.  It can
  * also handle download of the blockchain from peers, restarting the process when peers die.</p>
  *
- * <p>A PeerGroup won't do anything until you call the {@link PeerGroup#start()} method 
- * which will block until peer discovery is completed and some outbound connections 
- * have been initiated (it will return before handshaking is done, however). 
+ * <p>A PeerGroup won't do anything until you call the {@link PeerGroup#start()} method
+ * which will block until peer discovery is completed and some outbound connections
+ * have been initiated (it will return before handshaking is done, however).
  * You should call {@link PeerGroup#stop()} when finished. Note that not all methods
- * of PeerGroup are safe to call from a UI thread as some may do network IO, 
+ * of PeerGroup are safe to call from a UI thread as some may do network IO,
  * but starting and stopping the service should be fine.</p>
  */
 public class PeerGroup implements TransactionBroadcaster {
@@ -283,7 +283,7 @@ public class PeerGroup implements TransactionBroadcaster {
     /** The default timeout between when a connection attempt begins and version message exchange completes */
     public static final int DEFAULT_CONNECT_TIMEOUT_MILLIS = 5000;
     private volatile int vConnectTimeoutMillis = DEFAULT_CONNECT_TIMEOUT_MILLIS;
-    
+
     /** Whether bloom filter support is enabled when using a non FullPrunedBlockchain*/
     private volatile boolean vBloomFilteringEnabled = true;
 
@@ -668,7 +668,7 @@ public class PeerGroup implements TransactionBroadcaster {
     }
 
     /**
-     * Sets information that identifies this software to remote nodes. This is a convenience wrapper for creating 
+     * Sets information that identifies this software to remote nodes. This is a convenience wrapper for creating
      * a new {@link VersionMessage}, calling {@link VersionMessage#appendToSubVer(String, String, String)} on it,
      * and then calling {@link PeerGroup#setVersionMessage(VersionMessage)} on the result of that. See the docs for
      * {@link VersionMessage#appendToSubVer(String, String, String)} for information on what the fields should contain.
@@ -682,7 +682,7 @@ public class PeerGroup implements TransactionBroadcaster {
         ver.appendToSubVer(name, version, comments);
         setVersionMessage(ver);
     }
-    
+
     // Updates the relayTxesBeforeFilter flag of ver
     private void updateVersionMessageRelayTxesBeforeFilter(VersionMessage ver) {
         // We will provide the remote node with a bloom filter (ie they shouldn't relay yet)
@@ -981,6 +981,7 @@ public class PeerGroup implements TransactionBroadcaster {
         try {
             addInactive(peerAddress);
             newMax = getMaxConnections() + 1;
+            System.out.println("Max connection test: " + newMax);
         } finally {
             lock.unlock();
         }
@@ -1319,7 +1320,7 @@ public class PeerGroup implements TransactionBroadcaster {
         wallet.setTransactionBroadcaster(null);
         for (Peer peer : peers) {
             peer.removeWallet(wallet);
-        }        
+        }
     }
 
     public enum FilterRecalculateMode {
@@ -1403,13 +1404,13 @@ public class PeerGroup implements TransactionBroadcaster {
         }
         return future;
     }
-    
+
     /**
      * <p>Sets the false positive rate of bloom filters given to peers. The default is {@link #DEFAULT_BLOOM_FILTER_FP_RATE}.</p>
      *
      * <p>Be careful regenerating the bloom filter too often, as it decreases anonymity because remote nodes can
      * compare transactions against both the new and old filters to significantly decrease the false positive rate.</p>
-     * 
+     *
      * <p>See the docs for {@link BloomFilter#BloomFilter(int, double, long, BloomFilter.BloomUpdate)} for a brief
      * explanation of anonymity when using bloom filters.</p>
      */
@@ -1424,7 +1425,7 @@ public class PeerGroup implements TransactionBroadcaster {
     }
 
     /**
-     * Returns the number of currently connected peers. To be informed when this count changes, register a 
+     * Returns the number of currently connected peers. To be informed when this count changes, register a
      * {@link org.bitcoinj.core.listeners.PeerConnectionEventListener} and use the onPeerConnected/onPeerDisconnected methods.
      */
     public int numConnectedPeers() {
@@ -1434,7 +1435,7 @@ public class PeerGroup implements TransactionBroadcaster {
     /**
      * Connect to a peer by creating a channel to the destination address.  This should not be
      * used normally - let the PeerGroup manage connections through {@link #start()}
-     * 
+     *
      * @param address destination IP and port.
      * @return The newly created Peer object or null if the peer could not be connected.
      *         Use {@link org.bitcoinj.core.Peer#getConnectionOpenFuture()} if you
@@ -1582,7 +1583,7 @@ public class PeerGroup implements TransactionBroadcaster {
 
     /**
      * Download the blockchain from peers. Convenience that uses a {@link DownloadProgressTracker} for you.<p>
-     * 
+     *
      * This method waits until the download is complete.  "Complete" is defined as downloading
      * from at least one peer all the blocks that are in that peer's inventory.
      */
@@ -2107,9 +2108,11 @@ public class PeerGroup implements TransactionBroadcaster {
         try {
             if (minBroadcastConnections == 0) {
                 int max = getMaxConnections();
+                System.out.println("Max connection Rob: " + max);
                 if (max <= 1)
                     return max;
                 else
+                    System.out.println("Max connection Rob else math: " + Math.round(getMaxConnections() * 0.8));
                     return (int) Math.round(getMaxConnections() * 0.8);
             }
             return minBroadcastConnections;
