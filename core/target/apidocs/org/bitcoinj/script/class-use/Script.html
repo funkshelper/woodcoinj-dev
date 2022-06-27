@@ -285,13 +285,13 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><span class="typeNameLabel">NativeWalletEventListener.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/jni/NativeWalletEventListener.html#onScriptsChanged-org.bitcoinj.wallet.Wallet-java.util.List-boolean-">onScriptsChanged</a></span>(<a href="../../../../org/bitcoinj/wallet/Wallet.html" title="class in org.bitcoinj.wallet">Wallet</a>&nbsp;wallet,
+<td class="colLast"><span class="typeNameLabel">NativeScriptsChangeEventListener.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/jni/NativeScriptsChangeEventListener.html#onScriptsChanged-org.bitcoinj.wallet.Wallet-java.util.List-boolean-">onScriptsChanged</a></span>(<a href="../../../../org/bitcoinj/wallet/Wallet.html" title="class in org.bitcoinj.wallet">Wallet</a>&nbsp;wallet,
                 <a href="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/bitcoinj/script/Script.html" title="class in org.bitcoinj.script">Script</a>&gt;&nbsp;scripts,
                 boolean&nbsp;isAddingScripts)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><span class="typeNameLabel">NativeScriptsChangeEventListener.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/jni/NativeScriptsChangeEventListener.html#onScriptsChanged-org.bitcoinj.wallet.Wallet-java.util.List-boolean-">onScriptsChanged</a></span>(<a href="../../../../org/bitcoinj/wallet/Wallet.html" title="class in org.bitcoinj.wallet">Wallet</a>&nbsp;wallet,
+<td class="colLast"><span class="typeNameLabel">NativeWalletEventListener.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/jni/NativeWalletEventListener.html#onScriptsChanged-org.bitcoinj.wallet.Wallet-java.util.List-boolean-">onScriptsChanged</a></span>(<a href="../../../../org/bitcoinj/wallet/Wallet.html" title="class in org.bitcoinj.wallet">Wallet</a>&nbsp;wallet,
                 <a href="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/bitcoinj/script/Script.html" title="class in org.bitcoinj.script">Script</a>&gt;&nbsp;scripts,
                 boolean&nbsp;isAddingScripts)</code>&nbsp;</td>
 </tr>
@@ -324,36 +324,38 @@
 <td class="colLast"><span class="typeNameLabel">PaymentChannelServerState.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/protocols/channels/PaymentChannelServerState.html#createOutputScript--">createOutputScript</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../../../org/bitcoinj/script/Script.html" title="class in org.bitcoinj.script">Script</a></code></td>
-<td class="colLast"><span class="typeNameLabel">PaymentChannelV2ClientState.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/protocols/channels/PaymentChannelV2ClientState.html#getContractScript--">getContractScript</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../../org/bitcoinj/script/Script.html" title="class in org.bitcoinj.script">Script</a></code></td>
+<td class="colLast"><span class="typeNameLabel">PaymentChannelServerState.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/protocols/channels/PaymentChannelServerState.html#getContractScript--">getContractScript</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>protected <a href="../../../../org/bitcoinj/script/Script.html" title="class in org.bitcoinj.script">Script</a></code></td>
-<td class="colLast"><span class="typeNameLabel">PaymentChannelV1ClientState.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/protocols/channels/PaymentChannelV1ClientState.html#getContractScript--">getContractScript</a></span>()</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">PaymentChannelV2ClientState.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/protocols/channels/PaymentChannelV2ClientState.html#getContractScript--">getContractScript</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>protected abstract <a href="../../../../org/bitcoinj/script/Script.html" title="class in org.bitcoinj.script">Script</a></code></td>
 <td class="colLast"><span class="typeNameLabel">PaymentChannelClientState.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/protocols/channels/PaymentChannelClientState.html#getContractScript--">getContractScript</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code><a href="../../../../org/bitcoinj/script/Script.html" title="class in org.bitcoinj.script">Script</a></code></td>
-<td class="colLast"><span class="typeNameLabel">PaymentChannelServerState.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/protocols/channels/PaymentChannelServerState.html#getContractScript--">getContractScript</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>protected <a href="../../../../org/bitcoinj/script/Script.html" title="class in org.bitcoinj.script">Script</a></code></td>
+<td class="colLast"><span class="typeNameLabel">PaymentChannelV1ClientState.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/protocols/channels/PaymentChannelV1ClientState.html#getContractScript--">getContractScript</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../../../org/bitcoinj/script/Script.html" title="class in org.bitcoinj.script">Script</a></code></td>
-<td class="colLast"><span class="typeNameLabel">PaymentChannelV2ClientState.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/protocols/channels/PaymentChannelV2ClientState.html#getSignedScript--">getSignedScript</a></span>()</code>&nbsp;</td>
-</tr>
-<tr class="altColor">
 <td class="colFirst"><code>protected <a href="../../../../org/bitcoinj/script/Script.html" title="class in org.bitcoinj.script">Script</a></code></td>
 <td class="colLast"><span class="typeNameLabel">PaymentChannelV1ServerState.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/protocols/channels/PaymentChannelV1ServerState.html#getSignedScript--">getSignedScript</a></span>()</code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>protected <a href="../../../../org/bitcoinj/script/Script.html" title="class in org.bitcoinj.script">Script</a></code></td>
 <td class="colLast"><span class="typeNameLabel">PaymentChannelV2ServerState.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/protocols/channels/PaymentChannelV2ServerState.html#getSignedScript--">getSignedScript</a></span>()</code>&nbsp;</td>
 </tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected abstract <a href="../../../../org/bitcoinj/script/Script.html" title="class in org.bitcoinj.script">Script</a></code></td>
+<td class="colLast"><span class="typeNameLabel">PaymentChannelServerState.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/protocols/channels/PaymentChannelServerState.html#getSignedScript--">getSignedScript</a></span>()</code>
+<div class="block">Gets the script that signatures should sign against.</div>
+</td>
+</tr>
 <tr class="altColor">
 <td class="colFirst"><code>protected <a href="../../../../org/bitcoinj/script/Script.html" title="class in org.bitcoinj.script">Script</a></code></td>
-<td class="colLast"><span class="typeNameLabel">PaymentChannelV1ClientState.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/protocols/channels/PaymentChannelV1ClientState.html#getSignedScript--">getSignedScript</a></span>()</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">PaymentChannelV2ClientState.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/protocols/channels/PaymentChannelV2ClientState.html#getSignedScript--">getSignedScript</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>protected abstract <a href="../../../../org/bitcoinj/script/Script.html" title="class in org.bitcoinj.script">Script</a></code></td>
@@ -362,10 +364,8 @@
 </td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected abstract <a href="../../../../org/bitcoinj/script/Script.html" title="class in org.bitcoinj.script">Script</a></code></td>
-<td class="colLast"><span class="typeNameLabel">PaymentChannelServerState.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/protocols/channels/PaymentChannelServerState.html#getSignedScript--">getSignedScript</a></span>()</code>
-<div class="block">Gets the script that signatures should sign against.</div>
-</td>
+<td class="colFirst"><code>protected <a href="../../../../org/bitcoinj/script/Script.html" title="class in org.bitcoinj.script">Script</a></code></td>
+<td class="colLast"><span class="typeNameLabel">PaymentChannelV1ClientState.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/protocols/channels/PaymentChannelV1ClientState.html#getSignedScript--">getSignedScript</a></span>()</code>&nbsp;</td>
 </tr>
 </tbody>
 </table>
@@ -710,14 +710,14 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/bitcoinj/script/Script.html" title="class in org.bitcoinj.script">Script</a></code></td>
-<td class="colLast"><span class="typeNameLabel">DeterministicKeyChain.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/DeterministicKeyChain.html#freshOutputScript-org.bitcoinj.wallet.KeyChain.KeyPurpose-">freshOutputScript</a></span>(<a href="../../../../org/bitcoinj/wallet/KeyChain.KeyPurpose.html" title="enum in org.bitcoinj.wallet">KeyChain.KeyPurpose</a>&nbsp;purpose)</code>
-<div class="block">Create a new key and return the matching output script.</div>
+<td class="colLast"><span class="typeNameLabel">MarriedKeyChain.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/MarriedKeyChain.html#freshOutputScript-org.bitcoinj.wallet.KeyChain.KeyPurpose-">freshOutputScript</a></span>(<a href="../../../../org/bitcoinj/wallet/KeyChain.KeyPurpose.html" title="enum in org.bitcoinj.wallet">KeyChain.KeyPurpose</a>&nbsp;purpose)</code>
+<div class="block">Create a new married key and return the matching output script</div>
 </td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/bitcoinj/script/Script.html" title="class in org.bitcoinj.script">Script</a></code></td>
-<td class="colLast"><span class="typeNameLabel">MarriedKeyChain.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/MarriedKeyChain.html#freshOutputScript-org.bitcoinj.wallet.KeyChain.KeyPurpose-">freshOutputScript</a></span>(<a href="../../../../org/bitcoinj/wallet/KeyChain.KeyPurpose.html" title="enum in org.bitcoinj.wallet">KeyChain.KeyPurpose</a>&nbsp;purpose)</code>
-<div class="block">Create a new married key and return the matching output script</div>
+<td class="colLast"><span class="typeNameLabel">DeterministicKeyChain.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/DeterministicKeyChain.html#freshOutputScript-org.bitcoinj.wallet.KeyChain.KeyPurpose-">freshOutputScript</a></span>(<a href="../../../../org/bitcoinj/wallet/KeyChain.KeyPurpose.html" title="enum in org.bitcoinj.wallet">KeyChain.KeyPurpose</a>&nbsp;purpose)</code>
+<div class="block">Create a new key and return the matching output script.</div>
 </td>
 </tr>
 </tbody>
@@ -810,19 +810,19 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><span class="typeNameLabel">ScriptsChangeEventListener.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/listeners/ScriptsChangeEventListener.html#onScriptsChanged-org.bitcoinj.wallet.Wallet-java.util.List-boolean-">onScriptsChanged</a></span>(<a href="../../../../org/bitcoinj/wallet/Wallet.html" title="class in org.bitcoinj.wallet">Wallet</a>&nbsp;wallet,
-                <a href="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/bitcoinj/script/Script.html" title="class in org.bitcoinj.script">Script</a>&gt;&nbsp;scripts,
-                boolean&nbsp;isAddingScripts)</code>
-<div class="block">Called whenever a new watched script is added to the wallet.</div>
-</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>void</code></td>
 <td class="colLast"><span class="typeNameLabel">AbstractWalletEventListener.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/listeners/AbstractWalletEventListener.html#onScriptsChanged-org.bitcoinj.wallet.Wallet-java.util.List-boolean-">onScriptsChanged</a></span>(<a href="../../../../org/bitcoinj/wallet/Wallet.html" title="class in org.bitcoinj.wallet">Wallet</a>&nbsp;wallet,
                 <a href="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/bitcoinj/script/Script.html" title="class in org.bitcoinj.script">Script</a>&gt;&nbsp;scripts,
                 boolean&nbsp;isAddingScripts)</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
 &nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="typeNameLabel">ScriptsChangeEventListener.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/listeners/ScriptsChangeEventListener.html#onScriptsChanged-org.bitcoinj.wallet.Wallet-java.util.List-boolean-">onScriptsChanged</a></span>(<a href="../../../../org/bitcoinj/wallet/Wallet.html" title="class in org.bitcoinj.wallet">Wallet</a>&nbsp;wallet,
+                <a href="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/bitcoinj/script/Script.html" title="class in org.bitcoinj.script">Script</a>&gt;&nbsp;scripts,
+                boolean&nbsp;isAddingScripts)</code>
+<div class="block">Called whenever a new watched script is added to the wallet.</div>
+</td>
 </tr>
 </tbody>
 </table>
@@ -878,6 +878,6 @@
 <!--   -->
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
-<p class="legalCopy"><small>Copyright &#169; 2017. All rights reserved.</small></p>
+<p class="legalCopy"><small>Copyright &#169; 2022. All rights reserved.</small></p>
 </body>
 </html>

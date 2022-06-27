@@ -401,7 +401,7 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/bitcoinj/core/UTXO.html" title="class in org.bitcoinj.core">UTXO</a>&gt;</code></td>
-<td class="colLast"><span class="typeNameLabel">DatabaseFullPrunedBlockStore.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/store/DatabaseFullPrunedBlockStore.html#getOpenTransactionOutputs-java.util.List-">getOpenTransactionOutputs</a></span>(<a href="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/bitcoinj/core/Address.html" title="class in org.bitcoinj.core">Address</a>&gt;&nbsp;addresses)</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">LevelDBFullPrunedBlockStore.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/store/LevelDBFullPrunedBlockStore.html#getOpenTransactionOutputs-java.util.List-">getOpenTransactionOutputs</a></span>(<a href="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/bitcoinj/core/Address.html" title="class in org.bitcoinj.core">Address</a>&gt;&nbsp;addresses)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/bitcoinj/core/UTXO.html" title="class in org.bitcoinj.core">UTXO</a>&gt;</code></td>
@@ -409,7 +409,7 @@
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/bitcoinj/core/UTXO.html" title="class in org.bitcoinj.core">UTXO</a>&gt;</code></td>
-<td class="colLast"><span class="typeNameLabel">LevelDBFullPrunedBlockStore.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/store/LevelDBFullPrunedBlockStore.html#getOpenTransactionOutputs-java.util.List-">getOpenTransactionOutputs</a></span>(<a href="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/bitcoinj/core/Address.html" title="class in org.bitcoinj.core">Address</a>&gt;&nbsp;addresses)</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">DatabaseFullPrunedBlockStore.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/store/DatabaseFullPrunedBlockStore.html#getOpenTransactionOutputs-java.util.List-">getOpenTransactionOutputs</a></span>(<a href="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../org/bitcoinj/core/Address.html" title="class in org.bitcoinj.core">Address</a>&gt;&nbsp;addresses)</code>&nbsp;</td>
 </tr>
 </tbody>
 </table>
@@ -481,14 +481,14 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/bitcoinj/core/Address.html" title="class in org.bitcoinj.core">Address</a></code></td>
-<td class="colLast"><span class="typeNameLabel">KeyChainGroup.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/KeyChainGroup.html#currentAddress-org.bitcoinj.wallet.KeyChain.KeyPurpose-">currentAddress</a></span>(<a href="../../../../org/bitcoinj/wallet/KeyChain.KeyPurpose.html" title="enum in org.bitcoinj.wallet">KeyChain.KeyPurpose</a>&nbsp;purpose)</code>
-<div class="block">Returns address for a <a href="../../../../org/bitcoinj/wallet/KeyChainGroup.html#currentKey-org.bitcoinj.wallet.KeyChain.KeyPurpose-"><code>KeyChainGroup.currentKey(KeyChain.KeyPurpose)</code></a></div>
+<td class="colLast"><span class="typeNameLabel">Wallet.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/Wallet.html#currentAddress-org.bitcoinj.wallet.KeyChain.KeyPurpose-">currentAddress</a></span>(<a href="../../../../org/bitcoinj/wallet/KeyChain.KeyPurpose.html" title="enum in org.bitcoinj.wallet">KeyChain.KeyPurpose</a>&nbsp;purpose)</code>
+<div class="block">Returns address for a <a href="../../../../org/bitcoinj/wallet/Wallet.html#currentKey-org.bitcoinj.wallet.KeyChain.KeyPurpose-"><code>Wallet.currentKey(org.bitcoinj.wallet.KeyChain.KeyPurpose)</code></a></div>
 </td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/bitcoinj/core/Address.html" title="class in org.bitcoinj.core">Address</a></code></td>
-<td class="colLast"><span class="typeNameLabel">Wallet.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/Wallet.html#currentAddress-org.bitcoinj.wallet.KeyChain.KeyPurpose-">currentAddress</a></span>(<a href="../../../../org/bitcoinj/wallet/KeyChain.KeyPurpose.html" title="enum in org.bitcoinj.wallet">KeyChain.KeyPurpose</a>&nbsp;purpose)</code>
-<div class="block">Returns address for a <a href="../../../../org/bitcoinj/wallet/Wallet.html#currentKey-org.bitcoinj.wallet.KeyChain.KeyPurpose-"><code>Wallet.currentKey(org.bitcoinj.wallet.KeyChain.KeyPurpose)</code></a></div>
+<td class="colLast"><span class="typeNameLabel">KeyChainGroup.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/KeyChainGroup.html#currentAddress-org.bitcoinj.wallet.KeyChain.KeyPurpose-">currentAddress</a></span>(<a href="../../../../org/bitcoinj/wallet/KeyChain.KeyPurpose.html" title="enum in org.bitcoinj.wallet">KeyChain.KeyPurpose</a>&nbsp;purpose)</code>
+<div class="block">Returns address for a <a href="../../../../org/bitcoinj/wallet/KeyChainGroup.html#currentKey-org.bitcoinj.wallet.KeyChain.KeyPurpose-"><code>KeyChainGroup.currentKey(KeyChain.KeyPurpose)</code></a></div>
 </td>
 </tr>
 <tr class="altColor">
@@ -506,14 +506,14 @@
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/bitcoinj/core/Address.html" title="class in org.bitcoinj.core">Address</a></code></td>
-<td class="colLast"><span class="typeNameLabel">KeyChainGroup.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/KeyChainGroup.html#freshAddress-org.bitcoinj.wallet.KeyChain.KeyPurpose-">freshAddress</a></span>(<a href="../../../../org/bitcoinj/wallet/KeyChain.KeyPurpose.html" title="enum in org.bitcoinj.wallet">KeyChain.KeyPurpose</a>&nbsp;purpose)</code>
-<div class="block">Returns address for a <a href="../../../../org/bitcoinj/wallet/KeyChainGroup.html#freshKey-org.bitcoinj.wallet.KeyChain.KeyPurpose-"><code>KeyChainGroup.freshKey(KeyChain.KeyPurpose)</code></a></div>
+<td class="colLast"><span class="typeNameLabel">Wallet.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/Wallet.html#freshAddress-org.bitcoinj.wallet.KeyChain.KeyPurpose-">freshAddress</a></span>(<a href="../../../../org/bitcoinj/wallet/KeyChain.KeyPurpose.html" title="enum in org.bitcoinj.wallet">KeyChain.KeyPurpose</a>&nbsp;purpose)</code>
+<div class="block">Returns address for a <a href="../../../../org/bitcoinj/wallet/Wallet.html#freshKey-org.bitcoinj.wallet.KeyChain.KeyPurpose-"><code>Wallet.freshKey(org.bitcoinj.wallet.KeyChain.KeyPurpose)</code></a></div>
 </td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/bitcoinj/core/Address.html" title="class in org.bitcoinj.core">Address</a></code></td>
-<td class="colLast"><span class="typeNameLabel">Wallet.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/Wallet.html#freshAddress-org.bitcoinj.wallet.KeyChain.KeyPurpose-">freshAddress</a></span>(<a href="../../../../org/bitcoinj/wallet/KeyChain.KeyPurpose.html" title="enum in org.bitcoinj.wallet">KeyChain.KeyPurpose</a>&nbsp;purpose)</code>
-<div class="block">Returns address for a <a href="../../../../org/bitcoinj/wallet/Wallet.html#freshKey-org.bitcoinj.wallet.KeyChain.KeyPurpose-"><code>Wallet.freshKey(org.bitcoinj.wallet.KeyChain.KeyPurpose)</code></a></div>
+<td class="colLast"><span class="typeNameLabel">KeyChainGroup.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/KeyChainGroup.html#freshAddress-org.bitcoinj.wallet.KeyChain.KeyPurpose-">freshAddress</a></span>(<a href="../../../../org/bitcoinj/wallet/KeyChain.KeyPurpose.html" title="enum in org.bitcoinj.wallet">KeyChain.KeyPurpose</a>&nbsp;purpose)</code>
+<div class="block">Returns address for a <a href="../../../../org/bitcoinj/wallet/KeyChainGroup.html#freshKey-org.bitcoinj.wallet.KeyChain.KeyPurpose-"><code>KeyChainGroup.freshKey(KeyChain.KeyPurpose)</code></a></div>
 </td>
 </tr>
 <tr class="altColor">
@@ -693,6 +693,6 @@
 <!--   -->
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
-<p class="legalCopy"><small>Copyright &#169; 2017. All rights reserved.</small></p>
+<p class="legalCopy"><small>Copyright &#169; 2022. All rights reserved.</small></p>
 </body>
 </html>

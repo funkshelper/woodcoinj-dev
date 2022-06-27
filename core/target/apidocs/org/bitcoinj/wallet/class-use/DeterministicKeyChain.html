@@ -140,25 +140,17 @@
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/bitcoinj/wallet/DeterministicKeyChain.html" title="class in org.bitcoinj.wallet">DeterministicKeyChain</a></code></td>
-<td class="colLast"><span class="typeNameLabel">KeyChainGroup.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/KeyChainGroup.html#getActiveKeyChain--">getActiveKeyChain</a></span>()</code>
-<div class="block">Returns the key chain that's used for generation of fresh/current keys.</div>
-</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code><a href="../../../../org/bitcoinj/wallet/DeterministicKeyChain.html" title="class in org.bitcoinj.wallet">DeterministicKeyChain</a></code></td>
 <td class="colLast"><span class="typeNameLabel">Wallet.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/Wallet.html#getActiveKeyChain--">getActiveKeyChain</a></span>()</code>
 <div class="block">Gets the active keychain via <a href="../../../../org/bitcoinj/wallet/KeyChainGroup.html#getActiveKeyChain--"><code>KeyChainGroup.getActiveKeyChain()</code></a></div>
 </td>
 </tr>
-<tr class="rowColor">
-<td class="colFirst"><code><a href="../../../../org/bitcoinj/wallet/DeterministicKeyChain.html" title="class in org.bitcoinj.wallet">DeterministicKeyChain</a></code></td>
-<td class="colLast"><span class="typeNameLabel">DefaultKeyChainFactory.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/DefaultKeyChainFactory.html#makeKeyChain-org.bitcoinj.wallet.Protos.Key-org.bitcoinj.wallet.Protos.Key-org.bitcoinj.wallet.DeterministicSeed-org.bitcoinj.crypto.KeyCrypter-boolean-">makeKeyChain</a></span>(<a href="../../../../org/bitcoinj/wallet/Protos.Key.html" title="class in org.bitcoinj.wallet">Protos.Key</a>&nbsp;key,
-            <a href="../../../../org/bitcoinj/wallet/Protos.Key.html" title="class in org.bitcoinj.wallet">Protos.Key</a>&nbsp;firstSubKey,
-            <a href="../../../../org/bitcoinj/wallet/DeterministicSeed.html" title="class in org.bitcoinj.wallet">DeterministicSeed</a>&nbsp;seed,
-            <a href="../../../../org/bitcoinj/crypto/KeyCrypter.html" title="interface in org.bitcoinj.crypto">KeyCrypter</a>&nbsp;crypter,
-            boolean&nbsp;isMarried)</code>&nbsp;</td>
-</tr>
 <tr class="altColor">
+<td class="colFirst"><code><a href="../../../../org/bitcoinj/wallet/DeterministicKeyChain.html" title="class in org.bitcoinj.wallet">DeterministicKeyChain</a></code></td>
+<td class="colLast"><span class="typeNameLabel">KeyChainGroup.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/KeyChainGroup.html#getActiveKeyChain--">getActiveKeyChain</a></span>()</code>
+<div class="block">Returns the key chain that's used for generation of fresh/current keys.</div>
+</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/bitcoinj/wallet/DeterministicKeyChain.html" title="class in org.bitcoinj.wallet">DeterministicKeyChain</a></code></td>
 <td class="colLast"><span class="typeNameLabel">KeyChainFactory.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/KeyChainFactory.html#makeKeyChain-org.bitcoinj.wallet.Protos.Key-org.bitcoinj.wallet.Protos.Key-org.bitcoinj.wallet.DeterministicSeed-org.bitcoinj.crypto.KeyCrypter-boolean-">makeKeyChain</a></span>(<a href="../../../../org/bitcoinj/wallet/Protos.Key.html" title="class in org.bitcoinj.wallet">Protos.Key</a>&nbsp;key,
             <a href="../../../../org/bitcoinj/wallet/Protos.Key.html" title="class in org.bitcoinj.wallet">Protos.Key</a>&nbsp;firstSubKey,
@@ -168,6 +160,14 @@
 <div class="block">Make a keychain (but not a watching one).</div>
 </td>
 </tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../org/bitcoinj/wallet/DeterministicKeyChain.html" title="class in org.bitcoinj.wallet">DeterministicKeyChain</a></code></td>
+<td class="colLast"><span class="typeNameLabel">DefaultKeyChainFactory.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/DefaultKeyChainFactory.html#makeKeyChain-org.bitcoinj.wallet.Protos.Key-org.bitcoinj.wallet.Protos.Key-org.bitcoinj.wallet.DeterministicSeed-org.bitcoinj.crypto.KeyCrypter-boolean-">makeKeyChain</a></span>(<a href="../../../../org/bitcoinj/wallet/Protos.Key.html" title="class in org.bitcoinj.wallet">Protos.Key</a>&nbsp;key,
+            <a href="../../../../org/bitcoinj/wallet/Protos.Key.html" title="class in org.bitcoinj.wallet">Protos.Key</a>&nbsp;firstSubKey,
+            <a href="../../../../org/bitcoinj/wallet/DeterministicSeed.html" title="class in org.bitcoinj.wallet">DeterministicSeed</a>&nbsp;seed,
+            <a href="../../../../org/bitcoinj/crypto/KeyCrypter.html" title="interface in org.bitcoinj.crypto">KeyCrypter</a>&nbsp;crypter,
+            boolean&nbsp;isMarried)</code>&nbsp;</td>
+</tr>
 <tr class="rowColor">
 <td class="colFirst"><code>protected <a href="../../../../org/bitcoinj/wallet/DeterministicKeyChain.html" title="class in org.bitcoinj.wallet">DeterministicKeyChain</a></code></td>
 <td class="colLast"><span class="typeNameLabel">DeterministicKeyChain.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/DeterministicKeyChain.html#makeKeyChainFromSeed-org.bitcoinj.wallet.DeterministicSeed-">makeKeyChainFromSeed</a></span>(<a href="../../../../org/bitcoinj/wallet/DeterministicSeed.html" title="class in org.bitcoinj.wallet">DeterministicSeed</a>&nbsp;seed)</code>
@@ -176,14 +176,6 @@
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/bitcoinj/wallet/DeterministicKeyChain.html" title="class in org.bitcoinj.wallet">DeterministicKeyChain</a></code></td>
-<td class="colLast"><span class="typeNameLabel">DefaultKeyChainFactory.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/DefaultKeyChainFactory.html#makeWatchingKeyChain-org.bitcoinj.wallet.Protos.Key-org.bitcoinj.wallet.Protos.Key-org.bitcoinj.crypto.DeterministicKey-boolean-boolean-">makeWatchingKeyChain</a></span>(<a href="../../../../org/bitcoinj/wallet/Protos.Key.html" title="class in org.bitcoinj.wallet">Protos.Key</a>&nbsp;key,
-                    <a href="../../../../org/bitcoinj/wallet/Protos.Key.html" title="class in org.bitcoinj.wallet">Protos.Key</a>&nbsp;firstSubKey,
-                    <a href="../../../../org/bitcoinj/crypto/DeterministicKey.html" title="class in org.bitcoinj.crypto">DeterministicKey</a>&nbsp;accountKey,
-                    boolean&nbsp;isFollowingKey,
-                    boolean&nbsp;isMarried)</code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code><a href="../../../../org/bitcoinj/wallet/DeterministicKeyChain.html" title="class in org.bitcoinj.wallet">DeterministicKeyChain</a></code></td>
 <td class="colLast"><span class="typeNameLabel">KeyChainFactory.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/KeyChainFactory.html#makeWatchingKeyChain-org.bitcoinj.wallet.Protos.Key-org.bitcoinj.wallet.Protos.Key-org.bitcoinj.crypto.DeterministicKey-boolean-boolean-">makeWatchingKeyChain</a></span>(<a href="../../../../org/bitcoinj/wallet/Protos.Key.html" title="class in org.bitcoinj.wallet">Protos.Key</a>&nbsp;key,
                     <a href="../../../../org/bitcoinj/wallet/Protos.Key.html" title="class in org.bitcoinj.wallet">Protos.Key</a>&nbsp;firstSubKey,
                     <a href="../../../../org/bitcoinj/crypto/DeterministicKey.html" title="class in org.bitcoinj.crypto">DeterministicKey</a>&nbsp;accountKey,
@@ -191,6 +183,14 @@
                     boolean&nbsp;isMarried)</code>
 <div class="block">Make a watching keychain.</div>
 </td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../org/bitcoinj/wallet/DeterministicKeyChain.html" title="class in org.bitcoinj.wallet">DeterministicKeyChain</a></code></td>
+<td class="colLast"><span class="typeNameLabel">DefaultKeyChainFactory.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/DefaultKeyChainFactory.html#makeWatchingKeyChain-org.bitcoinj.wallet.Protos.Key-org.bitcoinj.wallet.Protos.Key-org.bitcoinj.crypto.DeterministicKey-boolean-boolean-">makeWatchingKeyChain</a></span>(<a href="../../../../org/bitcoinj/wallet/Protos.Key.html" title="class in org.bitcoinj.wallet">Protos.Key</a>&nbsp;key,
+                    <a href="../../../../org/bitcoinj/wallet/Protos.Key.html" title="class in org.bitcoinj.wallet">Protos.Key</a>&nbsp;firstSubKey,
+                    <a href="../../../../org/bitcoinj/crypto/DeterministicKey.html" title="class in org.bitcoinj.crypto">DeterministicKey</a>&nbsp;accountKey,
+                    boolean&nbsp;isFollowingKey,
+                    boolean&nbsp;isMarried)</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../org/bitcoinj/wallet/DeterministicKeyChain.html" title="class in org.bitcoinj.wallet">DeterministicKeyChain</a></code></td>
@@ -263,14 +263,14 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><span class="typeNameLabel">KeyChainGroup.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/KeyChainGroup.html#addAndActivateHDChain-org.bitcoinj.wallet.DeterministicKeyChain-">addAndActivateHDChain</a></span>(<a href="../../../../org/bitcoinj/wallet/DeterministicKeyChain.html" title="class in org.bitcoinj.wallet">DeterministicKeyChain</a>&nbsp;chain)</code>
-<div class="block">Adds an HD chain to the chains list, and make it the default chain (from which keys are issued).</div>
+<td class="colLast"><span class="typeNameLabel">Wallet.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/Wallet.html#addAndActivateHDChain-org.bitcoinj.wallet.DeterministicKeyChain-">addAndActivateHDChain</a></span>(<a href="../../../../org/bitcoinj/wallet/DeterministicKeyChain.html" title="class in org.bitcoinj.wallet">DeterministicKeyChain</a>&nbsp;chain)</code>
+<div class="block">Add a pre-configured keychain to the wallet.</div>
 </td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><span class="typeNameLabel">Wallet.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/Wallet.html#addAndActivateHDChain-org.bitcoinj.wallet.DeterministicKeyChain-">addAndActivateHDChain</a></span>(<a href="../../../../org/bitcoinj/wallet/DeterministicKeyChain.html" title="class in org.bitcoinj.wallet">DeterministicKeyChain</a>&nbsp;chain)</code>
-<div class="block">Add a pre-configured keychain to the wallet.</div>
+<td class="colLast"><span class="typeNameLabel">KeyChainGroup.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/wallet/KeyChainGroup.html#addAndActivateHDChain-org.bitcoinj.wallet.DeterministicKeyChain-">addAndActivateHDChain</a></span>(<a href="../../../../org/bitcoinj/wallet/DeterministicKeyChain.html" title="class in org.bitcoinj.wallet">DeterministicKeyChain</a>&nbsp;chain)</code>
+<div class="block">Adds an HD chain to the chains list, and make it the default chain (from which keys are issued).</div>
 </td>
 </tr>
 </tbody>
@@ -343,6 +343,6 @@
 <!--   -->
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
-<p class="legalCopy"><small>Copyright &#169; 2017. All rights reserved.</small></p>
+<p class="legalCopy"><small>Copyright &#169; 2022. All rights reserved.</small></p>
 </body>
 </html>

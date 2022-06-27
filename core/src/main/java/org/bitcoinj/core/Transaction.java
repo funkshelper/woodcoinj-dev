@@ -55,7 +55,7 @@ import java.math.BigInteger;
  * Whether to trust a transaction is something that needs to be decided on a case by case basis - a rule that makes
  * sense for selling MP3s might not make sense for selling cars, or accepting payments from a family member. If you
  * are building a wallet, how to present confidence to your users is something to consider carefully.</p>
- * 
+ *
  * <p>Instances of this class are not safe for use by multiple threads.</p>
  */
 public class Transaction extends ChildMessage {
@@ -97,20 +97,20 @@ public class Transaction extends ChildMessage {
     /**
      * If feePerKb is lower than this, Bitcoin Core will treat it as if there were no fee.
      */
-    public static final Coin REFERENCE_DEFAULT_MIN_TX_FEE = Coin.valueOf(5000); // 0.05 mBTC
+    public static final Coin REFERENCE_DEFAULT_MIN_TX_FEE = Coin.valueOf(100000); // 0.05 mBTC
 
     /**
      * If using this feePerKb, transactions will get confirmed within the next couple of blocks.
      * This should be adjusted from time to time. Last adjustment: March 2016.
      */
-    public static final Coin DEFAULT_TX_FEE = Coin.valueOf(50000); // 0.5 mBTC
+    public static final Coin DEFAULT_TX_FEE = Coin.valueOf(100000); // 0.5 mBTC
 
     /**
      * Any standard (ie pay-to-address) output smaller than this value (in satoshis) will most likely be rejected by the network.
      * This is calculated by assuming a standard output will be 34 bytes, and then using the formula used in
      * {@link TransactionOutput#getMinNonDustValue(Coin)}.
      */
-    public static final Coin MIN_NONDUST_OUTPUT = Coin.valueOf(2730); // satoshis
+    public static final Coin MIN_NONDUST_OUTPUT = Coin.valueOf(1); // satoshis
 
     // These are bitcoin serialized.
     private long version;

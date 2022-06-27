@@ -102,12 +102,17 @@ public class WalletFiles {
         };
     }
 
+    public Wallet getWallet() {
+        return wallet;
+    }
+
     /**
      * The given listener will be called on the autosave thread before and after the wallet is saved to disk.
      */
     public void setListener(@Nonnull Listener listener) {
         this.vListener = checkNotNull(listener);
     }
+
 
     /** Actually write the wallet file to disk, using an atomic rename when possible. Runs on the current thread. */
     public void saveNow() throws IOException {

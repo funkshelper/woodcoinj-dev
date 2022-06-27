@@ -120,7 +120,7 @@ public class Context {
      * rather than using a heuristic for the desired context.
      */
     public static void enableStrictMode() {
-        isStrictMode = true;
+        isStrictMode = false;
     }
 
     // A temporary internal shim designed to help us migrate internally in a way that doesn't wreck source compatibility.

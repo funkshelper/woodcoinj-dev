@@ -123,27 +123,27 @@
 <td class="colLast"><span class="typeNameLabel">BlockChain.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/core/BlockChain.html#add-org.bitcoinj.core.FilteredBlock-">add</a></span>(<a href="../../../../org/bitcoinj/core/FilteredBlock.html" title="class in org.bitcoinj.core">FilteredBlock</a>&nbsp;block)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../../../org/bitcoinj/core/TransactionOutputChanges.html" title="class in org.bitcoinj.core">TransactionOutputChanges</a></code></td>
-<td class="colLast"><span class="typeNameLabel">FullPrunedBlockChain.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/core/FullPrunedBlockChain.html#connectTransactions-org.bitcoinj.core.StoredBlock-">connectTransactions</a></span>(<a href="../../../../org/bitcoinj/core/StoredBlock.html" title="class in org.bitcoinj.core">StoredBlock</a>&nbsp;newBlock)</code>&nbsp;</td>
-</tr>
-<tr class="altColor">
 <td class="colFirst"><code>protected abstract <a href="../../../../org/bitcoinj/core/TransactionOutputChanges.html" title="class in org.bitcoinj.core">TransactionOutputChanges</a></code></td>
 <td class="colLast"><span class="typeNameLabel">AbstractBlockChain.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/core/AbstractBlockChain.html#connectTransactions-org.bitcoinj.core.StoredBlock-">connectTransactions</a></span>(<a href="../../../../org/bitcoinj/core/StoredBlock.html" title="class in org.bitcoinj.core">StoredBlock</a>&nbsp;newBlock)</code>
 <div class="block">Load newBlock from BlockStore and connect its transactions, returning changes to the set of unspent transactions.</div>
 </td>
 </tr>
-<tr class="rowColor">
-<td class="colFirst"><code>protected void</code></td>
-<td class="colLast"><span class="typeNameLabel">FullPrunedBlockChain.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/core/FullPrunedBlockChain.html#disconnectTransactions-org.bitcoinj.core.StoredBlock-">disconnectTransactions</a></span>(<a href="../../../../org/bitcoinj/core/StoredBlock.html" title="class in org.bitcoinj.core">StoredBlock</a>&nbsp;oldBlock)</code>
-<div class="block">This is broken for blocks that do not pass BIP30, so all BIP30-failing blocks which are allowed to fail BIP30
- must be checkpointed.</div>
-</td>
-</tr>
 <tr class="altColor">
+<td class="colFirst"><code>protected <a href="../../../../org/bitcoinj/core/TransactionOutputChanges.html" title="class in org.bitcoinj.core">TransactionOutputChanges</a></code></td>
+<td class="colLast"><span class="typeNameLabel">FullPrunedBlockChain.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/core/FullPrunedBlockChain.html#connectTransactions-org.bitcoinj.core.StoredBlock-">connectTransactions</a></span>(<a href="../../../../org/bitcoinj/core/StoredBlock.html" title="class in org.bitcoinj.core">StoredBlock</a>&nbsp;newBlock)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code>protected abstract void</code></td>
 <td class="colLast"><span class="typeNameLabel">AbstractBlockChain.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/core/AbstractBlockChain.html#disconnectTransactions-org.bitcoinj.core.StoredBlock-">disconnectTransactions</a></span>(<a href="../../../../org/bitcoinj/core/StoredBlock.html" title="class in org.bitcoinj.core">StoredBlock</a>&nbsp;block)</code>
 <div class="block">Disconnect each transaction in the block (after reading it from the block store)
  Only called if(shouldVerifyTransactions())</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><span class="typeNameLabel">FullPrunedBlockChain.</span><code><span class="memberNameLink"><a href="../../../../org/bitcoinj/core/FullPrunedBlockChain.html#disconnectTransactions-org.bitcoinj.core.StoredBlock-">disconnectTransactions</a></span>(<a href="../../../../org/bitcoinj/core/StoredBlock.html" title="class in org.bitcoinj.core">StoredBlock</a>&nbsp;oldBlock)</code>
+<div class="block">This is broken for blocks that do not pass BIP30, so all BIP30-failing blocks which are allowed to fail BIP30
+ must be checkpointed.</div>
 </td>
 </tr>
 </tbody>
@@ -200,6 +200,6 @@
 <!--   -->
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
-<p class="legalCopy"><small>Copyright &#169; 2017. All rights reserved.</small></p>
+<p class="legalCopy"><small>Copyright &#169; 2022. All rights reserved.</small></p>
 </body>
 </html>
